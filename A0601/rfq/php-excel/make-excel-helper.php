@@ -104,6 +104,11 @@ $jsonDdl = '{"F9E79F":[10,12,29,40,65,70,74,79,85]}';
 $jsonInput = '{"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]}';
 $jsonBigTotal = '{"cccccc":[23,24,105,111,112]}';
 
+//[[A0601]]
+//    var colorVersion = "#98AFC7"; // 
+$jsonVersion = '{"98AFC7":[7,8,9]}';
+
+
 $tool->makeColorFillStyle("A", $colorJsonStrStepStart);
 $tool->makeColorFillStyle("B", $colorJsonStrStepStart);
 $tool->makeColorFillStyle("B", $colorJsonStrStepEnd);
@@ -134,6 +139,23 @@ $tool->makeColorFillStyle("E", $jsonBigTotal);
 $tool->makeColorFillStyle("F", $jsonBigTotal);
 $tool->makeColorFillStyle("G", $jsonBigTotal);
 $tool->makeColorFillStyle("H", $jsonBigTotal);
+
+echo "<br><br>//[[A0601]] 顯示版本信息";
+$tool->makeColorFillStyle("A", $jsonVersion);
+
+echo "<br><br>//[[A0601]] 加方格線";
+
+//$styleArr = array(
+//    'borders' => array(
+//        'allborders' => array(
+//            'style' => 'thin', //细边框  //   const BORDER_THIN             = 'thin';     
+//        ),
+//    ),
+//);
+
+$tool->makeCellsBorderColRowFromTo( "ABCEDFGH", 1, 115);
+
+
 
 class MarkTool {
     /*
@@ -293,6 +315,24 @@ class MarkTool {
                 echo $str . ";<br>";
             }
         }
+    }
+
+    //[[A0601]]
+    public function makeCellsBorderColRowFromTo( $colName, $rowFrom, $rowTo) {
+        $str = "<br><br>\$styleArr = array( ";
+        $str .="'borders' => array(";
+        $str .="    'allborders' => array(";
+        $str .="        'style' => 'thin'"; //, //细边框  //   const BORDER_THIN             = 'thin';
+        $str .="    )";
+        $str .=")";
+        $str .=");<br>";
+        for ($k = 0; $k < strlen($colName); $k++) {
+            for ($i = $rowFrom; $i <= $rowTo; $i++) {
+                $cell = substr($colName,$k,1) . $i;
+                $str .= "\$objPHPExcel->getActiveSheet()->getStyle('$cell')->applyFromArray(\$styleArr);<br>"; //这里就是画出从单元格A5到N5的边框，看单元格最右边在哪哪个格就把这个N改
+            }
+        }
+        echo $str;
     }
 
     // cell format
