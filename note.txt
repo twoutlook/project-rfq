@@ -1,0 +1,16 @@
+﻿1. on dev pc, project-rfq,  copy paste 525 to A0530
+A表示2016年,
+05表示5月
+30表示30日
+
+
+
+2. git add .|git commit -m"..."|git push -u origin master 
+3. on server, cd /var/www/html/project-rfq, git pull
+4. check http://fulltech-metal.org/project-rfq/
+5. use IDE to develop and repeat step 2,3,4 and 5
+===============================================
+[525]
+1. row 79, ddl to have lookup and update row 81
+2. Excel, add border
+3. row 86, default to be 0
