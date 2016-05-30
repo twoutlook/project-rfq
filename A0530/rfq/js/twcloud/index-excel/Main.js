@@ -124,7 +124,8 @@ Ext.onReady(function () {
 //            {sheet: 1, name: "colGroups", ftype: "colgroup", json: "[{level:1, span:[2,3]}, {level:1, span:[4,6]}]"},
 //        ],
         cells: [
-            // A0530
+            // A0530 (start)
+
             {sheet: 11, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
             {sheet: 11, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
             {sheet: 11, row: 0, col: 2, json: {fm: "money|¥|3|none", ta: "center", data: "B", width: 100}},
@@ -134,6 +135,17 @@ Ext.onReady(function () {
             {sheet: 11, row: 2, col: 2, json: {data: '0.075'}},
             {sheet: 11, row: 3, col: 1, json: {data: '一般皮膜(48H)'}},
             {sheet: 11, row: 3, col: 2, json: {data: '0.2'}},
+            {sheet: 11, row: 4, col: 1, json: {data: '鎂合金一般皮膜(24H)'}},
+            {sheet: 11, row: 4, col: 2, json: {data: '0.2'}},
+            {sheet: 11, row: 5, col: 1, json: {data: '高清洁度清洗(600um)'}},
+            {sheet: 11, row: 5, col: 2, json: {data: '0.2'}},
+            {sheet: 11, row: 6, col: 1, json: {data: '高清洁度清洗(400um)'}},
+            {sheet: 11, row: 6, col: 2, json: {data: '0.3'}},
+            {sheet: 11, row: 7, col: 1, json: {data: '高清洁度清洗(200um)'}},
+            {sheet: 11, row: 7, col: 2, json: {data: '0.4'}},
+            {sheet: 11, row: 8, col: 1, json: {data: '特殊皮膜(48H)'}},
+            {sheet: 11, row: 8, col: 2, json: {data: '0.4'}},
+            // A0530 (end)
             //------------------------
             {sheet: 9, row: 0, col: 0, json: {height: 20, va: "middle"}},
             {sheet: 9, row: 0, col: 1, json: {ta: "center", data: "A", width: 50}},
