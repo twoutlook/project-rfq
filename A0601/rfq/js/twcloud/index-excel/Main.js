@@ -1366,7 +1366,11 @@ Ext.onReady(function () {
 
 //
 //          // 只是做成最後一行
-            {sheet: 1, row: 1, col: 1, json: {data: ''}}
+            {sheet: 1, row: 7, col: 1, json: {data: 'RFQ'}},
+            {sheet: 1, row: 8, col: 1, json: {data: 'A0601'}},
+            {sheet: 1, row: 9, col: 1, json: {data: '公版'}},
+            
+            
 
         ]
     };
