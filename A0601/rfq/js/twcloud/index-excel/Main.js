@@ -51,6 +51,9 @@ Ext.onReady(function () {
     var colorSect = "#837E7C"; //bgc: colorSect, fm: "money|¥|2|none", dsd: "ed", cal: true
     var colorDdl = "#F9E79F"; //#82E0AA  
     var colorInput = "#F4D03F"; // 
+    var colorVersion = "#98AFC7"; // 
+    
+//
     //
     //
     //
@@ -1366,9 +1369,9 @@ Ext.onReady(function () {
 
 //
 //          // 只是做成最後一行
-            {sheet: 1, row: 7, col: 1, json: {data: 'RFQ'}},
-            {sheet: 1, row: 8, col: 1, json: {data: 'A0601'}},
-            {sheet: 1, row: 9, col: 1, json: {data: '公版'}},
+            {sheet: 1, row: 7, col: 1, json: {bgc: colorVersion,data: 'RFQ'}},
+            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion,data: 'A0601'}},
+            {sheet: 1, row: 9, col: 1, json: {bgc: colorVersion,data: '公版'}},
             
             
 
