@@ -112,7 +112,7 @@ $tool->extend73X(102, '           {sheet: 1, row: 102, col: 3, json: styleSubTot
 
 //[[A0530]]
 echo "<br>// [[A0530]]";
-$tool->extend73X(81, '           {sheet: 1, row: 81, col: 3, json: styleSubTotal({data: "=VLOOKUP(C79,DDL079!$A$1:$B$99,2,0)"})},        ');
+$tool->extend73X(81, '           {sheet: 1, row: 81, col: 3, json: styleSubTotal({data: "=IF(ISNA(VLOOKUP(C79,DDL079!$A$1:$B$99,2,0)),VLOOKUP(C79,DDL079!$A$1:$B$99,2,0))"})},        ');
 
 
 $tool->extend73X(104, '          {sheet: 1, row: 104, col: 3, json: styleSubTotal({data: "=C102+C103"})},  ');
