@@ -129,11 +129,11 @@ Ext.onReady(function () {
 
             {sheet: 11, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
             {sheet: 11, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
-            {sheet: 11, row: 0, col: 2, json: {fm: "money|¥|3|none", ta: "center", data: "B", width: 100}},
+            {sheet: 11, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
             {sheet: 11, row: 1, col: 1, json: {data: '皮膜處理'}},
             {sheet: 11, row: 1, col: 2, json: {data: '費率'}},
             {sheet: 11, row: 2, col: 1, json: {data: '清洗'}},
-            {sheet: 11, row: 2, col: 2, json: {data: '0.075'}},
+            {sheet: 11, row: 2, col: 2, json: {data: '0.08'}},
             {sheet: 11, row: 3, col: 1, json: {data: '一般皮膜(48H)'}},
             {sheet: 11, row: 3, col: 2, json: {data: '0.2'}},
             {sheet: 11, row: 4, col: 1, json: {data: '鎂合金一般皮膜(24H)'}},
