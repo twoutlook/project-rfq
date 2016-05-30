@@ -61,7 +61,13 @@ $tool->makeInputNumber(71, [60, 56, 54, 52, 51, 49]);
 $tool->makeInputNumber(75, [60, 56, 54, 52, 51, 49]);
 $tool->makeInputNumber(80, [0.99, 0.98, 0.97, 0.96, 0.95, 0.94]);
 $tool->makeInputNumber(82, [1.0, 1.1, 1.2, 0.9, 0.8, 0.85]);
-$tool->makeInputNumber(86, [6, 5, 5.5, 7, 7.5, 9]);
+
+//[[A0530]]
+// row 86, default to be 0
+//$tool->makeInputNumber(86, [6, 5, 5.5, 7, 7.5, 9]);
+$tool->makeInputNumber(86, [0, 0, 0, 0, 0, 0]);
+
+
 $tool->makeInputNumber(90, [0.9, 1.0, 1.1, 1.2, 0.9, 0.8]);
 $tool->makeInputNumber(93, [12, 13, 14, 15, 16, 17]);
 $tool->makeInputNumber(97, [56, 57, 58, 59, 60, 61]);
