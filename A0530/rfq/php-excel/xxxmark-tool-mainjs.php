@@ -58,7 +58,7 @@ $tool->makeInputNumber(75, [60, 56, 54, 52, 51, 49]);
 $tool->makeInputNumber(80, [0.99, 0.98, 0.97, 0.96, 0.95, 0.94]);
 $tool->makeInputNumber(82, [1.0, 1.1, 1.2, 0.9, 0.8, 0.85]);
 $tool->makeInputNumber(86, [6, 5, 5.5, 7, 7.5, 9]);
-$tool->makeInputNumber(90, [0.9,1.0, 1.1, 1.2, 0.9, 0.8]);
+$tool->makeInputNumber(90, [0.9, 1.0, 1.1, 1.2, 0.9, 0.8]);
 $tool->makeInputNumber(93, [12, 13, 14, 15, 16, 17]);
 $tool->makeInputNumber(97, [56, 57, 58, 59, 60, 61]);
 $tool->makeInputNumber(101, [21, 22, 23, 24, 25, 26]);
@@ -75,9 +75,9 @@ $tool->makeInputRmb(81, [0.88, 0.89, 0.91, 0.92, 0.93, 0.94]);
 $tool->makeInputRmb(87, [0.1, 0.15, 0.2, 0.22, 0.33, 0.44]);
 $tool->makeInputRmb(88, [0.6, 0.7, 0.8, 0.9, 0.91, 0.94]);
 $tool->makeInputRmb(94, [0.34, 0.35, 0.36, 0.37, 0.38, 0.39]);
-$tool->makeInputRmb(103, [0.39,0.34, 0.35, 0.36, 0.37, 0.38 ]);
-$tool->makeInputRmb(108, [0.11,0.22, 0.33, 0.44, 0.55, 0.66 ]);
-$tool->makeInputRmb(109, [0.66,0.11,0.22, 0.33, 0.44, 0.55 ]);
+$tool->makeInputRmb(103, [0.39, 0.34, 0.35, 0.36, 0.37, 0.38]);
+$tool->makeInputRmb(108, [0.11, 0.22, 0.33, 0.44, 0.55, 0.66]);
+$tool->makeInputRmb(109, [0.66, 0.11, 0.22, 0.33, 0.44, 0.55]);
 
 
 
@@ -117,7 +117,7 @@ class MarkToolMainJs {
             echo " {sheet: 1, row: 65, col: $i, json: ddlMaching},<br>";
             echo "  {sheet: 1, row: 70, col: $i, json: ddlCold},<br>";
             echo "  {sheet: 1, row: 74, col: $i, json: ddlSand},<br>";
-            echo "  {sheet: 1, row: 79, col: $i, json: ddlStep9},<br>";
+            echo "  {sheet: 1, row: 79, col: $i, json: ddl079},<br>"; // A0530
         }
     }
 
@@ -170,7 +170,6 @@ class MarkToolMainJs {
             echo "     <br>";
         }
     }
-
 
     public function makeFormula24($row) {
 //        $row=23;
@@ -503,22 +502,22 @@ class MarkToolMainJs {
 
     //
 //    {bgc: colorSect, fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=C38+C48+C52+C59+C64+C69+C73+C77+C83+C91+C95+C99+C104'}},
-    
+
     public function makeFormula105($row) {
         $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
         for ($i = 3; $i <= 8; $i++) {
             $COL = $arrAtoH[$i];
             //  {bgc: colorSect, fm: 'money|¥|2|none', dsd: 'ed', cal: true, data:
             //   '=C38+C48+C52+C59+C64+C69+C73+C77+C83+C91+C95+C99+C104'}},
-    
             // replace C with ".$COL."
-            $data = "=".$COL."38+".$COL."48+".$COL."52+".$COL."59+".$COL."64+".$COL."69+".$COL."73+".$COL."77+".$COL."83+".$COL."91+".$COL."95+".$COL."99+".$COL."104";
+            $data = "=" . $COL . "38+" . $COL . "48+" . $COL . "52+" . $COL . "59+" . $COL . "64+" . $COL . "69+" . $COL . "73+" . $COL . "77+" . $COL . "83+" . $COL . "91+" . $COL . "95+" . $COL . "99+" . $COL . "104";
             echo "     {sheet: 1, row: $row, col: $i,json:";
             echo "  {bgc: colorSect, fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '$data'}},
     ";
             echo "     <br>";
         }
     }
+
     public function makeFormula106($row) {
         // $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
         for ($i = 3; $i <= 8; $i++) {
