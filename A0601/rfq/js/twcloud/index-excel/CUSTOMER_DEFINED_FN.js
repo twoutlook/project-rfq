@@ -398,7 +398,9 @@ function CUSTOM_BUTTON_CLICK___MAKE_EXCEL(value, row, column, sheetId, cellObj, 
 
     for (var i = 1; i < 113; i++) {
 
-        if (i > 10 && i < 110) {
+        // to show version info
+        //  if (i > 10 && i < 110) {
+        if (i > 5 && i < 110) {
             cellData = SHEET_API.getCell(SHEET_API_HD, sheet, i, 1);
             var one_json = {pos: "A" + i, data: cellData.data};
             data_in_json.push(one_json);

@@ -172,7 +172,7 @@ function getHttpToDownload($stamp) {
 date_default_timezone_set("Asia/Taipei");
 //echo "The time is " . date("h:i:s a");
 // by Mark, 2016/5/13 14:30
-date_default_timezone_set("Asia/Taipei");
+//date_default_timezone_set("Asia/Taipei");
 
 
 /** Error reporting */
