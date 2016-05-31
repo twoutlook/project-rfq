@@ -121,7 +121,7 @@ Ext.onReady(function () {
 
     var json = {
         fileName: "RFQ",
-        sheets: [{id: 1, name: "RFQ[[A0601]]", actived: true, color: "orange"},
+        sheets: [{id: 1, name: "RFQ", actived: true, color: "orange"},
             {id: 2, name: "LOOKUP", actived: true, color: "blue"},
             {id: 3, name: "LOOKUP2", actived: true, color: "blue"},
             {id: 5, name: "LOOKUP04", actived: true, color: "blue"},

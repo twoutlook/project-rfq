@@ -6,12 +6,12 @@
 //
 
 // makePercentFormat 0.00% ok, FORMAT_PERCENTAGE_00 為什麼不行?
-$objPHPExcel->getActiveSheet()->getStyle('C34:H34')->getNumberFormat()->setFormatCode("0.00%");
-$objPHPExcel->getActiveSheet()->getStyle('C47:H47')->getNumberFormat()->setFormatCode("0.00%");
-$objPHPExcel->getActiveSheet()->getStyle('C57:H57')->getNumberFormat()->setFormatCode("0.00%");
-$objPHPExcel->getActiveSheet()->getStyle('C68:H68')->getNumberFormat()->setFormatCode("0.00%");
-$objPHPExcel->getActiveSheet()->getStyle('C89:H89')->getNumberFormat()->setFormatCode("0.00%");
-$objPHPExcel->getActiveSheet()->getStyle('C106:H106')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C35:H35')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C48:H48')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C58:H58')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C69:H69')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C93:H93')->getNumberFormat()->setFormatCode("0.00%");
+$objPHPExcel->getActiveSheet()->getStyle('C110:H110')->getNumberFormat()->setFormatCode("0.00%");
 
 
 //
