@@ -62,6 +62,9 @@ $tool->extendColToCDEFGH(53,"=(C51/3600)*C52");
 //57,                        =(C55/3600)*C56
 $tool->extendColToCDEFGH(57,"=(C55/3600)*C56");
 
+//60,                        =C57*(1+(1-C58/100))
+$tool->extendColToCDEFGH(60,"=C57*(1+(1-C58/100))");
+
 
 /*
   $tool->makeCell32(32);
