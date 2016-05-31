@@ -43,8 +43,9 @@ function getDesiredData($obj) {
  //  {"pos":"C47","data":"91%"}
     //
     // NOTE: 
-    //
-    if (in_array($rowNum, array(47,57,68,89,106))){
+    // [[A0601]] 位移重新定位百分比欄位 
+    //if (in_array($rowNum, array(47,57,68,89,106))){
+    if (in_array($rowNum, array(48,58,69,93,110))){
         if ($colName>="C" && $colName<="H" ){
             $p1=str_replace("%","",$obj["data"]);
             $p2=  doubleval(str_replace(",","",$p1));
