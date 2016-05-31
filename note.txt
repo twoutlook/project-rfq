@@ -1,10 +1,4 @@
-﻿1. on dev pc, project-rfq,  copy paste 525 to A0530
-A表示2016年,
-05表示5月
-30表示30日
-
-
-
+﻿1. on dev pc, project-rfq,  copy paste 525 to 530
 2. git add .|git commit -m"..."|git push -u origin master 
 3. on server, cd /var/www/html/project-rfq, git pull
 4. check http://fulltech-metal.org/project-rfq/
@@ -14,10 +8,15 @@ A表示2016年,
 1. row 79, ddl to have lookup and update row 81
 2. Excel, add border
 3. row 86, default to be 0
--------------------------
-1. [root]/js/twcloud/index-excel/Main.js
-var json
-sheets, add id 11
-cells, add 
+----------------------
+ var ddlStep9 = {bgc: colorDdl, ta: "center", data: "===皮膜处理===", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
+  
 
-2. 
+    {sheet: 5, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
+            {sheet: 5, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
+            {sheet: 5, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
+            {sheet: 5, row: 1, col: 1, json: {data: '後段加工 工时费率：'}},
+            {sheet: 5, row: 2, col: 1, json: {data: ''}},
+            {sheet: 5, row: 3, col: 1, json: {data: 'CNC机加工'}},
+            {sheet: 5, row: 4, col: 1, json: {data: '传统机加工'}},
+            {sheet: 5, row: 5, col: 1, json: {data: '毛刺处理费（含粗磨） '}},
