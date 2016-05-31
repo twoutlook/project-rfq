@@ -153,7 +153,7 @@ echo "<br><br>//[[A0601]] 加方格線";
 //    ),
 //);
 
-$tool->makeCellsBorderColRowFromTo( "ABCEDFGH", 1, 115);
+$tool->makeCellsBorderColRowFromTo( "ABCEDFGH", 3, 119);
 
 
 

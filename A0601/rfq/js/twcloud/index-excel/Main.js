@@ -1424,34 +1424,37 @@ Ext.onReady(function () {
      * [[A0601]]-insert row and assign data (end)
      * 
      */
-    var cells = [];
-    cells.push(
-            {sheet: 1, row: 113, col: 2, json: {data: '合計（含稅）：'}},
-            {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
-            {sheet: 1, row: 113, col: 4, json: styleSubTotal({data: '=D111*1.17'})},
-            {sheet: 1, row: 113, col: 5, json: styleSubTotal({data: '=E111*1.17'})},
-            {sheet: 1, row: 113, col: 6, json: styleSubTotal({data: '=F111*1.17'})},
-            {sheet: 1, row: 113, col: 7, json: styleSubTotal({data: '=G111*1.17'})},
-            {sheet: 1, row: 113, col: 8, json: styleSubTotal({data: '=H111*1.17'})},
-    //
-            {sheet: 1, row: 112, col: 3, json: styleSubTotalMoney("$", {data: '=C111/6.35'})},
-            {sheet: 1, row: 112, col: 4, json: styleSubTotalMoney("$", {data: '=D111/6.35'})},
-            {sheet: 1, row: 112, col: 5, json: styleSubTotalMoney("$", {data: '=E111/6.35'})},
-            {sheet: 1, row: 112, col: 6, json: styleSubTotalMoney("$", {data: '=FC111/6.35'})},
-            {sheet: 1, row: 112, col: 7, json: styleSubTotalMoney("$", {data: '=G111/6.35'})},
-            {sheet: 1, row: 112, col: 8, json: styleSubTotalMoney("$", {data: '=H111/6.35'})},
-    //
-            {sheet: 1, row: 113, col: 2, json: {data: '合計（含稅）：'}},
-            {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
-            {sheet: 1, row: 113, col: 4, json: styleSubTotal({data: '=D111*1.17'})},
-            {sheet: 1, row: 113, col: 5, json: styleSubTotal({data: '=E111*1.17'})},
-            {sheet: 1, row: 113, col: 6, json: styleSubTotal({data: '=F111*1.17'})},
-            {sheet: 1, row: 113, col: 7, json: styleSubTotal({data: '=G111*1.17'})},
-            {sheet: 1, row: 113, col: 8, json: styleSubTotal({data: '=H111*1.17'})},
-    // LAST ONE ============================================================================================
-            {sheet: 1, row: 1, col: 1, json: {data: ""}}
-    );
-    SHEET_API.updateCells(SHEET_API_HD, cells);
+//    var cells = [];
+//    cells.push(
+//            {sheet: 1, row: 113, col: 2, json: {data: '合計（含稅）：'}},
+//            {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
+//            {sheet: 1, row: 113, col: 4, json: styleSubTotal({data: '=D111*1.17'})},
+//            {sheet: 1, row: 113, col: 5, json: styleSubTotal({data: '=E111*1.17'})},
+//            {sheet: 1, row: 113, col: 6, json: styleSubTotal({data: '=F111*1.17'})},
+//            {sheet: 1, row: 113, col: 7, json: styleSubTotal({data: '=G111*1.17'})},
+//            {sheet: 1, row: 113, col: 8, json: styleSubTotal({data: '=H111*1.17'})},
+//    //
+//            {sheet: 1, row: 112, col: 3, json: styleSubTotalMoney("$", {data: '=C111/6.35'})},
+//            {sheet: 1, row: 112, col: 4, json: styleSubTotalMoney("$", {data: '=D111/6.35'})},
+//            {sheet: 1, row: 112, col: 5, json: styleSubTotalMoney("$", {data: '=E111/6.35'})},
+//            {sheet: 1, row: 112, col: 6, json: styleSubTotalMoney("$", {data: '=FC111/6.35'})},
+//            {sheet: 1, row: 112, col: 7, json: styleSubTotalMoney("$", {data: '=G111/6.35'})},
+//            {sheet: 1, row: 112, col: 8, json: styleSubTotalMoney("$", {data: '=H111/6.35'})},
+//    //
+//            {sheet: 1, row: 113, col: 2, json: {data: '合計（含稅）：'}},
+//            {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
+//            {sheet: 1, row: 113, col: 4, json: styleSubTotal({data: '=D111*1.17'})},
+//            {sheet: 1, row: 113, col: 5, json: styleSubTotal({data: '=E111*1.17'})},
+//            {sheet: 1, row: 113, col: 6, json: styleSubTotal({data: '=F111*1.17'})},
+//            {sheet: 1, row: 113, col: 7, json: styleSubTotal({data: '=G111*1.17'})},
+//            {sheet: 1, row: 113, col: 8, json: styleSubTotal({data: '=H111*1.17'})},
+//            {sheet: 1, row: 114, col: 2, json: {data: '運費：'}},
+//            
+//    // LAST ONE ============================================================================================
+//            {sheet: 1, row: 1, col: 1, json: {data: ""}}
+//    );
+    var patch_A0601_1_cells = func_patch_A0601_1_cells();
+    SHEET_API.updateCells(SHEET_API_HD, patch_A0601_1_cells);
 
     /**
      * [[A0601]]-insert row and assign data (end)
@@ -1497,36 +1500,33 @@ Ext.onReady(function () {
             {sheet: 1, row: 94, col: 6, json: styleSubTotal({data: "=F86*(SUM(F87:F91))*(1+(1-F92/100))*F93"})},
             {sheet: 1, row: 94, col: 7, json: styleSubTotal({data: "=G86*(SUM(G87:G91))*(1+(1-G92/100))*G93"})},
             {sheet: 1, row: 94, col: 8, json: styleSubTotal({data: "=H86*(SUM(H87:H91))*(1+(1-H92/100))*H93"})},
-            
 //            {sheet: 1, row: 94, col: 4, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
 //            {sheet: 1, row: 94, col: 5, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
 //            {sheet: 1, row: 94, col: 6, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
 //            {sheet: 1, row: 94, col: 7, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
 //            {sheet: 1, row: 94, col: 8, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
     // LAST ONE ============================================================================================
-            {sheet: 1, row: 1, col: 1, json: null}
+            {sheet: 1, row: 1, col: 1, json: {data:""}}
     );
     SHEET_API.updateCells(SHEET_API_HD, cells);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    SHEET_API.insertRow(SHEET_API_HD, 1, 22, 1);
+    var cells = [];
+    cells.push(
+            {sheet: 1, row: 22, col: 2, json: {data: 'xxx专用测试设备费用：'}},
+    // LAST ONE ============================================================================================
+            {sheet: 1, row: 1, col: 1, json: {data:""}}
+    );
+    SHEET_API.updateCells(SHEET_API_HD, cells);
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
-    // add event listener - this shows the code to add customer function 
+
+
+
+//
+//
+
+// add event listener - this shows the code to add customer function 
     var sheet = SHEET_API_HD.sheet;
     var editor = sheet.getEditor();
     editor.on('quit', function (editor, sheetId, row, col) {
