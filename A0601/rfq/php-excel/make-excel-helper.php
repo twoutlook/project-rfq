@@ -29,8 +29,10 @@ $tool->extendColToCDEFGH(116,"=C115/6.35");
 $tool->extendColToCDEFGH(32,"=C11");
 //33,=C31*C32/1000
 $tool->extendColToCDEFGH(33,"=C31*C32/1000");
+
 //35,=100*C32*C16/(C32*C16+C34)
-$tool->extendColToCDEFGH(35,"=100*C32*C16/(C32*C16+C34)");
+//使用 Excel 百分比 --- 35,=C32*C16/(C32*C16+C34)
+$tool->extendColToCDEFGH(35,"=C32*C16/(C32*C16+C34)");
 
 
 
