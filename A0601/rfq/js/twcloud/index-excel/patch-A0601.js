@@ -1,13 +1,13 @@
 
 function getPatchCellA001(k) {
     if (k === 1) {
-        return getPatchCellsA0601_1;
+        return getPatchCellsA0601_1();
     }
     if (k === 2) {
-        return getPatchCellsA0601_2;
+        return getPatchCellsA0601_2();
     }
     if (k === 3) {
-        return getPatchCellsA0601_3;
+        return getPatchCellsA0601_3();
     }
 
 }
