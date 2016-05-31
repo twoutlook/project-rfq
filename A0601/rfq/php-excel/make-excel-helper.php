@@ -66,6 +66,10 @@ $tool->extendColToCDEFGH(57,"=(C55/3600)*C56");
 // fix percent               =C57*(1+(1-C58))
 $tool->extendColToCDEFGH(60,"=C57*(1+(1-C58))");
 
+//64,  65                    =(C62/3600)*C63
+$tool->extendColToCDEFGH(64,"=(C62/3600)*C63");
+$tool->extendColToCDEFGH(65,"=(C62/3600)*C63");
+
 
 /*
   $tool->makeCell32(32);
@@ -148,7 +152,7 @@ $tool->extendColToCDEFGH(60,"=C57*(1+(1-C58))");
 //    var colorDdl = "#F9E79F"; //#82E0AA  
 //    var colorInput = "#F4D03F"; // 
 //    var arrStepEnd = [23, 24, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111, 112];
-$fontJsonStrItalicTrue = '{"0000A0":[31,36,42,46,47]}'; //直接查表或是立即計算的
+$fontJsonStrItalicTrue = '{"0000A0":[31,36,42,46,47,52,56,63]}'; //直接查表或是立即計算的
 $colorJsonStrStepStart = '{"A9BCF5":[15,28,29,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]}';
 
 $colorJsonStrStepEnd = '{"BE6E6E6":[39,49,53,60,65,70,74,78,84,95,99,103,108,111,114]}';
