@@ -25,6 +25,14 @@ echo "<br> // USD 公式計算<br> ";
 $tool->extendColToCDEFGH(25,"=C24/6.35");
 $tool->extendColToCDEFGH(116,"=C115/6.35");
 
+//32,=C11
+$tool->extendColToCDEFGH(32,"=C11");
+//33,=C31*C32/1000
+$tool->extendColToCDEFGH(32,"=C31*C32/1000");
+//35,=100*C32*C16/(C32*C16+C34)
+$tool->extendColToCDEFGH(35,"=100*C32*C16/(C32*C16+C34)");
+
+
 
 
 
