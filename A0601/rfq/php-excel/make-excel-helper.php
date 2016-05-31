@@ -75,6 +75,10 @@ $tool->extendColToCDEFGH(65,"=(C62/3600)*C63");
 // fix percent               =IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 ))),0,((C67/3600)*C68 * (1 + (1 - C69 ))))
 $tool->extendColToCDEFGH(70,"=IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 ))),0,((C67/3600)*C68 * (1 + (1 - C69 ))))");
 
+// 74                        =IF(ISNA((C72/3600)*C73),0,((C72/3600)*C73))
+$tool->extendColToCDEFGH(74,"=IF(ISNA((C72/3600)*C73),0,((C72/3600)*C73))");
+
+
 /*
   $tool->makeCell32(32);
   $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
