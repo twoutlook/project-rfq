@@ -110,6 +110,8 @@ function getPatchCellsA0601_3() {
             {sheet: 1, row: 22, col: 6, json: styleInput({fm: "money|¥|2|none", data: "4444.44"})},
             {sheet: 1, row: 22, col: 7, json: styleInput({fm: "money|¥|2|none", data: "5555.55"})},
             {sheet: 1, row: 22, col: 8, json: styleInput({fm: "money|¥|2|none", data: "6666.66"})},
+    //MOQ
+            {sheet: 1, row: 14, col: 2, json: {data: 'MOQ：'}},
             {sheet: 1, row: 22, col: 2, json: {data: '专用测试设备费用：'}}
     );
     return cells;
