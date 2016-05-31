@@ -515,15 +515,15 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendColToCDEFGH(108,=C106+C107) ---
+// --- extendColToCDEFGH(108,=C105/3600*C106+C107) ---
 
 $objPHPExcel->getActiveSheet() 
-->setCellValue('C108', '=C106+C107')
-->setCellValue('D108', '=D106+D107')
-->setCellValue('E108', '=E106+E107')
-->setCellValue('F108', '=F106+F107')
-->setCellValue('G108', '=G106+G107')
-->setCellValue('H108', '=H106+H107')
+->setCellValue('C108', '=C105/3600*C106+C107')
+->setCellValue('D108', '=D105/3600*D106+D107')
+->setCellValue('E108', '=E105/3600*E106+E107')
+->setCellValue('F108', '=F105/3600*F106+F107')
+->setCellValue('G108', '=G105/3600*G106+G107')
+->setCellValue('H108', '=H105/3600*H106+H107')
 ;
 
 
