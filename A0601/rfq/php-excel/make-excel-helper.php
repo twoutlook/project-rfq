@@ -130,7 +130,7 @@ $tool->extendColToCDEFGH(39,"=IF(ISNA(C33+C37+C38),0,(C33+C37+C38))");
 //    var colorInput = "#F4D03F"; // 
 //    var arrStepEnd = [23, 24, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111, 112];
 $fontJsonStrItalicTrue = '{"0000A0":[31,36]}';
-$colorJsonStrStepStart = '{"A9BCF5":[15,28,39,50,54,61,66,71,75,78,85,96,100,104]}';
+$colorJsonStrStepStart = '{"A9BCF5":[15,28,40,50,54,61,66,71,75,79,85,96,100,104]}';
 
 $colorJsonStrStepEnd = '{"BE6E6E6":[39,49,53,60,65,70,74,78,84,95,99,103,108,111,114]}';
 $jsonDdl = '{"F9E79F":[10,12,30,41,66,71,75,80,86]}';
@@ -451,7 +451,7 @@ class MarkTool {
 //            print_r($val);
             foreach ($val as $item) {
 //                 echo $item;
-                $str = "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFont()->setItalic(true);<br>";
+                $str = "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFont()->setItalic(true)->setBold(true);<br>";
                 $str .= "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFont()->setColor( new PHPExcel_Style_Color('$key'));<br>";
                 
              //   $str.=" ->getStartColor()->setARGB('$key');<br>";
