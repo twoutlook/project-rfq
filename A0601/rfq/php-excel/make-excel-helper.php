@@ -78,6 +78,14 @@ $tool->extendColToCDEFGH(70,"=IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 ))),0,((C67
 // 74                        =IF(ISNA((C72/3600)*C73),0,((C72/3600)*C73))
 $tool->extendColToCDEFGH(74,"=IF(ISNA((C72/3600)*C73),0,((C72/3600)*C73))");
 
+//78                         =IF(ISNA(C77),0,(C76/3600)*C77)
+$tool->extendColToCDEFGH(78,"=IF(ISNA(C77),0,(C76/3600)*C77)");
+
+// 84                        =C81*C82*C83
+$tool->extendColToCDEFGH(84,"=C81*C82*C83");
+
+
+
 
 /*
   $tool->makeCell32(32);
