@@ -101,6 +101,10 @@ $tool->extendColToCDEFGH(108,"=C105/3600*C106+C107");
 // fix percent                =C109*C110
 $tool->extendColToCDEFGH(111,"=C109*C110");
 
+// 117                        =C115*1.17
+$tool->extendColToCDEFGH(117,"=C115*1.17");
+
+
 /*
   $tool->makeCell32(32);
   $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
