@@ -1453,66 +1453,21 @@ Ext.onReady(function () {
      3.10-7)插入 镭雕費用
      4.10)步驟和小計加入"印刷镭雕"字樣,調整小計公式
      */
-
-//    console.log("...going to insert");
     SHEET_API.insertRow(SHEET_API_HD, 1, 89, 1);
     SHEET_API.insertRow(SHEET_API_HD, 1, 89, 1);
     SHEET_API.insertRow(SHEET_API_HD, 1, 89, 1);
-
-//    var cells = [];
-//    cells.push(
-//            {sheet: 1, row: 89, col: 1, json: {data: "10-5）"}},
-//            {sheet: 1, row: 89, col: 2, json: {data: '遮蔽費用：'}},
-//            {sheet: 1, row: 89, col: 3, json: styleInput({fm: "money|¥|2|none", data: "0.11"})},
-//            {sheet: 1, row: 89, col: 4, json: styleInput({fm: "money|¥|2|none", data: "0.12"})},
-//            {sheet: 1, row: 89, col: 5, json: styleInput({fm: "money|¥|2|none", data: "0.13"})},
-//            {sheet: 1, row: 89, col: 6, json: styleInput({fm: "money|¥|2|none", data: "0.14"})},
-//            {sheet: 1, row: 89, col: 7, json: styleInput({fm: "money|¥|2|none", data: "0.15"})},
-//            {sheet: 1, row: 89, col: 8, json: styleInput({fm: "money|¥|2|none", data: "0.16"})},
-//            {sheet: 1, row: 90, col: 1, json: {data: "10-6）"}},
-//            {sheet: 1, row: 90, col: 2, json: {data: ' 印刷費用：'}},
-//            {sheet: 1, row: 90, col: 3, json: styleInput({fm: "money|¥|2|none", data: "0.21"})},
-//            {sheet: 1, row: 90, col: 4, json: styleInput({fm: "money|¥|2|none", data: "0.22"})},
-//            {sheet: 1, row: 90, col: 5, json: styleInput({fm: "money|¥|2|none", data: "0.23"})},
-//            {sheet: 1, row: 90, col: 6, json: styleInput({fm: "money|¥|2|none", data: "0.24"})},
-//            {sheet: 1, row: 90, col: 7, json: styleInput({fm: "money|¥|2|none", data: "0.25"})},
-//            {sheet: 1, row: 90, col: 8, json: styleInput({fm: "money|¥|2|none", data: "0.26"})},
-//            {sheet: 1, row: 91, col: 1, json: {data: "10-7）"}},
-//            {sheet: 1, row: 91, col: 2, json: {data: '镭雕費用：'}},
-//            {sheet: 1, row: 91, col: 3, json: styleInput({fm: "money|¥|2|none", data: "0.31"})},
-//            {sheet: 1, row: 91, col: 4, json: styleInput({fm: "money|¥|2|none", data: "0.32"})},
-//            {sheet: 1, row: 91, col: 5, json: styleInput({fm: "money|¥|2|none", data: "0.33"})},
-//            {sheet: 1, row: 91, col: 6, json: styleInput({fm: "money|¥|2|none", data: "0.34"})},
-//            {sheet: 1, row: 91, col: 7, json: styleInput({fm: "money|¥|2|none", data: "0.35"})},
-//            {sheet: 1, row: 91, col: 8, json: styleInput({fm: "money|¥|2|none", data: "0.36"})},
-//            {sheet: 1, row: 92, col: 1, json: {data: "10-8）"}},
-//            {sheet: 1, row: 93, col: 1, json: {data: "10-9）"}},
-//            {sheet: 1, row: 94, col: 3, json: styleSubTotal({data: "=C86*(SUM(C87:C91))*(1+(1-C92/100))*C93"})},
-//            {sheet: 1, row: 94, col: 4, json: styleSubTotal({data: "=D86*(SUM(D87:D91))*(1+(1-D92/100))*D93"})},
-//            {sheet: 1, row: 94, col: 5, json: styleSubTotal({data: "=E86*(SUM(E87:E91))*(1+(1-E92/100))*E93"})},
-//            {sheet: 1, row: 94, col: 6, json: styleSubTotal({data: "=F86*(SUM(F87:F91))*(1+(1-F92/100))*F93"})},
-//            {sheet: 1, row: 94, col: 7, json: styleSubTotal({data: "=G86*(SUM(G87:G91))*(1+(1-G92/100))*G93"})},
-//            {sheet: 1, row: 94, col: 8, json: styleSubTotal({data: "=H86*(SUM(H87:H91))*(1+(1-H92/100))*H93"})},
-////            {sheet: 1, row: 94, col: 4, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
-////            {sheet: 1, row: 94, col: 5, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
-////            {sheet: 1, row: 94, col: 6, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
-////            {sheet: 1, row: 94, col: 7, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
-////            {sheet: 1, row: 94, col: 8, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},
-//    // LAST ONE ============================================================================================
-//            {sheet: 1, row: 1, col: 1, json: {data: ""}}
-//    );
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(2));
     console.log("after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(2));---遮蔽,印刷,镭雕");
 
+
     SHEET_API.insertRow(SHEET_API_HD, 1, 22, 1);
- 
-//    SHEET_API.updateCells(SHEET_API_HD, cells);
-        SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(3));
+    SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(3));
     console.log("after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(3));---专用测试设备费用");
-    
-    
-    
-    
+    console.log(getPatchCellA001(3));
+
+
+
+
     //
     //
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
