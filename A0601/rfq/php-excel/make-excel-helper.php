@@ -43,6 +43,11 @@ $tool->extendColToCDEFGH(38,"=(C32+C34)*C31*0.02/1000/C16");
 //39,                        =IF(ISNA(C33+C37+C38),0,(C33+C37+C38))
 $tool->extendColToCDEFGH(39,"=IF(ISNA(C33+C37+C38),0,(C33+C37+C38))");
 
+//44,                        =3600/C43
+$tool->extendColToCDEFGH(44,"=3600/C43");
+
+//45,                       =C42/C44
+$tool->extendColToCDEFGH(44,"=C42/C44");
 
 
 
@@ -129,7 +134,7 @@ $tool->extendColToCDEFGH(39,"=IF(ISNA(C33+C37+C38),0,(C33+C37+C38))");
 //    var colorDdl = "#F9E79F"; //#82E0AA  
 //    var colorInput = "#F4D03F"; // 
 //    var arrStepEnd = [23, 24, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111, 112];
-$fontJsonStrItalicTrue = '{"0000A0":[31,36]}';
+$fontJsonStrItalicTrue = '{"0000A0":[31,36,42,46,47]}'; //直接查表或是立即計算的
 $colorJsonStrStepStart = '{"A9BCF5":[15,28,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]}';
 
 $colorJsonStrStepEnd = '{"BE6E6E6":[39,49,53,60,65,70,74,78,84,95,99,103,108,111,114]}';
