@@ -104,7 +104,13 @@ function getPatchCellsA0601_3() {
             {sheet: 1, row: 24, col: 6, json: styleSubTotal({data: '=SUM(F19:F23)'})},
             {sheet: 1, row: 24, col: 7, json: styleSubTotal({data: '=SUM(G19:G23)'})},
             {sheet: 1, row: 24, col: 8, json: styleSubTotal({data: '=SUM(H19:H23)'})},
-            {sheet: 1, row: 22, col: 2, json: {data: 'zzzxxx专用测试设备费用：'}}
+            {sheet: 1, row: 22, col: 3, json: styleInput({fm: "money|¥|2|none", data: "1111.11"})},
+            {sheet: 1, row: 22, col: 4, json: styleInput({fm: "money|¥|2|none", data: "2222.22"})},
+            {sheet: 1, row: 22, col: 5, json: styleInput({fm: "money|¥|2|none", data: "3333.33"})},
+            {sheet: 1, row: 22, col: 6, json: styleInput({fm: "money|¥|2|none", data: "4444.44"})},
+            {sheet: 1, row: 22, col: 7, json: styleInput({fm: "money|¥|2|none", data: "5555.55"})},
+            {sheet: 1, row: 22, col: 8, json: styleInput({fm: "money|¥|2|none", data: "6666.66"})},
+            {sheet: 1, row: 22, col: 2, json: {data: '专用测试设备费用：'}}
     );
     return cells;
 }
