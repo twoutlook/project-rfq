@@ -429,9 +429,43 @@ $objPHPExcel->getActiveSheet()->getStyle('H86')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(C, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(C, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('C11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('C16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('C113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
@@ -439,9 +473,43 @@ $objPHPExcel->getActiveSheet()->getStyle('C16')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(D, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(D, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('D11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('D16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('D113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
@@ -449,9 +517,43 @@ $objPHPExcel->getActiveSheet()->getStyle('D16')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(E, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(E, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('E11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('E16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('E113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
@@ -459,9 +561,43 @@ $objPHPExcel->getActiveSheet()->getStyle('E16')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(F, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(F, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('F11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('F16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('F113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
@@ -469,9 +605,43 @@ $objPHPExcel->getActiveSheet()->getStyle('F16')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(G, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(G, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('G11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('G16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('G113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
@@ -479,9 +649,43 @@ $objPHPExcel->getActiveSheet()->getStyle('G16')->getFill()->setFillType(PHPExcel
 //
 
 
-// --- makeColorFillStyle(H, {"F4D03F":[11,16]})---
+// --- makeColorFillStyle(H, {"F4D03F":[11,16,19,20,21,22,23,34,43,48,51,55,58,62,67,69,72,76,81,83,87,88,89,90,91,92,93,94,97,98,101,105,107,110,112,113]})---
 $objPHPExcel->getActiveSheet()->getStyle('H11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('H16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H19')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H20')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H21')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H22')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H34')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H43')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H48')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H51')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H55')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H58')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H62')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H67')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H69')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H72')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H76')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H81')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H83')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H87')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H88')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H89')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H90')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H91')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H93')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H94')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H97')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H98')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H101')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H107')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+$objPHPExcel->getActiveSheet()->getStyle('H113')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
 //
