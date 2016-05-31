@@ -9,8 +9,13 @@ error_reporting(E_ALL);
 $tool = new MarkTool();
 echo '&lt;?php <br>';
 $tool->makePercentFormat();
-$tool->makeUsd();
+// $tool->makeUsd();   --- retired
+
+
 $tool->makeSum(); //
+//
+//
+//
 //$tool->makeRmbStyle(); //makeRmbStyle
 echo "<br> // RMB<br> ";
 //$moneyArrRMB = '[{"items":[19, 20, 21, 22, 23,24, 31, 33, 36, 37, 38, 39, 42, 45, 46, 47, 49, 52, 53, 56, 57, 60, 63, 64, 65, 68, 70, 72, 73, 76, 77, 81, 83, 87, 88, 91, 94, 95, 98, 99, 102, 103, 104, 105, 107, 108, 109, 110, 111]}]';
@@ -156,9 +161,7 @@ echo "<br><br>//[[A0601]] 加方格線";
 //    ),
 //);
 
-$tool->makeCellsBorderColRowFromTo( "ABCEDFGH", 3, 119);
-
-
+$tool->makeCellsBorderColRowFromTo("ABCEDFGH", 3, 119);
 
 class MarkTool {
     /*
@@ -170,6 +173,8 @@ class MarkTool {
      */
 
     public function makeCell32($row) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         $colNameArr = Array("C", "D", "E", "F", "G", "H");
         $str = " <br> \$objPHPExcel->getActiveSheet() <br>";
         for ($i = 0; $i < 6; $i++) {
@@ -198,6 +203,8 @@ class MarkTool {
 
 
     public function extendCell34X($rowNum, $cellFormula) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         echo "<br><br>// ---  extendCell34X($rowNum,$cellFormula) ---<br>";
 
         $seq = "0ABCDEFGH";
@@ -218,6 +225,8 @@ class MarkTool {
     }
 
     public function makeUsd() {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         $strUsd = '[{"usd":24, "rmb":23},{"usd":112, "rmb":111}]';
         $objUsd = json_decode($strUsd);
 //        print_r($objUsd);
@@ -234,11 +243,18 @@ class MarkTool {
     }
 
     public function makeSum() {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+        
+        return;
+        
         $strUsd = '[{"sum":23, "items":[19,20,21,22]},{"sum":111, "items":[105,107,110]},{"sum":110, "items":[108,109]},{"sum":105, "items":[38,48,52,59,64,69,73,77,83,91,95,99,104]}]';
         $objUsd = json_decode($strUsd);
 //        print_r($objUsd);
+//__LINE__、__FUNCTION__
+
 
         $str = " <br> \$objPHPExcel->getActiveSheet() <br>";
+
         foreach ($objUsd as $key => $obj) {
             $colNameArr = Array("C", "D", "E", "F", "G", "H");
             for ($i = 0; $i < 6; $i++) {
@@ -267,6 +283,8 @@ class MarkTool {
      */
 
     public function makeRmbStyle() {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         $strRmb = '[{"items":[19,20,21,22,23,32, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111]}]';
         $objRmb = json_decode($strRmb);
 //        print_r($objRmb);
@@ -286,6 +304,8 @@ class MarkTool {
     }
 
     public function makePercentFormat() {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         echo "<br>// makePercentFormat 0.00% ok, FORMAT_PERCENTAGE_00 為什麼不行?<br>";
         $strRmb = '[{"items":[34,47,57,68,89,106]}]';
         $objRmb = json_decode($strRmb);
@@ -303,6 +323,8 @@ class MarkTool {
     }
 
     public function makeMoneyStyle($money, $moneyArr) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         $objMoney = json_decode($moneyArr);
 //        print_r($objRmb);
 
@@ -321,7 +343,9 @@ class MarkTool {
     }
 
     //[[A0601]]
-    public function makeCellsBorderColRowFromTo( $colName, $rowFrom, $rowTo) {
+    public function makeCellsBorderColRowFromTo($colName, $rowFrom, $rowTo) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         $str = "<br><br>\$styleArr = array( ";
         $str .="'borders' => array(";
         $str .="    'allborders' => array(";
@@ -331,7 +355,7 @@ class MarkTool {
         $str .=");<br>";
         for ($k = 0; $k < strlen($colName); $k++) {
             for ($i = $rowFrom; $i <= $rowTo; $i++) {
-                $cell = substr($colName,$k,1) . $i;
+                $cell = substr($colName, $k, 1) . $i;
                 $str .= "\$objPHPExcel->getActiveSheet()->getStyle('$cell')->applyFromArray(\$styleArr);<br>"; //这里就是画出从单元格A5到N5的边框，看单元格最右边在哪哪个格就把这个N改
             }
         }
@@ -342,6 +366,8 @@ class MarkTool {
     // http://www.cnblogs.com/freespider/p/3284828.html
     // for column B only
     public function makeColorFillStyle($col, $str) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
         echo "<br><br>// ---  makeColorFillStyle($col, $str)---<br> ";
         $json = json_decode($str);
 //        print_r($json);

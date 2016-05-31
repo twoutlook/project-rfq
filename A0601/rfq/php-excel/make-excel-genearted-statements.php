@@ -1,5 +1,10 @@
 <?php 
 
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:307 function: makePercentFormat
+//
+
 // makePercentFormat 0.00% ok, FORMAT_PERCENTAGE_00 為什麼不行?
 $objPHPExcel->getActiveSheet()->getStyle('C34:H34')->getNumberFormat()->setFormatCode("0.00%");
 $objPHPExcel->getActiveSheet()->getStyle('C47:H47')->getNumberFormat()->setFormatCode("0.00%");
@@ -8,49 +13,17 @@ $objPHPExcel->getActiveSheet()->getStyle('C68:H68')->getNumberFormat()->setForma
 $objPHPExcel->getActiveSheet()->getStyle('C89:H89')->getNumberFormat()->setFormatCode("0.00%");
 $objPHPExcel->getActiveSheet()->getStyle('C106:H106')->getNumberFormat()->setFormatCode("0.00%");
 
-$objPHPExcel->getActiveSheet() 
-->setCellValue('C24', '=C23/6.35') 
-->setCellValue('D24', '=D23/6.35') 
-->setCellValue('E24', '=E23/6.35') 
-->setCellValue('F24', '=F23/6.35') 
-->setCellValue('G24', '=G23/6.35') 
-->setCellValue('H24', '=H23/6.35') 
-->setCellValue('C112', '=C111/6.35') 
-->setCellValue('D112', '=D111/6.35') 
-->setCellValue('E112', '=E111/6.35') 
-->setCellValue('F112', '=F111/6.35') 
-->setCellValue('G112', '=G111/6.35') 
-->setCellValue('H112', '=H111/6.35') 
-; 
-$objPHPExcel->getActiveSheet() 
-->setCellValue('C23', '=C19+C20+C21+C22')
-->setCellValue('D23', '=D19+D20+D21+D22')
-->setCellValue('E23', '=E19+E20+E21+E22')
-->setCellValue('F23', '=F19+F20+F21+F22')
-->setCellValue('G23', '=G19+G20+G21+G22')
-->setCellValue('H23', '=H19+H20+H21+H22')
-->setCellValue('C111', '=C105+C107+C110')
-->setCellValue('D111', '=D105+D107+D110')
-->setCellValue('E111', '=E105+E107+E110')
-->setCellValue('F111', '=F105+F107+F110')
-->setCellValue('G111', '=G105+G107+G110')
-->setCellValue('H111', '=H105+H107+H110')
-->setCellValue('C110', '=C108+C109')
-->setCellValue('D110', '=D108+D109')
-->setCellValue('E110', '=E108+E109')
-->setCellValue('F110', '=F108+F109')
-->setCellValue('G110', '=G108+G109')
-->setCellValue('H110', '=H108+H109')
-->setCellValue('C105', '=C38+C48+C52+C59+C64+C69+C73+C77+C83+C91+C95+C99+C104')
-->setCellValue('D105', '=D38+D48+D52+D59+D64+D69+D73+D77+D83+D91+D95+D99+D104')
-->setCellValue('E105', '=E38+E48+E52+E59+E64+E69+E73+E77+E83+E91+E95+E99+E104')
-->setCellValue('F105', '=F38+F48+F52+F59+F64+F69+F73+F77+F83+F91+F95+F99+F104')
-->setCellValue('G105', '=G38+G48+G52+G59+G64+G69+G73+G77+G83+G91+G95+G99+G104')
-->setCellValue('H105', '=H38+H48+H52+H59+H64+H69+H73+H77+H83+H91+H95+H99+H104')
-;
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:246 function: makeSum
+//
 
 // RMB
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:326 function: makeMoneyStyle
+//
 $objPHPExcel->getActiveSheet()->getStyle('C19:H19')->getNumberFormat()->setFormatCode("¥#,##0.00");
 $objPHPExcel->getActiveSheet()->getStyle('C20:H20')->getNumberFormat()->setFormatCode("¥#,##0.00");
 $objPHPExcel->getActiveSheet()->getStyle('C21:H21')->getNumberFormat()->setFormatCode("¥#,##0.00");
@@ -99,11 +72,22 @@ $objPHPExcel->getActiveSheet()->getStyle('C107:H107')->getNumberFormat()->setFor
 $objPHPExcel->getActiveSheet()->getStyle('C108:H108')->getNumberFormat()->setFormatCode("¥#,##0.00");
 $objPHPExcel->getActiveSheet()->getStyle('C109:H109')->getNumberFormat()->setFormatCode("¥#,##0.00");
 $objPHPExcel->getActiveSheet()->getStyle('C110:H110')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C111:H111')->getNumberFormat()->setFormatCode("¥#,##0.00");
+$objPHPExcel->getActiveSheet()->getStyle('C115:H115')->getNumberFormat()->setFormatCode("¥#,##0.00");
+$objPHPExcel->getActiveSheet()->getStyle('C117:H117')->getNumberFormat()->setFormatCode("¥#,##0.00");
 
 // USD
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:326 function: makeMoneyStyle
+//
 $objPHPExcel->getActiveSheet()->getStyle('C24:H24')->getNumberFormat()->setFormatCode("$#,##0.00");
 $objPHPExcel->getActiveSheet()->getStyle('C112:H112')->getNumberFormat()->setFormatCode("$#,##0.00");
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:176 function: makeCell32
+//
 
 $objPHPExcel->getActiveSheet() 
 ->setCellValue('C32', '=C30*C31/1000') 
@@ -113,6 +97,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G32', '=G30*G31/1000') 
 ->setCellValue('H32', '=H30*H31/1000') 
 ;
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
 
 // --- extendCell34X(34,=100*C31*C16/(C31*C16+C33)/100) ---
 
@@ -124,6 +113,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G34', '=100*G31*G16/(G31*G16+G33)/100')
 ->setCellValue('H34', '=100*H31*H16/(H31*H16+H33)/100')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(36,=(C30-C35)*C33/1000/C16) ---
@@ -138,6 +132,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(37,=(C31+C33)*C30*0.02/1000/C16) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -148,6 +147,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G37', '=(G31+G33)*G30*0.02/1000/G16')
 ->setCellValue('H37', '=(H31+H33)*H30*0.02/1000/H16')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(38,=IF(ISNA(C32+C36+C37),0,(C32+C36+C37))) ---
@@ -162,6 +166,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(43,=3600/C42) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -172,6 +181,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G43', '=3600/G42')
 ->setCellValue('H43', '=3600/H42')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(44,=C41/C43 ) ---
@@ -186,6 +200,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(48,=(C44+C45)*(1+(1-C47))/C16) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -196,6 +215,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G48', '=(G44+G45)*(1+(1-G47))/G16')
 ->setCellValue('H48', '=(H44+H45)*(1+(1-H47))/H16')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(52,=(C50/3600)*C51) ---
@@ -210,6 +234,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(56,=(C54/3600)*C55) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -220,6 +249,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G56', '=(G54/3600)*G55')
 ->setCellValue('H56', '=(H54/3600)*H55')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(59,=C56*(1+(1-C57))) ---
@@ -234,6 +268,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(63,=(C61/3600)*C62) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -244,6 +283,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G63', '=(G61/3600)*G62')
 ->setCellValue('H63', '=(H61/3600)*H62')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(64,=(C61/3600)*C62) ---
@@ -258,6 +302,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(69,=IF(ISNA((C66/3600)*C67 * (1 + (1 - C68))),0,(C66/3600)*C67 * (1 + (1 - C68)))) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -268,6 +317,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G69', '=IF(ISNA((G66/3600)*G67 * (1 + (1 - G68))),0,(G66/3600)*G67 * (1 + (1 - G68)))')
 ->setCellValue('H69', '=IF(ISNA((H66/3600)*H67 * (1 + (1 - H68))),0,(H66/3600)*H67 * (1 + (1 - H68)))')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(73,=IF(ISNA((C71/3600)*C72),0,(C71/3600)*C72)) ---
@@ -282,6 +336,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(77,=IF(ISNA(C76),0,(C75/3600)*C76)) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -292,6 +351,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G77', '=IF(ISNA(G76),0,(G75/3600)*G76)')
 ->setCellValue('H77', '=IF(ISNA(H76),0,(H75/3600)*H76)')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(83,=C80*C81*C82) ---
@@ -306,6 +370,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(91,=C86*(C87+C88)*(1+(1-C89))*C90) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -316,6 +385,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G91', '=G86*(G87+G88)*(1+(1-G89))*G90')
 ->setCellValue('H91', '=H86*(H87+H88)*(1+(1-H89))*H90')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(95,=C94) ---
@@ -330,6 +404,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(99,=C98) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -340,6 +419,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G99', '=G98')
 ->setCellValue('H99', '=H98')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
 
 
 // --- extendCell34X(104,=C102+C103) ---
@@ -354,6 +438,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(107,=C105*C106) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -366,6 +455,11 @@ $objPHPExcel->getActiveSheet()
 ;
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:206 function: extendCell34X
+//
+
+
 // --- extendCell34X(110,=C108+C109) ---
 
 $objPHPExcel->getActiveSheet() 
@@ -376,6 +470,11 @@ $objPHPExcel->getActiveSheet()
 ->setCellValue('G110', '=G108+G109')
 ->setCellValue('H110', '=H108+H109')
 ;
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(A, {"A9BCF5":[15,28,39,49,53,60,65,70,74,78,84,92,96,100]})---
@@ -395,6 +494,11 @@ $objPHPExcel->getActiveSheet()->getStyle('A96')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('A100')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(B, {"A9BCF5":[15,28,39,49,53,60,65,70,74,78,84,92,96,100]})---
 $objPHPExcel->getActiveSheet()->getStyle('B15')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B28')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
@@ -410,6 +514,11 @@ $objPHPExcel->getActiveSheet()->getStyle('B84')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('B92')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B96')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B100')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(B, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
@@ -430,6 +539,11 @@ $objPHPExcel->getActiveSheet()->getStyle('B104')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('B110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(C, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
 $objPHPExcel->getActiveSheet()->getStyle('C23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('C38')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
@@ -446,6 +560,11 @@ $objPHPExcel->getActiveSheet()->getStyle('C95')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('C99')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('C104')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('C110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(D, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
@@ -466,6 +585,11 @@ $objPHPExcel->getActiveSheet()->getStyle('D104')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('D110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(E, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
 $objPHPExcel->getActiveSheet()->getStyle('E23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('E38')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
@@ -482,6 +606,11 @@ $objPHPExcel->getActiveSheet()->getStyle('E95')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('E99')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('E104')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('E110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(F, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
@@ -502,6 +631,11 @@ $objPHPExcel->getActiveSheet()->getStyle('F104')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('F110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(G, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
 $objPHPExcel->getActiveSheet()->getStyle('G23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('G38')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
@@ -518,6 +652,11 @@ $objPHPExcel->getActiveSheet()->getStyle('G95')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('G99')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('G104')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 $objPHPExcel->getActiveSheet()->getStyle('G110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(H, {"BE6E6E6":[23,38,48,52,59,64,69,73,77,83,91,95,99,104,110]})---
@@ -538,6 +677,11 @@ $objPHPExcel->getActiveSheet()->getStyle('H104')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('H110')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('BE6E6E6');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(C, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
 $objPHPExcel->getActiveSheet()->getStyle('C10')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('C12')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
@@ -548,6 +692,11 @@ $objPHPExcel->getActiveSheet()->getStyle('C70')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('C74')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('C79')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('C85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(D, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
@@ -562,6 +711,11 @@ $objPHPExcel->getActiveSheet()->getStyle('D79')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('D85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(E, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
 $objPHPExcel->getActiveSheet()->getStyle('E10')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('E12')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
@@ -572,6 +726,11 @@ $objPHPExcel->getActiveSheet()->getStyle('E70')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('E74')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('E79')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('E85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(F, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
@@ -586,6 +745,11 @@ $objPHPExcel->getActiveSheet()->getStyle('F79')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('F85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(G, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
 $objPHPExcel->getActiveSheet()->getStyle('G10')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('G12')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
@@ -598,6 +762,11 @@ $objPHPExcel->getActiveSheet()->getStyle('G79')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('G85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(H, {"F9E79F":[10,12,29,40,65,70,74,79,85]})---
 $objPHPExcel->getActiveSheet()->getStyle('H10')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('H12')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
@@ -608,6 +777,11 @@ $objPHPExcel->getActiveSheet()->getStyle('H70')->getFill()->setFillType(PHPExcel
 $objPHPExcel->getActiveSheet()->getStyle('H74')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('H79')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
 $objPHPExcel->getActiveSheet()->getStyle('H85')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F9E79F');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(C, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
@@ -646,6 +820,11 @@ $objPHPExcel->getActiveSheet()->getStyle('C108')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('C109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(D, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
 $objPHPExcel->getActiveSheet()->getStyle('D11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('D16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
@@ -680,6 +859,11 @@ $objPHPExcel->getActiveSheet()->getStyle('D103')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('D106')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('D108')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('D109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(E, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
@@ -718,6 +902,11 @@ $objPHPExcel->getActiveSheet()->getStyle('E108')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('E109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(F, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
 $objPHPExcel->getActiveSheet()->getStyle('F11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('F16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
@@ -752,6 +941,11 @@ $objPHPExcel->getActiveSheet()->getStyle('F103')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('F106')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('F108')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('F109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(G, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
@@ -790,6 +984,11 @@ $objPHPExcel->getActiveSheet()->getStyle('G108')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('G109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(H, {"F4D03F":[11,16,19,20,21,22,33,42,47,50,54,57,61,66,68,71,75,80,81,82,86,87,88,89,90,93,94,97,101,103,106,108,109]})---
 $objPHPExcel->getActiveSheet()->getStyle('H11')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 $objPHPExcel->getActiveSheet()->getStyle('H16')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
@@ -826,12 +1025,22 @@ $objPHPExcel->getActiveSheet()->getStyle('H108')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('H109')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('F4D03F');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(A, {"cccccc":[23,24,105,111,112]})---
 $objPHPExcel->getActiveSheet()->getStyle('A23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('A24')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('A105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('A111')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('A112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(B, {"cccccc":[23,24,105,111,112]})---
@@ -842,12 +1051,22 @@ $objPHPExcel->getActiveSheet()->getStyle('B111')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('B112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(C, {"cccccc":[23,24,105,111,112]})---
 $objPHPExcel->getActiveSheet()->getStyle('C23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('C24')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('C105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('C111')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('C112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(D, {"cccccc":[23,24,105,111,112]})---
@@ -858,12 +1077,22 @@ $objPHPExcel->getActiveSheet()->getStyle('D111')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('D112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(E, {"cccccc":[23,24,105,111,112]})---
 $objPHPExcel->getActiveSheet()->getStyle('E23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('E24')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('E105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('E111')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('E112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(F, {"cccccc":[23,24,105,111,112]})---
@@ -874,12 +1103,22 @@ $objPHPExcel->getActiveSheet()->getStyle('F111')->getFill()->setFillType(PHPExce
 $objPHPExcel->getActiveSheet()->getStyle('F112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(G, {"cccccc":[23,24,105,111,112]})---
 $objPHPExcel->getActiveSheet()->getStyle('G23')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('G24')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('G105')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('G111')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
 $objPHPExcel->getActiveSheet()->getStyle('G112')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('cccccc');
+
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
 
 
 // --- makeColorFillStyle(H, {"cccccc":[23,24,105,111,112]})---
@@ -892,6 +1131,11 @@ $objPHPExcel->getActiveSheet()->getStyle('H112')->getFill()->setFillType(PHPExce
 
 //[[A0601]] 顯示版本信息
 
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:369 function: makeColorFillStyle
+//
+
+
 // --- makeColorFillStyle(A, {"98AFC7":[7,8,9]})---
 $objPHPExcel->getActiveSheet()->getStyle('A7')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('98AFC7');
 $objPHPExcel->getActiveSheet()->getStyle('A8')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('98AFC7');
@@ -899,6 +1143,11 @@ $objPHPExcel->getActiveSheet()->getStyle('A9')->getFill()->setFillType(PHPExcel_
 
 
 //[[A0601]] 加方格線
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:347 function: makeCellsBorderColRowFromTo
+//
+
 
 $styleArr = array( 'borders' => array( 'allborders' => array( 'style' => 'thin' )));
 $objPHPExcel->getActiveSheet()->getStyle('A3')->applyFromArray($styleArr);
