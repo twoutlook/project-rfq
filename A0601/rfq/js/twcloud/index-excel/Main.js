@@ -452,7 +452,7 @@ Ext.onReady(function () {
             {sheet: 1, row: 17, col: 3, json: {ta: "center", data: "2"}},
             {sheet: 1, row: 18, col: 1, json: {data: ""}},
             {sheet: 1, row: 18, col: 2, json: {data: "模具寿命："}},
-            {sheet: 1, row: 18, col: 3, json: {ta: "center", data: "100K"}},
+            {sheet: 1, row: 18, col: 3, json: {ta: "center", data: ""}},
             {sheet: 1, row: 19, col: 1, json: {data: ""}},
             {sheet: 1, row: 19, col: 2, json: {data: "压铸模费用： "}},
             {sheet: 1, row: 19, col: 3, json: styleInput({fm: "money|¥|2|none", data: "71500"})},
