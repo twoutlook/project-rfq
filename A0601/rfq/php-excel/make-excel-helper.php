@@ -1,17 +1,10 @@
 <?php
-
 /** Error reporting */
 error_reporting(E_ALL);
-
-//$test = Array(19, 20, 21, 22, 23, 30, 32, 35, 36, 37, 38, 41, 44, 45, 46, 48, 51, 52, 55, 56, 59, 62, 63, 64, 67, 69, 72, 73, 76, 77, 81, 83, 87, 88, 91, 94, 95, 98, 99, 102, 103, 104, 105, 107, 108, 109, 110, 111);
-
 
 $tool = new MarkTool();
 echo '&lt;?php <br>';
 $tool->makePercentFormat();
-// $tool->makeUsd();   --- retired
-
-
 $tool->makeSum(); //
 //
 //
@@ -26,6 +19,10 @@ $moneyArrRMB = '[{"items":[19, 20, 21, 22, 23,24, 31, 33, 36, 37, 38, 39, 42, 45
 echo "<br> // USD<br> ";
 $moneyArrUSD = '[{"items":[25,116]}]';
 $tool->makeMoneyStyle("$", $moneyArrUSD);
+
+
+
+/*
 $tool->makeCell32(32);
 $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
 $tool->extendCell34X(36, "=(C30-C35)*C33/1000/C16");
@@ -92,7 +89,7 @@ $tool->extendCell34X(107, "=C105*C106");
 //
 $tool->extendCell34X(110, "=C108+C109");
 
-
+*/
 
 
 //
@@ -155,15 +152,6 @@ echo "<br><br>//[[A0601]] 顯示版本信息";
 $tool->makeColorFillStyle("A", $jsonVersion);
 
 echo "<br><br>//[[A0601]] 加方格線";
-
-//$styleArr = array(
-//    'borders' => array(
-//        'allborders' => array(
-//            'style' => 'thin', //细边框  //   const BORDER_THIN             = 'thin';     
-//        ),
-//    ),
-//);
-
 $tool->makeCellsBorderColRowFromTo("ABCEDFGH", 3, 119);
 
 class MarkTool {
@@ -248,7 +236,7 @@ class MarkTool {
     public function makeSum() {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
         
-        return;
+ 
         
         $strUsd = '[{"sum":23, "items":[19,20,21,22]},{"sum":111, "items":[105,107,110]},{"sum":110, "items":[108,109]},{"sum":105, "items":[38,48,52,59,64,69,73,77,83,91,95,99,104]}]';
         $objUsd = json_decode($strUsd);
