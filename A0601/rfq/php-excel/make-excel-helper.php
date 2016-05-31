@@ -38,7 +38,7 @@ $tool->extendColToCDEFGH(35,"=C32*C16/(C32*C16+C34)");
 $tool->extendColToCDEFGH(37,"=(C31-C36)*C34/1000/C16");
 
 //38,                        =(C32+C34)*C31*0.02/1000/C16
-$tool->extendColToCDEFGH(37,"=(C32+C34)*C31*0.02/1000/C16");
+$tool->extendColToCDEFGH(38,"=(C32+C34)*C31*0.02/1000/C16");
 
 //39,                        =IF(ISNA(C33+C37+C38),0,(C33+C37+C38))
 $tool->extendColToCDEFGH(39,"=IF(ISNA(C33+C37+C38),0,(C33+C37+C38))");

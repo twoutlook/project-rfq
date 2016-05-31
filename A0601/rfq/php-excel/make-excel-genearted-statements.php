@@ -226,15 +226,15 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendColToCDEFGH(37,=(C32+C34)*C31*0.02/1000/C16) ---
+// --- extendColToCDEFGH(38,=(C32+C34)*C31*0.02/1000/C16) ---
 
 $objPHPExcel->getActiveSheet() 
-->setCellValue('C37', '=(C32+C34)*C31*0.02/1000/C16')
-->setCellValue('D37', '=(D32+D34)*D31*0.02/1000/D16')
-->setCellValue('E37', '=(E32+E34)*E31*0.02/1000/E16')
-->setCellValue('F37', '=(F32+F34)*F31*0.02/1000/F16')
-->setCellValue('G37', '=(G32+G34)*G31*0.02/1000/G16')
-->setCellValue('H37', '=(H32+H34)*H31*0.02/1000/H16')
+->setCellValue('C38', '=(C32+C34)*C31*0.02/1000/C16')
+->setCellValue('D38', '=(D32+D34)*D31*0.02/1000/D16')
+->setCellValue('E38', '=(E32+E34)*E31*0.02/1000/E16')
+->setCellValue('F38', '=(F32+F34)*F31*0.02/1000/F16')
+->setCellValue('G38', '=(G32+G34)*G31*0.02/1000/G16')
+->setCellValue('H38', '=(H32+H34)*H31*0.02/1000/H16')
 ;
 
 
