@@ -298,7 +298,7 @@ class MarkTool {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
 
         echo "<br>// makePercentFormat 0.00% ok, FORMAT_PERCENTAGE_00 為什麼不行?<br>";
-        $strRmb = '[{"items":[34,47,57,68,89,106]}]';
+        $strRmb = '[{"items":[35,48,58,69,93,110]}]';
         $objRmb = json_decode($strRmb);
 
         foreach ($objRmb as $key => $obj) {
