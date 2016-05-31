@@ -98,8 +98,13 @@ function getPatchCellsA0601_2() {
 function getPatchCellsA0601_3() {
     var cells = [];
     cells.push(
+            {sheet: 1, row: 24, col: 3, json: styleSubTotal({data: '=SUM(C19:C23'})},
+            {sheet: 1, row: 24, col: 4, json: styleSubTotal({data: '=SUM(D19:D23'})},
+            {sheet: 1, row: 24, col: 5, json: styleSubTotal({data: '=SUM(E19:E23'})},
+            {sheet: 1, row: 24, col: 6, json: styleSubTotal({data: '=SUM(F19:F23'})},
+            {sheet: 1, row: 24, col: 7, json: styleSubTotal({data: '=SUM(G19:G23'})},
+            {sheet: 1, row: 24, col: 8, json: styleSubTotal({data: '=SUM(H19:H23'})},
             {sheet: 1, row: 22, col: 2, json: {data: 'zzzxxx专用测试设备费用：'}}
-
     );
     return cells;
 }
