@@ -94,7 +94,12 @@ $tool->extendColToCDEFGH(99,"=C98");
 // 103                     =C101/3600*C102
 $tool->extendColToCDEFGH(103,"=C101/3600*C102");
 
+// 108                        =C106+C107
+$tool->extendColToCDEFGH(108,"=C106+C107");
 
+// 111                        =C109*C110/100
+// fix percent                =C109*C110
+$tool->extendColToCDEFGH(111,"=C109*C110");
 
 /*
   $tool->makeCell32(32);
