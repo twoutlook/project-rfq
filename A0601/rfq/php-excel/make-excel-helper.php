@@ -56,6 +56,11 @@ $tool->extendColToCDEFGH(49,"=IF(ISNA((C45+C46)*(1+(1-C48))/C16),0,((C45+C46)*(1
 
 
 
+//53,                        =(C51/3600)*C52
+$tool->extendColToCDEFGH(53,"=(C51/3600)*C52");
+
+//57,                        =(C55/3600)*C56
+$tool->extendColToCDEFGH(57,"=(C55/3600)*C56");
 
 
 /*
