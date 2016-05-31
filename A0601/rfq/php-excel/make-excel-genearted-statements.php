@@ -294,9 +294,10 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- makeColorFillStyle(A, {"A9BCF5":[15,28,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]})---
+// --- makeColorFillStyle(A, {"A9BCF5":[15,28,29,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]})---
 $objPHPExcel->getActiveSheet()->getStyle('A15')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('A28')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
+$objPHPExcel->getActiveSheet()->getStyle('A29')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('A40')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('A50')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('A54')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
@@ -319,9 +320,10 @@ $objPHPExcel->getActiveSheet()->getStyle('A7')->getFill()->setFillType(PHPExcel_
 //
 
 
-// --- makeColorFillStyle(B, {"A9BCF5":[15,28,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]})---
+// --- makeColorFillStyle(B, {"A9BCF5":[15,28,29,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]})---
 $objPHPExcel->getActiveSheet()->getStyle('B15')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B28')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
+$objPHPExcel->getActiveSheet()->getStyle('B29')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B40')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B50')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
 $objPHPExcel->getActiveSheet()->getStyle('B54')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID) ->getStartColor()->setARGB('A9BCF5');
