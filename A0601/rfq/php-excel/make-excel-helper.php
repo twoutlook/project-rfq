@@ -71,6 +71,10 @@ $tool->extendColToCDEFGH(64,"=(C62/3600)*C63");
 $tool->extendColToCDEFGH(65,"=(C62/3600)*C63");
 
 
+// 70, =IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 / 100))),0,((C67/3600)*C68 * (1 + (1 - C69 / 100))))
+// fix percent               =IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 ))),0,((C67/3600)*C68 * (1 + (1 - C69 ))))
+$tool->extendColToCDEFGH(70,"=IF(ISNA((C67/3600)*C68 * (1 + (1 - C69 ))),0,((C67/3600)*C68 * (1 + (1 - C69 ))))");
+
 /*
   $tool->makeCell32(32);
   $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
@@ -152,7 +156,7 @@ $tool->extendColToCDEFGH(65,"=(C62/3600)*C63");
 //    var colorDdl = "#F9E79F"; //#82E0AA  
 //    var colorInput = "#F4D03F"; // 
 //    var arrStepEnd = [23, 24, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111, 112];
-$fontJsonStrItalicTrue = '{"0000A0":[31,36,42,46,47,52,56,63]}'; //直接查表或是立即計算的
+$fontJsonStrItalicTrue = '{"0000A0":[31,36,42,46,47,52,56,63,68,73,77,82]}'; //直接查表或是立即計算的
 $colorJsonStrStepStart = '{"A9BCF5":[15,28,29,40,50,54,61,66,71,75,79,85,96,100,104,110,112,7]}';
 
 $colorJsonStrStepEnd = '{"BE6E6E6":[39,49,53,60,65,70,74,78,84,95,99,103,108,111,114]}';
