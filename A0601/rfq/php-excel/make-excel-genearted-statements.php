@@ -277,15 +277,15 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendColToCDEFGH(44,=C42/C44) ---
+// --- extendColToCDEFGH(45,=C42/C44) ---
 
 $objPHPExcel->getActiveSheet() 
-->setCellValue('C44', '=C42/C44')
-->setCellValue('D44', '=D42/D44')
-->setCellValue('E44', '=E42/E44')
-->setCellValue('F44', '=F42/F44')
-->setCellValue('G44', '=G42/G44')
-->setCellValue('H44', '=H42/H44')
+->setCellValue('C45', '=C42/C44')
+->setCellValue('D45', '=D42/D44')
+->setCellValue('E45', '=E42/E44')
+->setCellValue('F45', '=F42/F44')
+->setCellValue('G45', '=G42/G44')
+->setCellValue('H45', '=H42/H44')
 ;
 
 
