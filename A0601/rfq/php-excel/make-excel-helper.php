@@ -49,6 +49,11 @@ $tool->extendColToCDEFGH(44,"=3600/C43");
 //45,                       =C42/C44
 $tool->extendColToCDEFGH(45,"=C42/C44");
 
+//49,                       =IF(ISNA((C45+C46)*(1+(1-C48/100))/C16),0,((C45+C46)*(1+(1-C48/100))/C16))
+// fix percent              =IF(ISNA((C45+C46)*(1+(1-C48))/C16),0,((C45+C46)*(1+(1-C48))/C16))
+$tool->extendColToCDEFGH(49,"=IF(ISNA((C45+C46)*(1+(1-C48))/C16),0,((C45+C46)*(1+(1-C48))/C16))");
+
+
 
 
 
