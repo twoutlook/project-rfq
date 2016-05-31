@@ -396,7 +396,7 @@ function CUSTOM_BUTTON_CLICK___MAKE_EXCEL(value, row, column, sheetId, cellObj, 
 
 
 
-    for (var i = 1; i < 116; i++) {
+    for (var i = 1; i < 120; i++) {
 
         // to show version info
         //  if (i > 10 && i < 110) {
