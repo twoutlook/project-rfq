@@ -118,15 +118,20 @@ $tool->extend73X(95, '          {sheet: 1, row: 95, col: 3, json: styleSubTotal(
 $tool->extend73X(98, '           {sheet: 1, row: 98, col: 3, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=VLOOKUP(\'气密性测试\',LOOKUP04!$A$2:$B$17,2,0)"}},           ');
 $tool->extend73X(99, '             {sheet: 1, row: 99, col: 3, json: styleSubTotal({data: "=C97/3600*C98"})},  ');
 
-//-------------
-$tool->extend73X(102, '           {sheet: 1, row: 102, col: 3, json: styleSubTotal({data: "=C101/3600*VLOOKUP(\'筛选和包装\',LOOKUP04!$A$2:$B$17,2,0)"})},        ');
+//[[A0601]]-------------
+//$tool->extend73X(102, '           {sheet: 1, row: 102, col: 3, json: styleSubTotal({data: "=C101/3600*VLOOKUP(\'筛选和包装\',LOOKUP04!$A$2:$B$17,2,0)"})},        ');
+//$tool->extend73X(104, '          {sheet: 1, row: 104, col: 3, json: styleSubTotal({data: "=C102+C103"})},  ');
+$tool->extend73X(102, '           {sheet: 1, row: 102, col: 3, json: styleSubTotal({data: "=VLOOKUP(\'筛选和包装\',LOOKUP04!$A$2:$B$17,2,0)"})},        ');
+$tool->extend73X(104, '          {sheet: 1, row: 104, col: 3, json: styleSubTotal({data: "=C101/3600*C102+C103"})},  ');
+
+
 
 //[[A0530]]
 echo "<br>// [[A0530]]";
 $tool->extend73X(81, '           {sheet: 1, row: 81, col: 3, json: styleSubTotal({data: "=IF(ISNA(VLOOKUP(C79,DDL079!$A$1:$B$99,2,0)),0,VLOOKUP(C79,DDL079!$A$1:$B$99,2,0))"})},        ');
 
 
-$tool->extend73X(104, '          {sheet: 1, row: 104, col: 3, json: styleSubTotal({data: "=C102+C103"})},  ');
+
 $tool->extend73X(107, '       {sheet: 1, row: 107, col: 3, json: styleSubTotal({data: "=C105*C106/100"})},  ');
 
 // TODO
