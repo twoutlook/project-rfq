@@ -1,4 +1,5 @@
 <?php
+
 /** Error reporting */
 error_reporting(E_ALL);
 
@@ -20,76 +21,81 @@ echo "<br> // USD<br> ";
 $moneyArrUSD = '[{"items":[25,116]}]';
 $tool->makeMoneyStyle("$", $moneyArrUSD);
 
+echo "<br> // USD 公式計算<br> ";
+$tool->extendColToCDEFGH(25,"=C24/6.35");
+$tool->extendColToCDEFGH(116,"=C115/6.35");
+
+
 
 
 /*
-$tool->makeCell32(32);
-$tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
-$tool->extendCell34X(36, "=(C30-C35)*C33/1000/C16");
-$tool->extendCell34X(37, "=(C31+C33)*C30*0.02/1000/C16");
-$tool->extendCell34X(38, "=IF(ISNA(C32+C36+C37),0,(C32+C36+C37))");
-//
-$tool->extendCell34X(43, "=3600/C42");
-$tool->extendCell34X(44, "=C41/C43 ");
-//$tool->extendCell34X(45, "  ");
-//$tool->extendCell34X(46, "  ");
-// 47 百分比要處理
-// $tool->extendCell34X(48, "=(C44+C45)*(1+(1-C47/100))/C16");  // before fix
-$tool->extendCell34X(48, "=(C44+C45)*(1+(1-C47))/C16");  //  after fix
+  $tool->makeCell32(32);
+  $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
+  $tool->extendCell34X(36, "=(C30-C35)*C33/1000/C16");
+  $tool->extendCell34X(37, "=(C31+C33)*C30*0.02/1000/C16");
+  $tool->extendCell34X(38, "=IF(ISNA(C32+C36+C37),0,(C32+C36+C37))");
+  //
+  $tool->extendCell34X(43, "=3600/C42");
+  $tool->extendCell34X(44, "=C41/C43 ");
+  //$tool->extendCell34X(45, "  ");
+  //$tool->extendCell34X(46, "  ");
+  // 47 百分比要處理
+  // $tool->extendCell34X(48, "=(C44+C45)*(1+(1-C47/100))/C16");  // before fix
+  $tool->extendCell34X(48, "=(C44+C45)*(1+(1-C47))/C16");  //  after fix
 
-$tool->extendCell34X(52, "=(C50/3600)*C51");
-//
-$tool->extendCell34X(56, "=(C54/3600)*C55");
-//=C56*(1+(1-C57/100))
-//$tool->extendCell34X(59, "=C56*(1+(1-C57/100))"); // TO FIX PERCENT
-$tool->extendCell34X(59, "=C56*(1+(1-C57))");
+  $tool->extendCell34X(52, "=(C50/3600)*C51");
+  //
+  $tool->extendCell34X(56, "=(C54/3600)*C55");
+  //=C56*(1+(1-C57/100))
+  //$tool->extendCell34X(59, "=C56*(1+(1-C57/100))"); // TO FIX PERCENT
+  $tool->extendCell34X(59, "=C56*(1+(1-C57))");
 
-// 63,64 SAME =(C61/3600)*C62'
-$tool->extendCell34X(63, "=(C61/3600)*C62");
-$tool->extendCell34X(64, "=(C61/3600)*C62");
-//
-//$tool->extendCell34X(69, "=(C66/3600)*C67 * (1 + (1 - C68 / 100))");
-$tool->extendCell34X(69, "=IF(ISNA((C66/3600)*C67 * (1 + (1 - C68))),0,(C66/3600)*C67 * (1 + (1 - C68)))");
+  // 63,64 SAME =(C61/3600)*C62'
+  $tool->extendCell34X(63, "=(C61/3600)*C62");
+  $tool->extendCell34X(64, "=(C61/3600)*C62");
+  //
+  //$tool->extendCell34X(69, "=(C66/3600)*C67 * (1 + (1 - C68 / 100))");
+  $tool->extendCell34X(69, "=IF(ISNA((C66/3600)*C67 * (1 + (1 - C68))),0,(C66/3600)*C67 * (1 + (1 - C68)))");
 
-//73
-//(C71/3600)*C72
-$tool->extendCell34X(73, "=IF(ISNA((C71/3600)*C72),0,(C71/3600)*C72)");
+  //73
+  //(C71/3600)*C72
+  $tool->extendCell34X(73, "=IF(ISNA((C71/3600)*C72),0,(C71/3600)*C72)");
 
-//77
-//"=IF(ISNA(C76),0,(C75/3600)*C76)
-$tool->extendCell34X(77, "=IF(ISNA(C76),0,(C75/3600)*C76)");
+  //77
+  //"=IF(ISNA(C76),0,(C75/3600)*C76)
+  $tool->extendCell34X(77, "=IF(ISNA(C76),0,(C75/3600)*C76)");
 
-//83
-//
-$tool->extendCell34X(83, "=C80*C81*C82");
-//91
-//"=C86*(C87+C88)*(1+(1-C89/100))*C90
-//$tool->extendCell34X(91, "=C86*(C87+C88)*(1+(1-C89/100))*C90");
-$tool->extendCell34X(91, "=C86*(C87+C88)*(1+(1-C89))*C90");
+  //83
+  //
+  $tool->extendCell34X(83, "=C80*C81*C82");
+  //91
+  //"=C86*(C87+C88)*(1+(1-C89/100))*C90
+  //$tool->extendCell34X(91, "=C86*(C87+C88)*(1+(1-C89/100))*C90");
+  $tool->extendCell34X(91, "=C86*(C87+C88)*(1+(1-C89))*C90");
 
-//95
-//
-$tool->extendCell34X(95, "=C94");
+  //95
+  //
+  $tool->extendCell34X(95, "=C94");
 
-//99
-//
-$tool->extendCell34X(99, "=C98");
+  //99
+  //
+  $tool->extendCell34X(99, "=C98");
 
-//104
-//
-$tool->extendCell34X(104, "=C102+C103");
+  //104
+  //
+  $tool->extendCell34X(104, "=C102+C103");
 
-//107
-//
-//$tool->extendCell34X(107, "=C105*C106/100");
-$tool->extendCell34X(107, "=C105*C106");
+  //107
+  //
+  //$tool->extendCell34X(107, "=C105*C106/100");
+  $tool->extendCell34X(107, "=C105*C106");
 
 
-//110
-//
-$tool->extendCell34X(110, "=C108+C109");
+  //110
+  //
+  $tool->extendCell34X(110, "=C108+C109");
 
-*/
+ */
 
 
 //
@@ -193,6 +199,30 @@ class MarkTool {
 //    }
 
 
+    public function extendColToCDEFGH($rowNum, $cellFormula) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
+        echo "<br><br>// ---  extendCell34X($rowNum,$cellFormula) ---<br>";
+
+        $seq = "0ABCDEFGH";
+        echo " <br> \$objPHPExcel->getActiveSheet() <br>";
+        echo "->setCellValue('C$rowNum', '$cellFormula')<br>";
+        for ($k = 4; $k <= 8; $k++) {
+            //    $strD = str_replace("col: 3", "col: $k", $cellFormula);
+            $colName = substr($seq, $k, 1);
+            $newCellformula = $cellFormula;
+            for ($item = 1; $item < 115; $item++) {
+                $oldStr = "C$item";
+                $newStr = $colName . $item;
+                $newCellformula = str_replace($oldStr, $newStr, $newCellformula);
+            }
+            echo "->setCellValue('$colName$rowNum', '$newCellformula')<br>";
+        }
+        echo ";<br>";
+    }
+
+    
+    
     public function extendCell34X($rowNum, $cellFormula) {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
 
@@ -215,29 +245,30 @@ class MarkTool {
         echo ";<br>";
     }
 
-    public function makeUsd() {
-        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+    /*
+      public function makeUsd() {
+      echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
 
-        $strUsd = '[{"usd":24, "rmb":23},{"usd":112, "rmb":111}]';
-        $objUsd = json_decode($strUsd);
-//        print_r($objUsd);
+      $strUsd = '[{"usd":24, "rmb":23},{"usd":112, "rmb":111}]';
+      $objUsd = json_decode($strUsd);
+      //        print_r($objUsd);
 
-        $str = " <br> \$objPHPExcel->getActiveSheet() <br>";
-        foreach ($objUsd as $key => $obj) {
-            $colNameArr = Array("C", "D", "E", "F", "G", "H");
-            for ($i = 0; $i < 6; $i++) {
-                $colName = $colNameArr[$i];
-                $str.="  ->setCellValue('" . $colName . $obj->usd . "', '=" . $colName . $obj->rmb . "/6.35') <br>";
-            }
-        }
-        echo $str . ";";
-    }
+      $str = " <br> \$objPHPExcel->getActiveSheet() <br>";
+      foreach ($objUsd as $key => $obj) {
+      $colNameArr = Array("C", "D", "E", "F", "G", "H");
+      for ($i = 0; $i < 6; $i++) {
+      $colName = $colNameArr[$i];
+      $str.="  ->setCellValue('" . $colName . $obj->usd . "', '=" . $colName . $obj->rmb . "/6.35') <br>";
+      }
+      }
+      echo $str . ";";
+      }
+     */
 
     public function makeSum() {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
-        
- 
-        
+
+
         $strUsd = '[{"sum":24, "items":[19,20,21,22,23]},{"sum":115, "items":[109,111,114]},{"sum":114, "items":[112,113]},{"sum":109, "items":[39,49,53,60,65,70,74,78,84,95,99,103,108]}]';
         $objUsd = json_decode($strUsd);
 //        print_r($objUsd);
@@ -266,12 +297,7 @@ class MarkTool {
         echo $str . ";<br><br>";
     }
 
-    /*
 
-      $objPHPExcel->getActiveSheet()->getStyle('C19:H23')->getNumberFormat()->setFormatCode("¥#,##0.00");
-      $objPHPExcel->getActiveSheet()->getStyle('C24:H24')->getNumberFormat()->setFormatCode("$#,##0.00");
-     * * 
-     */
 
     public function makeRmbStyle() {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
