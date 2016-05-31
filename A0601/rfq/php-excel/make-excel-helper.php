@@ -28,7 +28,7 @@ $tool->extendColToCDEFGH(116,"=C115/6.35");
 //32,=C11
 $tool->extendColToCDEFGH(32,"=C11");
 //33,=C31*C32/1000
-$tool->extendColToCDEFGH(32,"=C31*C32/1000");
+$tool->extendColToCDEFGH(33,"=C31*C32/1000");
 //35,=100*C32*C16/(C32*C16+C34)
 $tool->extendColToCDEFGH(35,"=100*C32*C16/(C32*C16+C34)");
 
@@ -210,7 +210,7 @@ class MarkTool {
     public function extendColToCDEFGH($rowNum, $cellFormula) {
         echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
 
-        echo "<br><br>// ---  extendCell34X($rowNum,$cellFormula) ---<br>";
+        echo "<br><br>// ---  extendColToCDEFGH($rowNum,$cellFormula) ---<br>";
 
         $seq = "0ABCDEFGH";
         echo " <br> \$objPHPExcel->getActiveSheet() <br>";

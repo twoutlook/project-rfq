@@ -124,7 +124,7 @@ $objPHPExcel->getActiveSheet()->getStyle('C116:H116')->getNumberFormat()->setFor
 //
 
 
-// --- extendCell34X(25,=C24/6.35) ---
+// --- extendColToCDEFGH(25,=C24/6.35) ---
 
 $objPHPExcel->getActiveSheet() 
 ->setCellValue('C25', '=C24/6.35')
@@ -141,7 +141,7 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendCell34X(116,=C115/6.35) ---
+// --- extendColToCDEFGH(116,=C115/6.35) ---
 
 $objPHPExcel->getActiveSheet() 
 ->setCellValue('C116', '=C115/6.35')
@@ -158,7 +158,7 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendCell34X(32,=C11) ---
+// --- extendColToCDEFGH(32,=C11) ---
 
 $objPHPExcel->getActiveSheet() 
 ->setCellValue('C32', '=C11')
@@ -175,15 +175,15 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendCell34X(32,=C31*C32/1000) ---
+// --- extendColToCDEFGH(33,=C31*C32/1000) ---
 
 $objPHPExcel->getActiveSheet() 
-->setCellValue('C32', '=C31*C32/1000')
-->setCellValue('D32', '=D31*D32/1000')
-->setCellValue('E32', '=E31*E32/1000')
-->setCellValue('F32', '=F31*F32/1000')
-->setCellValue('G32', '=G31*G32/1000')
-->setCellValue('H32', '=H31*H32/1000')
+->setCellValue('C33', '=C31*C32/1000')
+->setCellValue('D33', '=D31*D32/1000')
+->setCellValue('E33', '=E31*E32/1000')
+->setCellValue('F33', '=F31*F32/1000')
+->setCellValue('G33', '=G31*G32/1000')
+->setCellValue('H33', '=H31*H32/1000')
 ;
 
 
@@ -192,7 +192,7 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendCell34X(35,=100*C32*C16/(C32*C16+C34)) ---
+// --- extendColToCDEFGH(35,=100*C32*C16/(C32*C16+C34)) ---
 
 $objPHPExcel->getActiveSheet() 
 ->setCellValue('C35', '=100*C32*C16/(C32*C16+C34)')
