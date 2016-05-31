@@ -110,8 +110,13 @@ $tool->extend73X(77, '    {sheet: 1, row: 77, col: 3, json: styleSubTotal({data:
 $tool->extend73X(83, '      {sheet: 1, row: 83, col: 3, json: styleSubTotal({data: "=C80*C81*C82"})},  ');
 $tool->extend73X(91, '       {sheet: 1, row: 91, col: 3, json: styleSubTotal({data: "=C86*(C87+C88)*(1+(1-C89/100))*C90"})},  ');
 $tool->extend73X(95, '          {sheet: 1, row: 95, col: 3, json: styleSubTotal({data: "=C94"})},  ');
-$tool->extend73X(98, '           {sheet: 1, row: 98, col: 3, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=C97/3600*VLOOKUP(\'气密性测试\',LOOKUP04!$A$2:$B$17,2,0)"}},           ');
-$tool->extend73X(99, '             {sheet: 1, row: 99, col: 3, json: styleSubTotal({data: "=C98"})},  ');
+
+//[[A0601]]
+//$tool->extend73X(98, '           {sheet: 1, row: 98, col: 3, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=C97/3600*VLOOKUP(\'气密性测试\',LOOKUP04!$A$2:$B$17,2,0)"}},           ');
+//$tool->extend73X(99, '             {sheet: 1, row: 99, col: 3, json: styleSubTotal({data: "=C98"})},  ');
+
+$tool->extend73X(98, '           {sheet: 1, row: 98, col: 3, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=VLOOKUP(\'气密性测试\',LOOKUP04!$A$2:$B$17,2,0)"}},           ');
+$tool->extend73X(99, '             {sheet: 1, row: 99, col: 3, json: styleSubTotal({data: "=C97/3600*C98"})},  ');
 
 //-------------
 $tool->extend73X(102, '           {sheet: 1, row: 102, col: 3, json: styleSubTotal({data: "=C101/3600*VLOOKUP(\'筛选和包装\',LOOKUP04!$A$2:$B$17,2,0)"})},        ');
