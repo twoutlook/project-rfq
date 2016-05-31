@@ -34,6 +34,16 @@ $tool->extendColToCDEFGH(33,"=C31*C32/1000");
 //使用 Excel 百分比 --- 35,=C32*C16/(C32*C16+C34)
 $tool->extendColToCDEFGH(35,"=C32*C16/(C32*C16+C34)");
 
+//37,                        =(C31-C36)*C34/1000/C16
+$tool->extendColToCDEFGH(37,"=(C31-C36)*C34/1000/C16");
+
+//38,                        =(C32+C34)*C31*0.02/1000/C16
+$tool->extendColToCDEFGH(37,"=(C32+C34)*C31*0.02/1000/C16");
+
+//39,                        =IF(ISNA(C33+C37+C38),0,(C33+C37+C38))
+$tool->extendColToCDEFGH(39,"=IF(ISNA(C33+C37+C38),0,(C33+C37+C38))");
+
+
 
 
 
@@ -119,7 +129,9 @@ $tool->extendColToCDEFGH(35,"=C32*C16/(C32*C16+C34)");
 //    var colorDdl = "#F9E79F"; //#82E0AA  
 //    var colorInput = "#F4D03F"; // 
 //    var arrStepEnd = [23, 24, 38, 48, 52, 59, 64, 69, 73, 77, 83, 91, 95, 99, 104, 105, 110, 111, 112];
+$fontJsonStrItalicTrue = '{"0000A0":[31,36]}';
 $colorJsonStrStepStart = '{"A9BCF5":[15,28,39,50,54,61,66,71,75,78,85,96,100,104]}';
+
 $colorJsonStrStepEnd = '{"BE6E6E6":[39,49,53,60,65,70,74,78,84,95,99,103,108,111,114]}';
 $jsonDdl = '{"F9E79F":[10,12,30,41,66,71,75,80,86]}';
 
@@ -132,6 +144,8 @@ $jsonBigTotal = '{"cccccc":[24,25,109,115,116,117]}';
 //    var colorVersion = "#98AFC7"; // 
 $jsonVersion = '{"98AFC7":[7,8,9]}';
 
+//$objPHPExcel->getActiveSheet()->getStyle('B1')->getFont()->getColor()->setARGB(PHPExcel_Style_Color::COLOR_WHITE);
+//>getFont()->setItalic(true);  
 
 $tool->makeColorFillStyle("A", $colorJsonStrStepStart);
 $tool->makeColorFillStyle("B", $colorJsonStrStepStart);
@@ -169,6 +183,15 @@ $tool->makeColorFillStyle("A", $jsonVersion);
 
 echo "<br><br>//[[A0601]] 加方格線";
 $tool->makeCellsBorderColRowFromTo("ABCEDFGH", 3, 119);
+
+
+$tool->makeFontItalic("C",$fontJsonStrItalicTrue);
+$tool->makeFontItalic("D",$fontJsonStrItalicTrue);
+$tool->makeFontItalic("E",$fontJsonStrItalicTrue);
+$tool->makeFontItalic("F",$fontJsonStrItalicTrue);
+$tool->makeFontItalic("G",$fontJsonStrItalicTrue);
+$tool->makeFontItalic("H",$fontJsonStrItalicTrue);
+
 
 class MarkTool {
     /*
@@ -408,6 +431,30 @@ class MarkTool {
 //                 echo $item;
                 $str = "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)";
                 $str.=" ->getStartColor()->setARGB('$key');<br>";
+                echo $str;
+            }
+        }
+    }
+
+    
+     public function makeFontItalic($col, $str) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . "<br>//<br>";
+
+        echo "<br><br>// ---  makeFontItalic($col, $str)---<br> ";
+        $json = json_decode($str);
+//$objPayable->getFont()->setItalic(true);  
+//$objPayable->getFont()->setColor( new PHPExcel_Style_Color( PHPExcel_Style_Color::COLOR_DARKGREEN ) );  
+
+
+        foreach ($json as $key => $val) {
+//            echo $key;
+//            print_r($val);
+            foreach ($val as $item) {
+//                 echo $item;
+                $str = "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFont()->setItalic(true);<br>";
+                $str .= "\$objPHPExcel->getActiveSheet()->getStyle('$col$item')->getFont()->setColor( new PHPExcel_Style_Color('$key'));<br>";
+                
+             //   $str.=" ->getStartColor()->setARGB('$key');<br>";
                 echo $str;
             }
         }
