@@ -98,9 +98,8 @@ function getPatchCellsA0601_2() {
 function getPatchCellsA0601_3() {
     var cells = [];
     cells.push(
-            {sheet: 1, row: 22, col: 2, json: {data: 'xxx专用测试设备费用：'}},
-    // LAST ONE ============================================================================================
-            {sheet: 1, row: 1, col: 1, json: {data: ""}}
+            {sheet: 1, row: 22, col: 2, json: {data: 'zzzxxx专用测试设备费用：'}}
+
     );
     return cells;
 }
