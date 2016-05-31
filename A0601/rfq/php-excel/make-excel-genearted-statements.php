@@ -20,69 +20,14 @@ $objPHPExcel->getActiveSheet()->getStyle('C106:H106')->getNumberFormat()->setFor
 
 // RMB
 
-
-//
-// file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:326 function: makeMoneyStyle
-//
-$objPHPExcel->getActiveSheet()->getStyle('C19:H19')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C20:H20')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C21:H21')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C22:H22')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C23:H23')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C24:H24')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C31:H31')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C33:H33')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C36:H36')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C37:H37')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C38:H38')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C39:H39')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C42:H42')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C45:H45')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C46:H46')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C47:H47')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C49:H49')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C52:H52')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C53:H53')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C56:H56')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C57:H57')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C60:H60')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C63:H63')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C64:H64')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C65:H65')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C68:H68')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C70:H70')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C72:H72')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C73:H73')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C76:H76')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C77:H77')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C81:H81')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C83:H83')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C87:H87')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C88:H88')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C91:H91')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C94:H94')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C95:H95')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C98:H98')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C99:H99')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C102:H102')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C103:H103')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C104:H104')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C105:H105')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C107:H107')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C108:H108')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C109:H109')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C110:H110')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C115:H115')->getNumberFormat()->setFormatCode("¥#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C117:H117')->getNumberFormat()->setFormatCode("¥#,##0.00");
-
 // USD
 
 
 //
 // file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:326 function: makeMoneyStyle
 //
-$objPHPExcel->getActiveSheet()->getStyle('C24:H24')->getNumberFormat()->setFormatCode("$#,##0.00");
-$objPHPExcel->getActiveSheet()->getStyle('C112:H112')->getNumberFormat()->setFormatCode("$#,##0.00");
+$objPHPExcel->getActiveSheet()->getStyle('C25:H25')->getNumberFormat()->setFormatCode("$#,##0.00");
+$objPHPExcel->getActiveSheet()->getStyle('C116:H116')->getNumberFormat()->setFormatCode("$#,##0.00");
 
 
 //

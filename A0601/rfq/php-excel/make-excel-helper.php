@@ -22,9 +22,9 @@ echo "<br> // RMB<br> ";
 // to 70
 
 $moneyArrRMB = '[{"items":[19, 20, 21, 22, 23,24, 31, 33, 36, 37, 38, 39, 42, 45, 46, 47, 49, 52, 53, 56, 57, 60, 63, 64, 65, 68, 70, 72, 73, 76, 77, 81, 83, 87, 88, 91, 94, 95, 98, 99, 102, 103, 104, 105, 107, 108, 109, 110, 115,117]}]';
-$tool->makeMoneyStyle("¥", $moneyArrRMB);
+//$tool->makeMoneyStyle("¥", $moneyArrRMB);
 echo "<br> // USD<br> ";
-$moneyArrUSD = '[{"items":[24,112]}]';
+$moneyArrUSD = '[{"items":[25,116]}]';
 $tool->makeMoneyStyle("$", $moneyArrUSD);
 $tool->makeCell32(32);
 $tool->extendCell34X(34, "=100*C31*C16/(C31*C16+C33)/100"); //注意 EXCEL 和 ENTERPRISESHEET 的百分比表達方式不同
