@@ -1271,7 +1271,7 @@ $objPHPExcel->getActiveSheet()->getStyle('A9')->getFill()->setFillType(PHPExcel_
 // file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:454 function: makeCellsBorderColRowFromTo
 //
 
-
+/*
 $styleArr = array( 'borders' => array( 'allborders' => array( 'style' => 'thin' )));
 $objPHPExcel->getActiveSheet()->getStyle('A3')->applyFromArray($styleArr);
 $objPHPExcel->getActiveSheet()->getStyle('A4')->applyFromArray($styleArr);
@@ -2209,7 +2209,7 @@ $objPHPExcel->getActiveSheet()->getStyle('H116')->applyFromArray($styleArr);
 $objPHPExcel->getActiveSheet()->getStyle('H117')->applyFromArray($styleArr);
 $objPHPExcel->getActiveSheet()->getStyle('H118')->applyFromArray($styleArr);
 $objPHPExcel->getActiveSheet()->getStyle('H119')->applyFromArray($styleArr);
-
+*/
 
 //
 // file:D:\xampp\htdocs\project-rfq\A0601\rfq\php-excel\make-excel-helper.php line:498 function: makeFontItalic
