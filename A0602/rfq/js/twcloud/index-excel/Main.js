@@ -1495,27 +1495,7 @@ Ext.onReady(function () {
 
 //                                      getPatchCellA0602
 
-//    function getPatchCellsA0601_3() {
-//        var cells = [];
-//        cells.push(
-//                {sheet: 1, row: 24, col: 3, json: styleSubTotal({data: '=SUM(C19:C23)'})},
-//                {sheet: 1, row: 24, col: 4, json: styleSubTotal({data: '=SUM(D19:D23)'})},
-//                {sheet: 1, row: 24, col: 5, json: styleSubTotal({data: '=SUM(E19:E23)'})},
-//                {sheet: 1, row: 24, col: 6, json: styleSubTotal({data: '=SUM(F19:F23)'})},
-//                {sheet: 1, row: 24, col: 7, json: styleSubTotal({data: '=SUM(G19:G23)'})},
-//                {sheet: 1, row: 24, col: 8, json: styleSubTotal({data: '=SUM(H19:H23)'})},
-//                {sheet: 1, row: 22, col: 3, json: styleInput({fm: "money|¥|2|none", data: "1111.11"})},
-//                {sheet: 1, row: 22, col: 4, json: styleInput({fm: "money|¥|2|none", data: "2222.22"})},
-//                {sheet: 1, row: 22, col: 5, json: styleInput({fm: "money|¥|2|none", data: "3333.33"})},
-//                {sheet: 1, row: 22, col: 6, json: styleInput({fm: "money|¥|2|none", data: "4444.44"})},
-//                {sheet: 1, row: 22, col: 7, json: styleInput({fm: "money|¥|2|none", data: "5555.55"})},
-//                {sheet: 1, row: 22, col: 8, json: styleInput({fm: "money|¥|2|none", data: "6666.66"})},
-//        //MOQ
-//                {sheet: 1, row: 14, col: 2, json: {data: 'MOQ：'}},
-//                {sheet: 1, row: 22, col: 2, json: {data: '专用测试设备费用：'}}
-//        );
-//        return cells;
-//    }
+
 
     function getPatchCellsA0602_1() {
 
@@ -1542,7 +1522,7 @@ Ext.onReady(function () {
     console.log("PATCH#4 ---");
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellsA0602_1());
     console.log("PATCH#4 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(4));--- 086 單獨下拉");
-    console.log(getPatchCellsA0602_1());
+   // console.log(getPatchCellsA0602_1());
 
 
 
