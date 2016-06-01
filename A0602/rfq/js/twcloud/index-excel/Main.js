@@ -1494,9 +1494,55 @@ Ext.onReady(function () {
 //    console.log(getPatchCellA001(3));
 
 //                                      getPatchCellA0602
-    SHEET_API.updateCells(SHEET_API_HD, getPatchCellA0602(1));
-    console.log("PATCH#4 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA0602(1));--- 086 單獨下拉");
-    console.log(getPatchCellA0602(1));
+
+//    function getPatchCellsA0601_3() {
+//        var cells = [];
+//        cells.push(
+//                {sheet: 1, row: 24, col: 3, json: styleSubTotal({data: '=SUM(C19:C23)'})},
+//                {sheet: 1, row: 24, col: 4, json: styleSubTotal({data: '=SUM(D19:D23)'})},
+//                {sheet: 1, row: 24, col: 5, json: styleSubTotal({data: '=SUM(E19:E23)'})},
+//                {sheet: 1, row: 24, col: 6, json: styleSubTotal({data: '=SUM(F19:F23)'})},
+//                {sheet: 1, row: 24, col: 7, json: styleSubTotal({data: '=SUM(G19:G23)'})},
+//                {sheet: 1, row: 24, col: 8, json: styleSubTotal({data: '=SUM(H19:H23)'})},
+//                {sheet: 1, row: 22, col: 3, json: styleInput({fm: "money|¥|2|none", data: "1111.11"})},
+//                {sheet: 1, row: 22, col: 4, json: styleInput({fm: "money|¥|2|none", data: "2222.22"})},
+//                {sheet: 1, row: 22, col: 5, json: styleInput({fm: "money|¥|2|none", data: "3333.33"})},
+//                {sheet: 1, row: 22, col: 6, json: styleInput({fm: "money|¥|2|none", data: "4444.44"})},
+//                {sheet: 1, row: 22, col: 7, json: styleInput({fm: "money|¥|2|none", data: "5555.55"})},
+//                {sheet: 1, row: 22, col: 8, json: styleInput({fm: "money|¥|2|none", data: "6666.66"})},
+//        //MOQ
+//                {sheet: 1, row: 14, col: 2, json: {data: 'MOQ：'}},
+//                {sheet: 1, row: 22, col: 2, json: {data: '专用测试设备费用：'}}
+//        );
+//        return cells;
+//    }
+
+    function getPatchCellsA0602_1() {
+
+//        var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
+//        var ddl086 = {bgc: colorDdl, ta: "center", data: "===表面要求(2)===", drop: Ext.encode({data: ddl086Data})};
+
+        var cells = [];
+        cells.push(
+                 {sheet: 1, row: 85, col: 2, json:{bgc: colorStep, data: "10)粉体烤漆.液体烤漆...： "}},
+                {sheet: 1, row: 86, col: 3, json: ddl086}, // 
+                {sheet: 1, row: 86, col: 4, json: ddl086}, // 
+                {sheet: 1, row: 86, col: 5, json: ddl086}, // 
+                {sheet: 1, row: 86, col: 6, json: ddl086}, // 
+                {sheet: 1, row: 86, col: 7, json: ddl086}, // 
+                {sheet: 1, row: 86, col: 8, json: ddl086}, // 
+        //
+        //
+        // LAST ONE ============================================================================================
+                {sheet: 1, row: 1, col: 1, json: {data: ""}}
+        );
+        return cells;
+    }
+
+    console.log("PATCH#4 ---");
+    SHEET_API.updateCells(SHEET_API_HD, getPatchCellsA0602_1());
+    console.log("PATCH#4 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(4));--- 086 單獨下拉");
+    console.log(getPatchCellsA0602_1());
 
 
 

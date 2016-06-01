@@ -1,6 +1,6 @@
 
 console.log("---patch-A0602.js---");
-function getPatchCellA0602(k) {
+function getPatchCellsA0602(k) {
     if (k === 1) {
         return getPatchCellsA0602_1();
     }

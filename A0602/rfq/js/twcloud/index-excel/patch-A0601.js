@@ -9,6 +9,9 @@ function getPatchCellA001(k) {
     if (k === 3) {
         return getPatchCellsA0601_3();
     }
+    if (k === 4) {
+     //   return getPatchCellsA0601_4();
+    }
 
 }
 
@@ -94,6 +97,7 @@ function getPatchCellsA0601_2() {
     );
     return cells;
 }
+
 
 function getPatchCellsA0601_3() {
     var cells = [];
