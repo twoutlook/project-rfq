@@ -440,13 +440,14 @@ Ext.onReady(function () {
             {sheet: 1, row: 6, col: 3, json: {data: ""}},
             {sheet: 1, row: 7, col: 1, json: {data: ""}},
             {sheet: 1, row: 7, col: 2, json: {data: "项目 料号 "}},
-            {sheet: 1, row: 7, col: 3, json: {ta: "center", data: "(1)12-00620-00003_R6"}},
+            {sheet: 1, row: 7, col: 3, json: {ta: "center", data: "AAAAA"}},
+//            {sheet: 1, row: 7, col: 4, json: {ta: "center", data: "BBBBB"}},
             {sheet: 1, row: 8, col: 1, json: {data: ""}},
             {sheet: 1, row: 8, col: 2, json: {data: "品名 / 图纸版本号："}},
-            {sheet: 1, row: 8, col: 3, json: {ta: "center", data: "REV 6"}},
+            {sheet: 1, row: 8, col: 3, json: {ta: "center", data: ""}},
             {sheet: 1, row: 9, col: 1, json: {data: ""}},
             {sheet: 1, row: 9, col: 2, json: {data: "产品外形尺寸"}},
-            {sheet: 1, row: 9, col: 3, json: {ta: "center", data: "41.25*29*29"}},
+            {sheet: 1, row: 9, col: 3, json: {ta: "center", data: ""}},
             {sheet: 1, row: 10, col: 1, json: {data: ""}},
             {sheet: 1, row: 10, col: 2, json: {data: "材质规格： "}},
             {sheet: 1, row: 10, col: 3, json: ddlMaterial},
@@ -458,7 +459,7 @@ Ext.onReady(function () {
             {sheet: 1, row: 12, col: 3, json: ddlSurface},
             {sheet: 1, row: 13, col: 1, json: {data: ""}},
             {sheet: 1, row: 13, col: 2, json: {data: "年需求量："}},
-            {sheet: 1, row: 13, col: 3, json: {ta: "center", data: "12000"}},
+            {sheet: 1, row: 13, col: 3, json: {ta: "center", data: ""}},
             {sheet: 1, row: 14, col: 1, json: {data: ""}},
             {sheet: 1, row: 14, col: 2, json: {data: ""}},
             {sheet: 1, row: 14, col: 3, json: {data: ""}},
@@ -470,7 +471,7 @@ Ext.onReady(function () {
             {sheet: 1, row: 16, col: 3, json: styleInput({fm: "number", data: "1"})},
             {sheet: 1, row: 17, col: 1, json: {data: ""}},
             {sheet: 1, row: 17, col: 2, json: {data: "侧滑模数/油压抽芯数 "}},
-            {sheet: 1, row: 17, col: 3, json: {ta: "center", data: "2"}},
+            {sheet: 1, row: 17, col: 3, json: {ta: "center", data: ""}},
             {sheet: 1, row: 18, col: 1, json: {data: ""}},
             {sheet: 1, row: 18, col: 2, json: {data: "模具寿命："}},
             {sheet: 1, row: 18, col: 3, json: {ta: "center", data: ""}},
@@ -858,12 +859,20 @@ Ext.onReady(function () {
             {sheet: 1, row: 32, col: 6, json: {fm: 'money|¥|2|none', dsd: 'ed', data: '=F30*F31/1000', cal: true}},
             {sheet: 1, row: 32, col: 7, json: {fm: 'money|¥|2|none', dsd: 'ed', data: '=G30*G31/1000', cal: true}},
             {sheet: 1, row: 32, col: 8, json: {fm: 'money|¥|2|none', dsd: 'ed', data: '=H30*H31/1000', cal: true}},
-            {sheet: 1, row: 34, col: 3, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*C31*C16/(C31*C16+C33)'}},
-            {sheet: 1, row: 34, col: 4, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*D31*D16/(D31*D16+D33)'}},
-            {sheet: 1, row: 34, col: 5, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*E31*E16/(E31*E16+E33)'}},
-            {sheet: 1, row: 34, col: 6, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*F31*F16/(F31*F16+F33)'}},
-            {sheet: 1, row: 34, col: 7, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*G31*G16/(G31*G16+G33)'}},
-            {sheet: 1, row: 34, col: 8, json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*H31*H16/(H31*H16+H33)'}},
+//
+// file:D:\xampp\htdocs\project-rfq\A0602\rfq\php-excel\make-js-mainjs-helper.php line:376 function: makeFormula34 --- start ---
+//
+{sheet: 1, row: 34, col: 3,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*C31*C16/(C31*C16+C33)),0, 100*C31*C16/(C31*C16+C33) )'}},
+{sheet: 1, row: 34, col: 4,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*D31*D16/(D31*D16+D33)),0, 100*D31*D16/(D31*D16+D33) )'}},
+{sheet: 1, row: 34, col: 5,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*E31*E16/(E31*E16+E33)),0, 100*E31*E16/(E31*E16+E33) )'}},
+{sheet: 1, row: 34, col: 6,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*F31*F16/(F31*F16+F33)),0, 100*F31*F16/(F31*F16+F33) )'}},
+{sheet: 1, row: 34, col: 7,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*G31*G16/(G31*G16+G33)),0, 100*G31*G16/(G31*G16+G33) )'}},
+{sheet: 1, row: 34, col: 8,json: {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=IF(ISNA (100*H31*H16/(H31*H16+H33)),0, 100*H31*H16/(H31*H16+H33) )'}},
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0602\rfq\php-excel\make-js-mainjs-helper.php line:388 function: makeFormula34 --- end ---
+//
+
             {sheet: 1, row: 36, col: 3, json: {fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=(C30-C35)*C33/1000/C16'}},
             {sheet: 1, row: 36, col: 4, json: {fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=(D30-D35)*D33/1000/D16'}},
             {sheet: 1, row: 36, col: 5, json: {fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=(E30-E35)*E33/1000/E16'}},

@@ -86,13 +86,13 @@ $tool->makeInputNumber(86, [0, 0, 0, 0, 0, 0]);
   $tool->makeInputRmb(108, [0.11, 0.22, 0.33, 0.44, 0.55, 0.66]);
   $tool->makeInputRmb(109, [0.66, 0.11, 0.22, 0.33, 0.44, 0.55]);
  */
- echo "<br><br><br>  //makeInputNumberZero  ---start </br></br></br>";
-$tool->makeInputNumberZero(Array(11,16,33,42,50,54,61,66,71,75,80,82,90,93,97,101));
- echo "<br><br><br>  //makeInputNumberZero  ---end </br></br></br>";
+echo "<br><br><br>  //makeInputNumberZero  ---start </br></br></br>";
+$tool->makeInputNumberZero(Array(11, 16, 33, 42, 50, 54, 61, 66, 71, 75, 80, 82, 90, 93, 97, 101));
+echo "<br><br><br>  //makeInputNumberZero  ---end </br></br></br>";
 
- echo "<br><br><br>  //makeInputRmbZero  ---start </br></br></br>";
-$tool->makeInputRmbZero(Array(19,20,21,22,81,87,88,94,103,108,109));
- echo "<br><br><br>  //makeInputRmbZero  ---end </br></br></br>";
+echo "<br><br><br>  //makeInputRmbZero  ---start </br></br></br>";
+$tool->makeInputRmbZero(Array(19, 20, 21, 22, 81, 87, 88, 94, 103, 108, 109));
+echo "<br><br><br>  //makeInputRmbZero  ---end </br></br></br>";
 
 
 $tool->makeFormula85(85);
@@ -301,14 +301,16 @@ class MarkToolMainJs {
 
     public function makeInputNumberZero($rowArr) {
         foreach ($rowArr as $row) {
-            $this->makeInputNumber($row,  [0,0,0,0,0,0]);
+            $this->makeInputNumber($row, [0, 0, 0, 0, 0, 0]);
         }
     }
+
     public function makeInputRmbZero($rowArr) {
         foreach ($rowArr as $row) {
-            $this->makeInputRmb($row,  [0,0,0,0,0,0]);
+            $this->makeInputRmb($row, [0, 0, 0, 0, 0, 0]);
         }
     }
+
     //json: styleInput({fm: "money|¥|2|none", data: "71500"})},
     public function makeInputRmb($row, $init) {
         $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
@@ -369,16 +371,21 @@ class MarkToolMainJs {
         }
     }
 
+    //[[A0602]]
     public function makeFormula34($row) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- start ---<br>//<br>";
         $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
         for ($i = 3; $i <= 8; $i++) {
             $COL = $arrAtoH[$i];
 //{fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '=100*C31*C16/(C31*C16+C33)'}},
-            $data = "=100*" . $COL . "31*" . $COL . "16/(" . $COL . "31*" . $COL . "16+" . $COL . "33)";
+            //DOING
+            $data1 = "100*" . $COL . "31*" . $COL . "16/(" . $COL . "31*" . $COL . "16+" . $COL . "33)";
+            $data = "=IF(ISNA ($data1),0, $data1 )";
             echo "     {sheet: 1, row: $row, col: $i,json:";
             echo "      {fm: 'number', dfm: '0%', dsd: 'ed', cal: true, data: '$data'}},";
             echo "     <br>";
         }
+        echo "<br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- end ---<br>//<br><br>";
     }
 
     //{fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=VLOOKUP(C10,LOOKUP!$A$3:$C$20,3,0)'}},
