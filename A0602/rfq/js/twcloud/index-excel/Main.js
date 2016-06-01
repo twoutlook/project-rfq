@@ -59,7 +59,23 @@ Ext.onReady(function () {
     //
 //        var ddlMaterial = {data: "xxx", drop: Ext.encode({data: "xxx,yyy,zzz"})};
     var ddlMaterial = {bgc: colorDdl, ta: "center", data: "===材质规格===", drop: Ext.encode({data: "一。铝合金,AlSi10Mg,AlSi9Cu3,ADC12,A380,A413,A360,A356,二。锌合金 ,ZINC-2,ZINC-3,ZINC-5,ZINC-7,ZAMAK-8,三。镁合金 ,AZ91D,AM60,THX-AZ91D,THX-AM60"})};
-    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
+
+
+    //挂镀铬，挂镀镍，挂镀沙丁镍，挂镀沙丁铬，
+//拉丝镀铬，拉丝镀镍，
+//挂镀黑铬，挂镀化学镍，
+//挂镀枪黑，镀PVD
+//滚镀镍
+//滚镀化学镍，挂镀锌，滚镀锌
+//    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
+    var ddlSurface_data = "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
+
+
+
+    var A0602_ddlSurface_data = ",挂镀铬,挂镀镍,挂镀沙丁镍,挂镀沙丁铬,拉丝镀铬,拉丝镀镍,挂镀黑铬,挂镀化学镍,挂镀枪黑,镀PVD,滚镀镍,滚镀化学镍,挂镀锌,滚镀锌";
+
+    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: ddlSurface_data + A0602_ddlSurface_data})};
+
     var ddlMachine = {bgc: colorDdl, ta: "center", data: "===适用机型===", drop: Ext.encode({data: "一。铝合金压铸合模费：,铝-125T,鋁-150T/160T/200T,鋁-250T/280T,鋁-350T/340T/400T,鋁-550T/530T/500T,鋁-630T/650T,鋁-800T/900T,鋁-1250T,鋁-1600T,鋁-2000T,鋁-2500T,鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
     var ddlSand = {bgc: colorDdl, ta: "center", data: "===喷砂,抛丸,震动研磨===", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
@@ -67,6 +83,11 @@ Ext.onReady(function () {
     var ddlStep9 = {bgc: colorDdl, ta: "center", data: "===皮膜处理===", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
     var ddlMaching = {bgc: colorDdl, ta: "center", data: "===机加工===", drop: Ext.encode({data: "CNC机加工,传统机加工"})};
     var ddl079 = {bgc: colorDdl, ta: "center", data: "===皮膜处理===", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜(48H)"})};
+
+    //[[A0602]]
+    var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
+    var ddl086 = {bgc: colorDdl, ta: "center", data: "===表面要求(2)===", drop: Ext.encode({data: ddl086Data})};
+
 
 //var colorStep="#E6E6E6";
 //var colorStepEnd="#A9BCF5";
@@ -1451,7 +1472,7 @@ Ext.onReady(function () {
     //   5.最後加 合計(含稅),公式 X1.17
     //   6.最後加 運費,預設值空白
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(1));
-    console.log("after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(1));---合計(含稅), 運費");
+    console.log("PATCH#1 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(1));---合計(含稅), 運費");
 
     /**
      * [[A0601]]
@@ -1464,14 +1485,18 @@ Ext.onReady(function () {
     SHEET_API.insertRow(SHEET_API_HD, 1, 89, 1);
     SHEET_API.insertRow(SHEET_API_HD, 1, 89, 1);
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(2));
-    console.log("after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(2));---遮蔽,印刷,镭雕");
+    console.log("PATCH#2 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(2));---遮蔽,印刷,镭雕");
 
 
     SHEET_API.insertRow(SHEET_API_HD, 1, 22, 1);
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(3));
-    console.log("after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(3));---专用测试设备费用");
-    console.log(getPatchCellA001(3));
+    console.log("PATCH#3 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(3));---专用测试设备费用");
+//    console.log(getPatchCellA001(3));
 
+//                                      getPatchCellA0602
+    SHEET_API.updateCells(SHEET_API_HD, getPatchCellA0602(1));
+    console.log("PATCH#4 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA0602(1));--- 086 單獨下拉");
+    console.log(getPatchCellA0602(1));
 
 
 
