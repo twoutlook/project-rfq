@@ -446,31 +446,46 @@ class MarkToolMainJs {
     }
 
     public function makeFormula43($row) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- start ---<br>//<br>";
+
         $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
         for ($i = 3; $i <= 8; $i++) {
             $COL = $arrAtoH[$i];
             // {fm: 'number', dfm: '0', dsd: 'ed', cal: true, data: '=3600/C42'}},
             // replace C with ".$COL."
+            //[[A0602]]
+//            $data = "=3600/" . $COL . "42";
+            $cell = $COL . "42";
+            $data = "=IF($cell==0,0,3600/$cell )";
 
-            $data = "=3600/" . $COL . "42";
             echo "     {sheet: 1, row: $row, col: $i,json:";
             echo "  {fm: 'number', dfm: '0', dsd: 'ed', cal: true, data: '$data'}},";
             echo "     <br>";
         }
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- end ---<br>//<br>";
     }
 
     public function makeFormula44($row) {
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- start ---<br>//<br>";
+
         $arrAtoH = [".", "A", "B", "C", "D", "E", "F", "G", "H"];
         for ($i = 3; $i <= 8; $i++) {
             $COL = $arrAtoH[$i];
             // {fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '=C41/C43'}},
             // replace C with ".$COL."
+            $cell1=$COL . "41";
+            $cell2=$COL . "43";
+            
+//            $data = "=" . $COL . "41/" . $COL . "43";
+            //=IF(C43==0,0,3600/C43 )
 
-            $data = "=" . $COL . "41/" . $COL . "43";
+            $data = "=IF($cell2==0 ,0,$cell1/$cell2 )";
+            
             echo "     {sheet: 1, row: $row, col: $i,json:";
             echo "  {fm: 'money|¥|2|none', dsd: 'ed', cal: true, data: '$data'}},";
             echo "     <br>";
         }
+        echo "<br><br>//<br>// file:" . __FILE__ . " line:" . __LINE__ . " function: " . __FUNCTION__ . " --- end ---<br>//<br>";
     }
 
     public function makeFormula45($row) {
