@@ -1605,7 +1605,7 @@ Ext.onReady(function () {
 
 
 
-    function getPatchCellsA0602_1() {
+    function getTemp1() {
 
 //        var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
 //        var ddl086 = {bgc: colorDdl, ta: "center", data: "===表面要求(2)===", drop: Ext.encode({data: ddl086Data})};
@@ -1628,12 +1628,13 @@ Ext.onReady(function () {
     }
 
     console.log("PATCH#4 ---");
-    SHEET_API.updateCells(SHEET_API_HD, getPatchCellsA0602_1());
+    SHEET_API.updateCells(SHEET_API_HD, getTemp1());
     console.log("PATCH#4 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(4));--- 086 單獨下拉");
     // console.log(getPatchCellsA0602_1());
 
-
-
+    console.log("DOING...");
+    SHEET_API.updateCells(SHEET_API_HD, getPatchA0602(1));
+console.log("DOING...###");
     //
     //
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
