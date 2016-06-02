@@ -1576,7 +1576,7 @@ Ext.onReady(function () {
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(2));
     console.log("PATCH#2 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(2));---遮蔽,印刷,镭雕");
 
-
+  
     SHEET_API.insertRow(SHEET_API_HD, 1, 22, 1);
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(3));
     console.log("PATCH#3 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(3));---专用测试设备费用");
@@ -1616,8 +1616,13 @@ Ext.onReady(function () {
     console.log("PATCH A0602");
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0602(1));
     
+    //[[A0603]]
     console.log("PATCH A0603");
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(1));
+    //[[A0603]] ROW14, MOQ, LOOKUP
+    SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(2));
+    
+    
     
     //
     //
