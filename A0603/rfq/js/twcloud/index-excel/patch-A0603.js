@@ -27,15 +27,27 @@ function getPatchA0603(k) {
     }
 
 
+    function get2() {
+        var cells = [];
+        cells.push(
+                {sheet: 1, row: 14, col: 3, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(C41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 4, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(D41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 5, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(E41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 6, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(F41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 7, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(G41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 8, json: {fm: '', dsd: 'ed', cal: true, data: '=VLOOKUP(H41,LOOKUP2!$A$1:$C$100,4,0)'}},
+        // LAST ONE ============================================================================================
+                {sheet: 1, row: 1, col: 1, json: {data: ""}}
+        );
+        return cells;
+    }
+
     if (k === 1) {
         return get1();
     }
-//    if (k === 2) {
-//        return getPatchCellsA0601_2();
-//    }
-//    if (k === 3) {
-//        return getPatchCellsA0601_3();
-//    }
+    if (k === 1) {
+        return get2();
+    }
 
 }
 
