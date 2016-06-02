@@ -90,9 +90,11 @@ Ext.onReady(function () {
 
     //[[A0603]]
     var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級";
-
     var ddl086 = {bgc: colorDdl, ta: "center", data: "===表面要求(2)===", drop: Ext.encode({data: ddl086Data})};
 
+    //[[A0606]] 其它特殊处理”一栏需细化，除了会议中提及的渗补、时效
+    var ddlSpecialData = "　,渗补,时效";//全形空白
+    var ddlSpecial = {bgc: colorDdl, ta: "center", data: "===其它特殊处理===", drop: Ext.encode({data: ddlSpecialData})};
 
 //var colorStep="#E6E6E6";
 //var colorStepEnd="#A9BCF5";
@@ -1698,7 +1700,20 @@ Ext.onReady(function () {
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(2));
 
 
-
+function getPatchA0606InMain() {
+        var cells = [];
+        cells.push(
+                {sheet: 1, row: 96, col: 3, json: ddlSpecial}, // 
+                {sheet: 1, row: 96, col: 4, json: ddlSpecial}, // 
+                {sheet: 1, row: 96, col: 5, json: ddlSpecial}, // 
+                {sheet: 1, row: 96, col: 6, json: ddlSpecial}, // 
+                {sheet: 1, row: 96, col: 7, json: ddlSpecial}, // 
+                {sheet: 1, row: 96, col: 8, json: ddlSpecial} // 
+        );
+        return cells;
+    }
+    //[[A0606]]  吴文清 根据2016.5.30号讨论“其它特殊处理”一栏需细化，除了会议中提及的渗补、时效外，一时想不起来，还有哪些？
+    SHEET_API.updateCells(SHEET_API_HD, getPatchA0606InMain());
     //
     //
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
