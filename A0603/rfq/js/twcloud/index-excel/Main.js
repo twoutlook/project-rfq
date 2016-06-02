@@ -276,6 +276,7 @@ Ext.onReady(function () {
             {sheet: 3, row: 29, col: 2, json: {ta: 'center', data: '430'}},
             {sheet: 3, row: 30, col: 2, json: {ta: 'center', data: '320'}},
             {sheet: 3, row: 31, col: 2, json: {ta: 'center', data: '430'}},
+            
             {sheet: 3, row: 1, col: 3, json: {ta: 'center', data: '人工費率/H'}},
             {sheet: 3, row: 2, col: 3, json: {ta: 'center', data: ''}},
             {sheet: 3, row: 3, col: 3, json: {ta: 'center', data: '45.00'}},
@@ -307,6 +308,44 @@ Ext.onReady(function () {
             {sheet: 3, row: 29, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 30, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 31, col: 3, json: {ta: 'center', data: '135'}},
+            
+            // [[A0603]] MOQ --- start
+            {sheet: 3, row: 1, col: 4, json: {ta: 'center', data: 'MOQ'}},
+            {sheet: 3, row: 2, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 3, col: 4, json: {ta: 'center', data: '2000'}},
+            {sheet: 3, row: 4, col: 4, json: {ta: 'center', data: '2000'}},
+            {sheet: 3, row: 5, col: 4, json: {ta: 'center', data: '2000'}},
+            {sheet: 3, row: 6, col: 4, json: {ta: 'center', data: '1500'}},
+            {sheet: 3, row: 7, col: 4, json: {ta: 'center', data: '1200'}},
+            {sheet: 3, row: 8, col: 4, json: {ta: 'center', data: '1200'}},
+            {sheet: 3, row: 9, col: 4, json: {ta: 'center', data: '1000'}},
+            {sheet: 3, row: 10, col: 4, json: {ta: 'center', data: '800'}},
+            {sheet: 3, row: 11, col: 4, json: {ta: 'center', data: '600'}},
+            {sheet: 3, row: 12, col: 4, json: {ta: 'center', data: '600'}},
+            {sheet: 3, row: 13, col: 4, json: {ta: 'center', data: '500'}},
+            {sheet: 3, row: 14, col: 4, json: {ta: 'center', data: '500'}},
+            {sheet: 3, row: 15, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 16, col: 4, json: {ta: 'center', data: '15000'}},
+            {sheet: 3, row: 17, col: 4, json: {ta: 'center', data: '10000'}},
+            {sheet: 3, row: 18, col: 4, json: {ta: 'center', data: '10000'}},
+            {sheet: 3, row: 19, col: 4, json: {ta: 'center', data: '8000'}},
+            {sheet: 3, row: 20, col: 4, json: {ta: 'center', data: '5000'}},
+            {sheet: 3, row: 21, col: 4, json: {ta: 'center', data: '5000'}},
+            {sheet: 3, row: 22, col: 4, json: {ta: 'center', data: '3000'}},
+            {sheet: 3, row: 23, col: 4, json: {ta: 'center', data: '2500'}},
+            {sheet: 3, row: 24, col: 4, json: {ta: 'center', data: '2000'}},
+            {sheet: 3, row: 25, col: 4, json: {ta: 'center', data: '1500'}},
+            {sheet: 3, row: 26, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 27, col: 4, json: {ta: 'center', data: '3500'}},
+            {sheet: 3, row: 28, col: 4, json: {ta: 'center', data: '1500'}},
+            {sheet: 3, row: 29, col: 4, json: {ta: 'center', data: '1000'}},
+            {sheet: 3, row: 30, col: 4, json: {ta: 'center', data: '2500'}},
+            {sheet: 3, row: 31, col: 4, json: {ta: 'center', data: '1000'}},
+            // [[A0603]]  MOQ --- end
+            
+            
+            
+            
             {sheet: 5, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
             {sheet: 5, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
             {sheet: 5, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
