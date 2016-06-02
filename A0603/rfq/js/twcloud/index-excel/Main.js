@@ -68,7 +68,7 @@ Ext.onReady(function () {
 //滚镀镍
 //滚镀化学镍，挂镀锌，滚镀锌
 //    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
-  
+
     var ddlSurface_data = "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
 
 
@@ -87,10 +87,10 @@ Ext.onReady(function () {
 
     //[[A0602]]
 //    var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
-    
+
     //[[A0603]]
     var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級";
-    
+
     var ddl086 = {bgc: colorDdl, ta: "center", data: "===表面要求(2)===", drop: Ext.encode({data: ddl086Data})};
 
 
@@ -152,12 +152,83 @@ Ext.onReady(function () {
             {id: 3, name: "LOOKUP2", actived: true, color: "blue"},
             {id: 5, name: "LOOKUP04", actived: true, color: "blue"},
             {id: 11, name: "DDL079", actived: true, color: "blue"},
+            {id: 13, name: "MOQ", actived: true, color: "blue"},
 //            {id: 9, name: "Remark", actived: true, color: "green"},
         ],
 //        floatings: [
 //            {sheet: 1, name: "colGroups", ftype: "colgroup", json: "[{level:1, span:[2,3]}, {level:1, span:[4,6]}]"},
 //        ],
         cells: [
+            {sheet: 13, row: 0, col: 0, json: {ta: "center", height: 20, va: "middle"}},
+            {sheet: 13, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
+            {sheet: 13, row: 0, col: 2, json: {fm: "number", ta: "center", data: "B", width: 100}},
+            {sheet: 13, row: 1, col: 1, json: {ta: 'center', data: '压铸合模费：'}},
+            {sheet: 13, row: 2, col: 1, json: {ta: 'center', data: '一。铝合金压铸合模费：'}},
+            {sheet: 13, row: 3, col: 1, json: {ta: 'center', data: '铝-125T'}},
+            {sheet: 13, row: 4, col: 1, json: {ta: 'center', data: '鋁-150T/160T/200T'}},
+            {sheet: 13, row: 5, col: 1, json: {ta: 'center', data: '鋁-250T/280T'}},
+            {sheet: 13, row: 6, col: 1, json: {ta: 'center', data: '鋁-350T/340T/400T'}},
+            {sheet: 13, row: 7, col: 1, json: {ta: 'center', data: '鋁-550T/530T/500T'}},
+            {sheet: 13, row: 8, col: 1, json: {ta: 'center', data: '鋁-630T/650T'}},
+            {sheet: 13, row: 9, col: 1, json: {ta: 'center', data: '鋁-800T/900T'}},
+            {sheet: 13, row: 10, col: 1, json: {ta: 'center', data: '鋁-1250T'}},
+            {sheet: 13, row: 11, col: 1, json: {ta: 'center', data: '鋁-1600T'}},
+            {sheet: 13, row: 12, col: 1, json: {ta: 'center', data: '鋁-2000T'}},
+            {sheet: 13, row: 13, col: 1, json: {ta: 'center', data: '鋁-2500T'}},
+            {sheet: 13, row: 14, col: 1, json: {ta: 'center', data: '鋁-3000T'}},
+            {sheet: 13, row: 15, col: 1, json: {ta: 'center', data: '二。锌合金压铸合模费：'}},
+            {sheet: 13, row: 16, col: 1, json: {ta: 'center', data: '鋅-快速机/4轴机'}},
+            {sheet: 13, row: 17, col: 1, json: {ta: 'center', data: '鋅-10T/5T'}},
+            {sheet: 13, row: 18, col: 1, json: {ta: 'center', data: '鋅-15T/20T'}},
+            {sheet: 13, row: 19, col: 1, json: {ta: 'center', data: '鋅-25T/30T/40T'}},
+            {sheet: 13, row: 20, col: 1, json: {ta: 'center', data: '鋅-50T/60T'}},
+            {sheet: 13, row: 21, col: 1, json: {ta: 'center', data: '鋅-80T/100T/125'}},
+            {sheet: 13, row: 22, col: 1, json: {ta: 'center', data: '鋅-150T'}},
+            {sheet: 13, row: 23, col: 1, json: {ta: 'center', data: '鋅-185/200T'}},
+            {sheet: 13, row: 24, col: 1, json: {ta: 'center', data: '鋅-250T'}},
+            {sheet: 13, row: 25, col: 1, json: {ta: 'center', data: '鋅-300T'}},
+            {sheet: 13, row: 26, col: 1, json: {ta: 'center', data: '三。镁合金压铸合模费：'}},
+            {sheet: 13, row: 27, col: 1, json: {ta: 'center', data: '鎂-150T'}},
+            {sheet: 13, row: 28, col: 1, json: {ta: 'center', data: '鎂-340T/400T'}},
+            {sheet: 13, row: 29, col: 1, json: {ta: 'center', data: '鎂-530T/660T'}},
+            {sheet: 13, row: 30, col: 1, json: {ta: 'center', data: 'THX-鎂280T'}},
+            {sheet: 13, row: 31, col: 1, json: {ta: 'center', data: 'THX-鎂650T'}},
+            {sheet: 13, row: 1, col: 2, json: {ta: 'center', data: 'MOQ'}},
+            {sheet: 13, row: 2, col: 2, json: {ta: 'center', data: ''}},
+            {sheet: 13, row: 3, col: 2, json: {ta: 'center', data: '2000'}},
+            {sheet: 13, row: 4, col: 2, json: {ta: 'center', data: '2000'}},
+            {sheet: 13, row: 5, col: 2, json: {ta: 'center', data: '2000'}},
+            {sheet: 13, row: 6, col: 2, json: {ta: 'center', data: '1500'}},
+            {sheet: 13, row: 7, col: 2, json: {ta: 'center', data: '1200'}},
+            {sheet: 13, row: 8, col: 2, json: {ta: 'center', data: '1200'}},
+            {sheet: 13, row: 9, col: 2, json: {ta: 'center', data: '1000'}},
+            {sheet: 13, row: 10, col: 2, json: {ta: 'center', data: '800'}},
+            {sheet: 13, row: 11, col: 2, json: {ta: 'center', data: '600'}},
+            {sheet: 13, row: 12, col: 2, json: {ta: 'center', data: '600'}},
+            {sheet: 13, row: 13, col: 2, json: {ta: 'center', data: '500'}},
+            {sheet: 13, row: 14, col: 2, json: {ta: 'center', data: '500'}},
+            {sheet: 13, row: 15, col: 2, json: {ta: 'center', data: ''}},
+            {sheet: 13, row: 16, col: 2, json: {ta: 'center', data: '15000'}},
+            {sheet: 13, row: 17, col: 2, json: {ta: 'center', data: '10000'}},
+            {sheet: 13, row: 18, col: 2, json: {ta: 'center', data: '10000'}},
+            {sheet: 13, row: 19, col: 2, json: {ta: 'center', data: '8000'}},
+            {sheet: 13, row: 20, col: 2, json: {ta: 'center', data: '5000'}},
+            {sheet: 13, row: 21, col: 2, json: {ta: 'center', data: '5000'}},
+            {sheet: 13, row: 22, col: 2, json: {ta: 'center', data: '3000'}},
+            {sheet: 13, row: 23, col: 2, json: {ta: 'center', data: '2500'}},
+            {sheet: 13, row: 24, col: 2, json: {ta: 'center', data: '2000'}},
+            {sheet: 13, row: 25, col: 2, json: {ta: 'center', data: '1500'}},
+            {sheet: 13, row: 26, col: 2, json: {ta: 'center', data: ''}},
+            {sheet: 13, row: 27, col: 2, json: {ta: 'center', data: '3500'}},
+            {sheet: 13, row: 28, col: 2, json: {ta: 'center', data: '1500'}},
+            {sheet: 13, row: 29, col: 2, json: {ta: 'center', data: '1000'}},
+            {sheet: 13, row: 30, col: 2, json: {ta: 'center', data: '2500'}},
+            {sheet: 13, row: 31, col: 2, json: {ta: 'center', data: '1000'}},
+            // [[A0603]]  MOQ --- end
+
+
+
+
             // A0530 (start)
 
             {sheet: 11, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
@@ -214,6 +285,9 @@ Ext.onReady(function () {
             {sheet: 3, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
             {sheet: 3, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
             {sheet: 3, row: 0, col: 3, json: {fm: "money|¥|2|none", ta: "center", data: "C", width: 100}},
+            //[[A0603]] 無效
+            {sheet: 3, row: 0, col: 4, json: {fm: "money|¥|2|none", ta: "center", data: "D", width: 100}},
+            //[[A0603]]
             {sheet: 3, row: 1, col: 1, json: {ta: 'center', data: '压铸合模费：'}},
             {sheet: 3, row: 2, col: 1, json: {ta: 'center', data: '一。铝合金压铸合模费：'}},
             {sheet: 3, row: 3, col: 1, json: {ta: 'center', data: '铝-125T'}},
@@ -276,7 +350,6 @@ Ext.onReady(function () {
             {sheet: 3, row: 29, col: 2, json: {ta: 'center', data: '430'}},
             {sheet: 3, row: 30, col: 2, json: {ta: 'center', data: '320'}},
             {sheet: 3, row: 31, col: 2, json: {ta: 'center', data: '430'}},
-            
             {sheet: 3, row: 1, col: 3, json: {ta: 'center', data: '人工費率/H'}},
             {sheet: 3, row: 2, col: 3, json: {ta: 'center', data: ''}},
             {sheet: 3, row: 3, col: 3, json: {ta: 'center', data: '45.00'}},
@@ -308,44 +381,43 @@ Ext.onReady(function () {
             {sheet: 3, row: 29, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 30, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 31, col: 3, json: {ta: 'center', data: '135'}},
-            
             // [[A0603]] MOQ --- start
-            {sheet: 3, row: 1, col: 4, json: {ta: 'center', data: 'MOQ'}},
-            {sheet: 3, row: 2, col: 4, json: {ta: 'center', data: ''}},
-            {sheet: 3, row: 3, col: 4, json: {ta: 'center', data: '2000'}},
-            {sheet: 3, row: 4, col: 4, json: {ta: 'center', data: '2000'}},
-            {sheet: 3, row: 5, col: 4, json: {ta: 'center', data: '2000'}},
-            {sheet: 3, row: 6, col: 4, json: {ta: 'center', data: '1500'}},
-            {sheet: 3, row: 7, col: 4, json: {ta: 'center', data: '1200'}},
-            {sheet: 3, row: 8, col: 4, json: {ta: 'center', data: '1200'}},
-            {sheet: 3, row: 9, col: 4, json: {ta: 'center', data: '1000'}},
-            {sheet: 3, row: 10, col: 4, json: {ta: 'center', data: '800'}},
-            {sheet: 3, row: 11, col: 4, json: {ta: 'center', data: '600'}},
-            {sheet: 3, row: 12, col: 4, json: {ta: 'center', data: '600'}},
-            {sheet: 3, row: 13, col: 4, json: {ta: 'center', data: '500'}},
-            {sheet: 3, row: 14, col: 4, json: {ta: 'center', data: '500'}},
-            {sheet: 3, row: 15, col: 4, json: {ta: 'center', data: ''}},
-            {sheet: 3, row: 16, col: 4, json: {ta: 'center', data: '15000'}},
-            {sheet: 3, row: 17, col: 4, json: {ta: 'center', data: '10000'}},
-            {sheet: 3, row: 18, col: 4, json: {ta: 'center', data: '10000'}},
-            {sheet: 3, row: 19, col: 4, json: {ta: 'center', data: '8000'}},
-            {sheet: 3, row: 20, col: 4, json: {ta: 'center', data: '5000'}},
-            {sheet: 3, row: 21, col: 4, json: {ta: 'center', data: '5000'}},
-            {sheet: 3, row: 22, col: 4, json: {ta: 'center', data: '3000'}},
-            {sheet: 3, row: 23, col: 4, json: {ta: 'center', data: '2500'}},
-            {sheet: 3, row: 24, col: 4, json: {ta: 'center', data: '2000'}},
-            {sheet: 3, row: 25, col: 4, json: {ta: 'center', data: '1500'}},
-            {sheet: 3, row: 26, col: 4, json: {ta: 'center', data: ''}},
-            {sheet: 3, row: 27, col: 4, json: {ta: 'center', data: '3500'}},
-            {sheet: 3, row: 28, col: 4, json: {ta: 'center', data: '1500'}},
-            {sheet: 3, row: 29, col: 4, json: {ta: 'center', data: '1000'}},
-            {sheet: 3, row: 30, col: 4, json: {ta: 'center', data: '2500'}},
-            {sheet: 3, row: 31, col: 4, json: {ta: 'center', data: '1000'}},
+//            {sheet: 3, row: 1, col: 4, json: {ta: 'center', data: 'MOQ'}},
+//            {sheet: 3, row: 2, col: 4, json: {ta: 'center', data: ''}},
+//            {sheet: 3, row: 3, col: 4, json: {ta: 'center', data: '2000'}},
+//            {sheet: 3, row: 4, col: 4, json: {ta: 'center', data: '2000'}},
+//            {sheet: 3, row: 5, col: 4, json: {ta: 'center', data: '2000'}},
+//            {sheet: 3, row: 6, col: 4, json: {ta: 'center', data: '1500'}},
+//            {sheet: 3, row: 7, col: 4, json: {ta: 'center', data: '1200'}},
+//            {sheet: 3, row: 8, col: 4, json: {ta: 'center', data: '1200'}},
+//            {sheet: 3, row: 9, col: 4, json: {ta: 'center', data: '1000'}},
+//            {sheet: 3, row: 10, col: 4, json: {ta: 'center', data: '800'}},
+//            {sheet: 3, row: 11, col: 4, json: {ta: 'center', data: '600'}},
+//            {sheet: 3, row: 12, col: 4, json: {ta: 'center', data: '600'}},
+//            {sheet: 3, row: 13, col: 4, json: {ta: 'center', data: '500'}},
+//            {sheet: 3, row: 14, col: 4, json: {ta: 'center', data: '500'}},
+//            {sheet: 3, row: 15, col: 4, json: {ta: 'center', data: ''}},
+//            {sheet: 3, row: 16, col: 4, json: {ta: 'center', data: '15000'}},
+//            {sheet: 3, row: 17, col: 4, json: {ta: 'center', data: '10000'}},
+//            {sheet: 3, row: 18, col: 4, json: {ta: 'center', data: '10000'}},
+//            {sheet: 3, row: 19, col: 4, json: {ta: 'center', data: '8000'}},
+//            {sheet: 3, row: 20, col: 4, json: {ta: 'center', data: '5000'}},
+//            {sheet: 3, row: 21, col: 4, json: {ta: 'center', data: '5000'}},
+//            {sheet: 3, row: 22, col: 4, json: {ta: 'center', data: '3000'}},
+//            {sheet: 3, row: 23, col: 4, json: {ta: 'center', data: '2500'}},
+//            {sheet: 3, row: 24, col: 4, json: {ta: 'center', data: '2000'}},
+//            {sheet: 3, row: 25, col: 4, json: {ta: 'center', data: '1500'}},
+//            {sheet: 3, row: 26, col: 4, json: {ta: 'center', data: ''}},
+//            {sheet: 3, row: 27, col: 4, json: {ta: 'center', data: '3500'}},
+//            {sheet: 3, row: 28, col: 4, json: {ta: 'center', data: '1500'}},
+//            {sheet: 3, row: 29, col: 4, json: {ta: 'center', data: '1000'}},
+//            {sheet: 3, row: 30, col: 4, json: {ta: 'center', data: '2500'}},
+//            {sheet: 3, row: 31, col: 4, json: {ta: 'center', data: '1000'}},
             // [[A0603]]  MOQ --- end
-            
-            
-            
-            
+
+
+
+
             {sheet: 5, row: 0, col: 0, json: {dsd: "", height: 20, va: "middle"}},
             {sheet: 5, row: 0, col: 1, json: {ta: "center", data: "A", width: 200}},
             {sheet: 5, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
@@ -1576,7 +1648,7 @@ Ext.onReady(function () {
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(2));
     console.log("PATCH#2 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(2));---遮蔽,印刷,镭雕");
 
-  
+
     SHEET_API.insertRow(SHEET_API_HD, 1, 22, 1);
     SHEET_API.updateCells(SHEET_API_HD, getPatchCellA001(3));
     console.log("PATCH#3 after SHEET_API.updateCells(SHEET_API_HD,  getPatchCellA001(3));---专用测试设备费用");
@@ -1615,15 +1687,18 @@ Ext.onReady(function () {
 
     console.log("PATCH A0602");
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0602(1));
-    
+
     //[[A0603]]
     console.log("PATCH A0603");
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(1));
+
+    //WARNING NOT WORKING 查表取2,3 ok, 4不行!!!???
+    //
     //[[A0603]] ROW14, MOQ, LOOKUP
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(2));
-    
-    
-    
+
+
+
     //
     //
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);

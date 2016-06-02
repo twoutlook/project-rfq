@@ -30,12 +30,12 @@ function getPatchA0603(k) {
     function get2() {
         var cells = [];
         cells.push(
-                {sheet: 1, row: 14, col: 3, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(C41,LOOKUP2!$A$1:$C$100,4,0)'}},
-                {sheet: 1, row: 14, col: 4, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(D41,LOOKUP2!$A$1:$C$100,4,0)'}},
-                {sheet: 1, row: 14, col: 5, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(E41,LOOKUP2!$A$1:$C$100,4,0)'}},
-                {sheet: 1, row: 14, col: 6, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(F41,LOOKUP2!$A$1:$C$100,4,0)'}},
-                {sheet: 1, row: 14, col: 7, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(G41,LOOKUP2!$A$1:$C$100,4,0)'}},
-                {sheet: 1, row: 14, col: 8, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(H41,LOOKUP2!$A$1:$C$100,4,0)'}},
+                {sheet: 1, row: 14, col: 3, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(C41,MOQ!$A$1:$C$100,1,0)'}},
+                {sheet: 1, row: 14, col: 4, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(D41,MOQ!$A$1:$C$100,1,0)'}},
+                {sheet: 1, row: 14, col: 5, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(E41,MOQ!$A$1:$C$100,1,0)'}},
+                {sheet: 1, row: 14, col: 6, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(F41,MOQ!$A$1:$C$100,1,0)'}},
+                {sheet: 1, row: 14, col: 7, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(G41,MOQ!$A$1:$C$100,1,0)'}},
+                {sheet: 1, row: 14, col: 8, json: { dsd: 'ed', cal: true, data: '=VLOOKUP(H41,MOQ!$A$1:$C$100,1,0)'}},
         // LAST ONE ============================================================================================
                 {sheet: 1, row: 1, col: 1, json: {data: ""}}
         );
