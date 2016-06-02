@@ -45,7 +45,7 @@ function getPatchA0603(k) {
     if (k === 1) {
         return get1();
     }
-    if (k === 1) {
+    if (k === 2) {
         return get2();
     }
 
