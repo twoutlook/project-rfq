@@ -524,7 +524,7 @@ Ext.onReady(function () {
             {sheet: 2, row: 20, col: 3, json: {dsd: "ed", data: "14.09"}},
             {sheet: 1, row: 0, col: 0, json: {fz: 10, ww: 'break-word', ws: 'normal', dsd: "", height: 20, va: "middle"}},
             {sheet: 1, row: 0, col: 1, json: {ta: "center", dsd: "", data: "A", width: 60}},
-            {sheet: 1, row: 0, col: 2, json: {ta: "center", data: "B", width: 160}},
+            {sheet: 1, row: 0, col: 2, json: {ta: "center", data: "B", width: 320}},
             {sheet: 1, row: 0, col: 3, json: {dsd: "", width: 120}},
             {sheet: 1, row: 0, col: 4, json: {dsd: "", width: 120}},
             {sheet: 1, row: 0, col: 5, json: {dsd: "", width: 120}},
