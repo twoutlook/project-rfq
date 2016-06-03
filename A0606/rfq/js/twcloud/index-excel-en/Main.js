@@ -77,13 +77,13 @@ Ext.onReady(function () {
 
     var ddlSurface = {bgc: colorDdl, ta: "center", data: "≡Surface finishing≡|≡表面要求≡", drop: Ext.encode({data: ddlSurface_data + A0602_ddlSurface_data})};
 
-    var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡适用机型≡", drop: Ext.encode({data: "一。铝合金压铸合模费：,铝-125T,鋁-150T/160T/200T,鋁-250T/280T,鋁-350T/340T/400T,鋁-550T/530T/500T,鋁-630T/650T,鋁-800T/900T,鋁-1250T,鋁-1600T,鋁-2000T,鋁-2500T,鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
+    var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡Machine size≡|≡适用机型≡", drop: Ext.encode({data: "一。铝合金压铸合模费：,铝-125T,鋁-150T/160T/200T,鋁-250T/280T,鋁-350T/340T/400T,鋁-550T/530T/500T,鋁-630T/650T,鋁-800T/900T,鋁-1250T,鋁-1600T,鋁-2000T,鋁-2500T,鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
-    var ddlSand = {bgc: colorDdl, ta: "center", data: "≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
-    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
-    var ddlStep9 = {bgc: colorDdl, ta: "center", data: "≡皮膜处理≡", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
-    var ddlMaching = {bgc: colorDdl, ta: "center", data: "≡机加工≡", drop: Ext.encode({data: "CNC机加工,传统机加工"})};
-    var ddl079 = {bgc: colorDdl, ta: "center", data: "≡皮膜处理≡", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜"})};
+    var ddlSand = {bgc: colorDdl, ta: "center", data: "≡shot blasting,vibration≡|≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
+    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
+    var ddlStep9 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
+    var ddlMaching = {bgc: colorDdl, ta: "center", data: "≡CNC≡|≡机加工≡", drop: Ext.encode({data: "CNC机加工,传统机加工"})};
+    var ddl079 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜"})};
 
     //[[A0602]]
 //    var ddl086Data = "粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
