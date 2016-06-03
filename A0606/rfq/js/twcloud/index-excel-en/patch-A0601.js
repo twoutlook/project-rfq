@@ -45,7 +45,7 @@ function getPatchCellsA0601_1() {
 //            {sheet: 1, row: 113, col: 6, json: styleSubTotal({data: '=F111*1.17'})},
 //            {sheet: 1, row: 113, col: 7, json: styleSubTotal({data: '=G111*1.17'})},
 //            {sheet: 1, row: 113, col: 8, json: styleSubTotal({data: '=H111*1.17'})},
-            {sheet: 1, row: 114, col: 2, json: {data: '運費：'}},
+            {sheet: 1, row: 114, col: 2, json: {data: 'Freight|運費：'}},
     // LAST ONE ============================================================================================
             {sheet: 1, row: 1, col: 1, json: {data: ""}}
     );
