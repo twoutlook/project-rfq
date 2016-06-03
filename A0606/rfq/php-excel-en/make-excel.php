@@ -252,7 +252,11 @@ $objPHPExcel->getProperties()->setCreator("in-house WebApp RFQ")
 
 // NOTE BY MARK, TO HAVE FIXED COLUMN WIDTH
 $objPHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(8);
-$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(32);
+
+//[[A0606]]
+//$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(32);
+$objPHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(40);
+
 $objPHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth($data_width);
 $objPHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth($data_width);
 $objPHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth($data_width);
