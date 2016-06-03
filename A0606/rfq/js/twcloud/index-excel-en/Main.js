@@ -69,7 +69,7 @@ Ext.onReady(function () {
 //滚镀化学镍，挂镀锌，滚镀锌
 //    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
 
-    var ddlSurface_data = "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
+    var ddlSurface_data = "cleaning&amp;xxx|单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸";
 
 
 
@@ -893,10 +893,10 @@ Ext.onReady(function () {
             {sheet: 1, row: 105, col: 3, json: {bgc: colorSect, fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=C38+C48+C52+C59+C64+C69+C73+C77+C83+C91+C95+C99+C104"}},
             //{fm: "number", dfm: "0%",
             {sheet: 1, row: 106, col: 1, json: {data: "* "}},
-            {sheet: 1, row: 106, col: 2, json: {data: "Overhead Cost and Margin Profit % |管销加利润%"}},
+            {sheet: 1, row: 106, col: 2, json: {data: "Overhead Cost &amp; Margin Profit % |管销加利润%"}},
             {sheet: 1, row: 106, col: 3, json: {fm: "number", dfm: "0%", data: "20"}},
             {sheet: 1, row: 107, col: 1, json: {data: "* "}},
-            {sheet: 1, row: 107, col: 2, json: {data: "Overhead  Cost and Profit |管销加利润"}},
+            {sheet: 1, row: 107, col: 2, json: {data: "Overhead  Cost &amp; Profit |管销加利润"}},
             {sheet: 1, row: 107, col: 3, json: styleSubTotal({data: "=C105*C106/100"})},
             {sheet: 1, row: 108, col: 1, json: {data: "* "}},
             {sheet: 1, row: 108, col: 2, json: {data: "Hardware or Components Cost (if any): |其他五金配件： "}},
