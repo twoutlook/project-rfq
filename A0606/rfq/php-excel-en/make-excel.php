@@ -61,7 +61,9 @@ function getDesiredData($obj) {
     $temp2 = str_replace('¥', '', $temp1);
     $temp3 = str_replace(',', '', $temp2);
 
-    //}
+    // &
+    $temp3 = str_replace('&amp;', '&', $temp3);
+
 
 
     $temp4 = str_replace('<span style="padding-left:20px;font-size:0px;">&nbsp;</span>', '', $temp3);
@@ -105,6 +107,12 @@ function getDesiredData($obj) {
         $result = "$tempArrEn\n$tempArrZh"; //雙引號是關鍵，根據實驗 \n 就可以達到效果
 //        $result="\"$result\"";
     }
+    
+    
+    
+    
+    
+    
 
 //    $result = str_replace('|', '\n', $temp6);
 //    $WHY="XXXXHel\nlo\nWor\nld";
