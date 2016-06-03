@@ -58,7 +58,7 @@ Ext.onReady(function () {
     //
     //
 //        var ddlMaterial = {data: "xxx", drop: Ext.encode({data: "xxx,yyy,zzz"})};
-    var ddlMaterial = {bgc: colorDdl, ta: "center", data: "===材质规格===", drop: Ext.encode({data: "一。铝合金,AlSi10Mg,AlSi9Cu3,ADC12,A380,A413,A360,A356,二。锌合金 ,ZINC-2,ZINC-3,ZINC-5,ZINC-7,ZAMAK-8,三。镁合金 ,AZ91D,AM60,THX-AZ91D,THX-AM60"})};
+    var ddlMaterial = {bgc: colorDdl, ta: "center", data: "≡Material spec≡|≡材质规格≡", drop: Ext.encode({data: "(1)Aluminum alloy| 一。铝合金,AlSi10Mg,AlSi9Cu3,ADC12,A380,A413,A360,A356,(2)Zinic alloy 二。锌合金 ,ZINC-2,ZINC-3,ZINC-5,ZINC-7,ZAMAK-8,(3)Magnesium alloy 三。镁合金 ,AZ91D,AM60,THX-AZ91D,THX-AM60"})};
 
 
     //挂镀铬，挂镀镍，挂镀沙丁镍，挂镀沙丁铬，
@@ -75,7 +75,7 @@ Ext.onReady(function () {
 
     var A0602_ddlSurface_data = ",挂镀铬,挂镀镍,挂镀沙丁镍,挂镀沙丁铬,拉丝镀铬,拉丝镀镍,挂镀黑铬,挂镀化学镍,挂镀枪黑,镀PVD,滚镀镍,滚镀化学镍,挂镀锌,滚镀锌";
 
-    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: ddlSurface_data + A0602_ddlSurface_data})};
+    var ddlSurface = {bgc: colorDdl, ta: "center", data: "≡Surface finishing≡|≡表面要求≡", drop: Ext.encode({data: ddlSurface_data + A0602_ddlSurface_data})};
 
     var ddlMachine = {bgc: colorDdl, ta: "center", data: "===适用机型===", drop: Ext.encode({data: "一。铝合金压铸合模费：,铝-125T,鋁-150T/160T/200T,鋁-250T/280T,鋁-350T/340T/400T,鋁-550T/530T/500T,鋁-630T/650T,鋁-800T/900T,鋁-1250T,鋁-1600T,鋁-2000T,鋁-2500T,鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
@@ -525,12 +525,12 @@ Ext.onReady(function () {
             {sheet: 1, row: 0, col: 0, json: {fz: 10, ww: 'break-word', ws: 'normal', dsd: "", height: 20, va: "middle"}},
             {sheet: 1, row: 0, col: 1, json: {ta: "center", dsd: "", data: "A", width: 60}},
             {sheet: 1, row: 0, col: 2, json: {ta: "center", data: "B", width: 320}},
-            {sheet: 1, row: 0, col: 3, json: {dsd: "", width: 120}},
-            {sheet: 1, row: 0, col: 4, json: {dsd: "", width: 120}},
-            {sheet: 1, row: 0, col: 5, json: {dsd: "", width: 120}},
-            {sheet: 1, row: 0, col: 6, json: {dsd: "", width: 120}},
-            {sheet: 1, row: 0, col: 7, json: {dsd: "", width: 120}},
-            {sheet: 1, row: 0, col: 8, json: {dsd: "", width: 120}},
+            {sheet: 1, row: 0, col: 3, json: {dsd: "", width: 180}},
+            {sheet: 1, row: 0, col: 4, json: {dsd: "", width: 180}},
+            {sheet: 1, row: 0, col: 5, json: {dsd: "", width: 180}},
+            {sheet: 1, row: 0, col: 6, json: {dsd: "", width: 180}},
+            {sheet: 1, row: 0, col: 7, json: {dsd: "", width: 180}},
+            {sheet: 1, row: 0, col: 8, json: {dsd: "", width: 180}},
             {sheet: 1, row: 1, col: 0, json: {hidden: true}},
             {sheet: 1, row: 2, col: 0, json: {hidden: true}},
 //            {sheet: 1, row: 1, col: 1, json: {data: ""}},

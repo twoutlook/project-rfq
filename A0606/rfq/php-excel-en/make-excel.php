@@ -94,15 +94,15 @@ function getDesiredData($obj) {
     $findme = '|';
     $pos = strpos($mystring, $findme);
     if ($pos === false) {
-        //   echo "The string '$findme' was not found in the string '$mystring'";
+        //  保留這樣，思路比較清楚
     } else {
-//        echo "The string '$findme' was found in the string '$mystring'";
-//        echo " and exists at position $pos";
+        //        
+        //  在 PHPExcel 獲
+        //
         $tempArr = explode("|", $result);
         $tempArrEn = $tempArr[0];
         $tempArrZh = $tempArr[1];
-
-        $result = "$tempArrEn\n$tempArrZh";
+        $result = "$tempArrEn\n$tempArrZh"; //雙引號是關鍵，根據實驗 \n 就可以達到效果
 //        $result="\"$result\"";
     }
 
