@@ -338,7 +338,23 @@ $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 //
 // --- 以下檔案內容由 mark-tool.php 生成，現階段先以手工複制粘貼方式
 //
-include 'make-excel-genearted-statements.php';
+
+
+include 'make-excel-genearted-statements.php';//wrong spelling here
+
+//[[A0603]] 文清想去掉多的空行，目前的結構會破壞,沒找到隱
+// 不能設為0, 0.1 或 1 可行
+$objPHPExcel->getActiveSheet()->getRowDimension('5')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('26')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('27')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('59')->setRowHeight(1);
+
+$objPHPExcel->getActiveSheet()->getRowDimension('6')->setRowHeight(120);
+
+
+
+
+
 
 // 如果沒有項目料號，就不顯示。
 // 實際做法是把該Column內容清空，顏色為白。

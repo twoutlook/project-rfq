@@ -2425,3 +2425,11 @@ $objPHPExcel->getActiveSheet()->getStyle('H102')->getFont()->setItalic(true)->se
 $objPHPExcel->getActiveSheet()->getStyle('H102')->getFont()->setColor( new PHPExcel_Style_Color('0000A0'));
 $objPHPExcel->getActiveSheet()->getStyle('H106')->getFont()->setItalic(true)->setBold(true);
 $objPHPExcel->getActiveSheet()->getStyle('H106')->getFont()->setColor( new PHPExcel_Style_Color('0000A0'));
+
+
+$objPHPExcel->getActiveSheet()->getRowDimension('5')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('26')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('27')->setRowHeight(1);
+$objPHPExcel->getActiveSheet()->getRowDimension('59')->setRowHeight(1);
+
+$objPHPExcel->getActiveSheet()->getRowDimension('6')->setRowHeight(120);
