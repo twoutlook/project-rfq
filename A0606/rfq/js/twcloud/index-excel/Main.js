@@ -1700,7 +1700,8 @@ Ext.onReady(function () {
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0603(2));
 
 
-function getPatchA0606InMain() {
+
+    function getPatchA0606InMain() {
         var cells = [];
         cells.push(
                 {sheet: 1, row: 96, col: 3, json: ddlSpecial}, // 
@@ -1715,6 +1716,8 @@ function getPatchA0606InMain() {
     //[[A0606]]  吴文清 根据2016.5.30号讨论“其它特殊处理”一栏需细化，除了会议中提及的渗补、时效外，一时想不起来，还有哪些？
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0606InMain());
     //
+    //文清發現 #95 公式錯誤
+    SHEET_API.updateCells(SHEET_API_HD, getPatchA0606(1));
     //
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
 
