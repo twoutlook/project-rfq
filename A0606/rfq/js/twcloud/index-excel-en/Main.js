@@ -77,7 +77,7 @@ Ext.onReady(function () {
 
     var ddlSurface = {bgc: colorDdl, ta: "center", data: "≡Surface finishing≡|≡表面要求≡", drop: Ext.encode({data: ddlSurface_data + A0602_ddlSurface_data})};
 
-    var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡Machine size≡|≡适用机型≡", drop: Ext.encode({data: "一。铝合金压铸合模费：,铝-125T,鋁-150T/160T/200T,鋁-250T/280T,鋁-350T/340T/400T,鋁-550T/530T/500T,鋁-630T/650T,鋁-800T/900T,鋁-1250T,鋁-1600T,鋁-2000T,鋁-2500T,鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
+    var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡Machine size≡|≡适用机型≡", drop: Ext.encode({data: "一。铝合金压铸合模费：,AL-125T|铝-125T,AL-150T/160T/200T|鋁-150T/160T/200T,AL-250T/280T|鋁-250T/280T,AL-350T/340T/400T|鋁-350T/340T/400T,AL-550T/530T/500T|鋁-550T/530T/500T,AL-630T/650T|鋁-630T/650T,AL-800T/900T|鋁-800T/900T,AL-1250T|鋁-1250T,AL-1600T|鋁-1600T,AL-2000T|鋁-2000T,AL-2500T|鋁-2500T,AL-3000T|鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
     var ddlSand = {bgc: colorDdl, ta: "center", data: "≡shot blasting,vibration≡|≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
     var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
@@ -164,18 +164,18 @@ Ext.onReady(function () {
             {sheet: 13, row: 0, col: 2, json: {fm: "number", ta: "center", data: "B", width: 100}},
             {sheet: 13, row: 1, col: 1, json: {ta: 'center', data: '压铸合模费：'}},
             {sheet: 13, row: 2, col: 1, json: {ta: 'center', data: '一。铝合金压铸合模费：'}},
-            {sheet: 13, row: 3, col: 1, json: {ta: 'center', data: '铝-125T'}},
-            {sheet: 13, row: 4, col: 1, json: {ta: 'center', data: '鋁-150T/160T/200T'}},
-            {sheet: 13, row: 5, col: 1, json: {ta: 'center', data: '鋁-250T/280T'}},
-            {sheet: 13, row: 6, col: 1, json: {ta: 'center', data: '鋁-350T/340T/400T'}},
-            {sheet: 13, row: 7, col: 1, json: {ta: 'center', data: '鋁-550T/530T/500T'}},
-            {sheet: 13, row: 8, col: 1, json: {ta: 'center', data: '鋁-630T/650T'}},
-            {sheet: 13, row: 9, col: 1, json: {ta: 'center', data: '鋁-800T/900T'}},
-            {sheet: 13, row: 10, col: 1, json: {ta: 'center', data: '鋁-1250T'}},
-            {sheet: 13, row: 11, col: 1, json: {ta: 'center', data: '鋁-1600T'}},
-            {sheet: 13, row: 12, col: 1, json: {ta: 'center', data: '鋁-2000T'}},
-            {sheet: 13, row: 13, col: 1, json: {ta: 'center', data: '鋁-2500T'}},
-            {sheet: 13, row: 14, col: 1, json: {ta: 'center', data: '鋁-3000T'}},
+            {sheet: 13, row: 3, col: 1, json: {ta: 'center', data: 'AL-125T|铝-125T'}},
+            {sheet: 13, row: 4, col: 1, json: {ta: 'center', data: 'AL-150T/160T/200T|鋁-150T/160T/200T'}},
+            {sheet: 13, row: 5, col: 1, json: {ta: 'center', data: 'AL-250T/280T|鋁-250T/280T'}},
+            {sheet: 13, row: 6, col: 1, json: {ta: 'center', data: 'AL-350T/340T/400T|鋁-350T/340T/400T'}},
+            {sheet: 13, row: 7, col: 1, json: {ta: 'center', data: 'AL-550T/530T/500T|鋁-550T/530T/500T'}},
+            {sheet: 13, row: 8, col: 1, json: {ta: 'center', data: 'AL-630T/650T|鋁-630T/650T'}},
+            {sheet: 13, row: 9, col: 1, json: {ta: 'center', data: 'AL-800T/900T|鋁-800T/900T'}},
+            {sheet: 13, row: 10, col: 1, json: {ta: 'center', data: 'AL-1250T|鋁-1250T'}},
+            {sheet: 13, row: 11, col: 1, json: {ta: 'center', data: 'AL-1600T|鋁-1600T'}},
+            {sheet: 13, row: 12, col: 1, json: {ta: 'center', data: 'AL-2000T|鋁-2000T'}},
+            {sheet: 13, row: 13, col: 1, json: {ta: 'center', data: 'AL-2500T|鋁-2500T'}},
+            {sheet: 13, row: 14, col: 1, json: {ta: 'center', data: 'AL-3000T|鋁-3000T'}},
             {sheet: 13, row: 15, col: 1, json: {ta: 'center', data: '二。锌合金压铸合模费：'}},
             {sheet: 13, row: 16, col: 1, json: {ta: 'center', data: '鋅-快速机/4轴机'}},
             {sheet: 13, row: 17, col: 1, json: {ta: 'center', data: '鋅-10T/5T'}},
@@ -290,18 +290,37 @@ Ext.onReady(function () {
             //[[A0603]]
             {sheet: 3, row: 1, col: 1, json: {ta: 'center', data: '压铸合模费：'}},
             {sheet: 3, row: 2, col: 1, json: {ta: 'center', data: '一。铝合金压铸合模费：'}},
-            {sheet: 3, row: 3, col: 1, json: {ta: 'center', data: '铝-125T'}},
-            {sheet: 3, row: 4, col: 1, json: {ta: 'center', data: '鋁-150T/160T/200T'}},
-            {sheet: 3, row: 5, col: 1, json: {ta: 'center', data: '鋁-250T/280T'}},
-            {sheet: 3, row: 6, col: 1, json: {ta: 'center', data: '鋁-350T/340T/400T'}},
-            {sheet: 3, row: 7, col: 1, json: {ta: 'center', data: '鋁-550T/530T/500T'}},
-            {sheet: 3, row: 8, col: 1, json: {ta: 'center', data: '鋁-630T/650T'}},
-            {sheet: 3, row: 9, col: 1, json: {ta: 'center', data: '鋁-800T/900T'}},
-            {sheet: 3, row: 10, col: 1, json: {ta: 'center', data: '鋁-1250T'}},
-            {sheet: 3, row: 11, col: 1, json: {ta: 'center', data: '鋁-1600T'}},
-            {sheet: 3, row: 12, col: 1, json: {ta: 'center', data: '鋁-2000T'}},
-            {sheet: 3, row: 13, col: 1, json: {ta: 'center', data: '鋁-2500T'}},
-            {sheet: 3, row: 14, col: 1, json: {ta: 'center', data: '鋁-3000T'}},
+            //[[A0606]]
+//            {sheet: 3, row: 3, col: 1, json: {ta: 'center', data: '铝-125T'}},
+//            {sheet: 3, row: 4, col: 1, json: {ta: 'center', data: '鋁-150T/160T/200T'}},
+//            {sheet: 3, row: 5, col: 1, json: {ta: 'center', data: '鋁-250T/280T'}},
+//            {sheet: 3, row: 6, col: 1, json: {ta: 'center', data: '鋁-350T/340T/400T'}},
+//            {sheet: 3, row: 7, col: 1, json: {ta: 'center', data: '鋁-550T/530T/500T'}},
+//            {sheet: 3, row: 8, col: 1, json: {ta: 'center', data: '鋁-630T/650T'}},
+//            {sheet: 3, row: 9, col: 1, json: {ta: 'center', data: '鋁-800T/900T'}},
+//            {sheet: 3, row: 10, col: 1, json: {ta: 'center', data: '鋁-1250T'}},
+//            {sheet: 3, row: 11, col: 1, json: {ta: 'center', data: '鋁-1600T'}},
+//            {sheet: 3, row: 12, col: 1, json: {ta: 'center', data: '鋁-2000T'}},
+//            {sheet: 3, row: 13, col: 1, json: {ta: 'center', data: '鋁-2500T'}},
+//            {sheet: 3, row: 14, col: 1, json: {ta: 'center', data: '鋁-3000T'}},
+
+            //---
+            {sheet: 3, row: 3, col: 1, json: {ta: 'center', data: 'AL-125T|铝-125T'}},
+            {sheet: 3, row: 4, col: 1, json: {ta: 'center', data: 'AL-150T/160T/200T|鋁-150T/160T/200T'}},
+            {sheet: 3, row: 5, col: 1, json: {ta: 'center', data: 'AL-250T/280T|鋁-250T/280T'}},
+            {sheet: 3, row: 6, col: 1, json: {ta: 'center', data: 'AL-350T/340T/400T|鋁-350T/340T/400T'}},
+            {sheet: 3, row: 7, col: 1, json: {ta: 'center', data: 'AL-550T/530T/500T|鋁-550T/530T/500T'}},
+            {sheet: 3, row: 8, col: 1, json: {ta: 'center', data: 'AL-630T/650T|鋁-630T/650T'}},
+            {sheet: 3, row: 9, col: 1, json: {ta: 'center', data: 'AL-800T/900T|鋁-800T/900T'}},
+            {sheet: 3, row: 10, col: 1, json: {ta: 'center', data: 'AL-1250T|鋁-1250T'}},
+            {sheet: 3, row: 11, col: 1, json: {ta: 'center', data: 'AL-1600T|鋁-1600T'}},
+            {sheet: 3, row: 12, col: 1, json: {ta: 'center', data: 'AL-2000T|鋁-2000T'}},
+            {sheet: 3, row: 13, col: 1, json: {ta: 'center', data: 'AL-2500T|鋁-2500T'}},
+            {sheet: 3, row: 14, col: 1, json: {ta: 'center', data: 'AL-3000T|鋁-3000T'}},
+            //---
+
+
+
             {sheet: 3, row: 15, col: 1, json: {ta: 'center', data: '二。锌合金压铸合模费：'}},
             {sheet: 3, row: 16, col: 1, json: {ta: 'center', data: '鋅-快速机/4轴机'}},
             {sheet: 3, row: 17, col: 1, json: {ta: 'center', data: '鋅-10T/5T'}},
