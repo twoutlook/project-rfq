@@ -70,7 +70,7 @@ Ext.onReady(function () {
 //    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
 
 
-    var ddlSurface_data = "cleaning|单清洗,Chromating and cleaning before painting|烤漆前皮膜（含清洗）,normal Al alloy chromating|铝合金一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),Special Al alloy chromating|铝合金-特殊皮膜（   H）,Special chromating, Zinc alloy|锌合金-特殊皮膜（   H) ,Special conductive chromating|特殊导电皮膜(  欧姆) ,power coating-Lev.A+|粉體烤漆-A+級,power coating-Lev.A|粉體烤漆-A級 ,power coating-Lev.B|粉體烤漆-B級 ,wet paint-Lev.A+|液體烤漆-A+級 ,wet paint-Lev.A|液體烤漆-A級 ,wet paint-Lev.B|液體烤漆-B級 ,anodizing-Lev.A|阳极氧化-A级 , anodizing-Lev.B|阳极氧化-B级 ,electrophoresis,Lev.A|电泳-A级,electrophoresis,Lev.B|电泳-B级 ,rack plating-Lev.A|掛鍍-A級,rack plating-Lev.B|掛鍍-B 級,barrel plating-Lev.A|滾鍍-A級,barrel plating-Lev.B|滾鍍-B級 ,high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Chromating|清洗鉻酸";
+    var ddlSurface_data = "cleaning|单清洗,Chromating and cleaning before painting|烤漆前皮膜（含清洗）,normal Al alloy chromating|铝合金一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),Special Al alloy chromating|铝合金-特殊皮膜（   H）,Special chromating, Zinc alloy|锌合金-特殊皮膜（   H) ,Special conductive chromating|特殊导电皮膜(  欧姆) ,power coating-Lev.A+|粉體烤漆-A+級,power coating-Lev.A|粉體烤漆-A級 ,power coating-Lev.B|粉體烤漆-B級 ,wet paint-Lev.A+|液體烤漆-A+級 ,wet paint-Lev.A|液體烤漆-A級 ,wet paint-Lev.B|液體烤漆-B級 ,anodizing-Lev.A|阳极氧化-A级 , anodizing-Lev.B|阳极氧化-B级 ,electrophoresis-Lev.A|电泳-A级,electrophoresis-Lev.B|电泳-B级 ,rack plating-Lev.A|掛鍍-A級,rack plating-Lev.B|掛鍍-B 級,barrel plating-Lev.A|滾鍍-A級,barrel plating-Lev.B|滾鍍-B級 ,high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Chromating|清洗鉻酸";
 
 
 
@@ -80,7 +80,7 @@ Ext.onReady(function () {
 
     var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡Machine size≡|≡适用机型≡", drop: Ext.encode({data: "(1)Aluminum Melting and Die Casting cost|一。铝合金压铸合模费：,AL-125T|铝-125T,AL-150T/160T/200T|鋁-150T/160T/200T,AL-250T/280T|鋁-250T/280T,AL-350T/340T/400T|鋁-350T/340T/400T,AL-550T/530T/500T|鋁-550T/530T/500T,AL-630T/650T|鋁-630T/650T,AL-800T/900T|鋁-800T/900T,AL-1250T|鋁-1250T,AL-1600T|鋁-1600T,AL-2000T|鋁-2000T,AL-2500T|鋁-2500T,AL-3000T|鋁-3000T,(2)Zinc Melting and Die Casting cost|二。锌合金压铸合模费：,ZN-快速机/4轴机|鋅-快速机/4轴机,ZN-10T/5T|鋅-10T/5T,ZN-15T/20T|鋅-15T/20T,ZN-25T/30T/40T|鋅-25T/30T/40T,ZN-50T/60T|鋅-50T/60T,ZN-80T/100T/125|鋅-80T/100T/125,ZN-150T|鋅-150T,ZN-185/200T|鋅-185/200T,ZN-250T|鋅-250T,ZN-300T|鋅-300T,(3)Magnesium Melting and Die Casting cost|三。镁合金压铸合模费：,MG-150T|鎂-150T,MG-340T/400T|鎂-340T/400T,MG-530T/660T|鎂-530T/660T,THX-MG280T|THX-鎂280T,THX-MG650T|THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
-    var ddlSand = {bgc: colorDdl, ta: "center", data: "≡shot blasting,vibration≡|≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
+    var ddlSand = {bgc: colorDdl, ta: "center", data: "≡shot blasting,vibration≡|≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "sand blast|喷砂,ball blast|抛丸,vibration grinding|震动研磨"})};
 
     //[[A0606]] EN Frozen De-burning/Thermal De-burring
 //    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
@@ -455,9 +455,9 @@ Ext.onReady(function () {
             {sheet: 5, row: 7, col: 1, json: {data: ' 整形'}},
             {sheet: 5, row: 8, col: 1, json: {data: '毛刺處理'}},
             {sheet: 5, row: 9, col: 1, json: {data: '镜面抛光'}},
-            {sheet: 5, row: 10, col: 1, json: {data: '震动研磨'}},
-            {sheet: 5, row: 11, col: 1, json: {data: '抛丸'}},
-            {sheet: 5, row: 12, col: 1, json: {data: '喷砂'}},
+            {sheet: 5, row: 10, col: 1, json: {data: 'vibration grinding|震动研磨'}},
+            {sheet: 5, row: 11, col: 1, json: {data: 'ball blast|抛丸'}},
+            {sheet: 5, row: 12, col: 1, json: {data: 'sand blast|喷砂'}},
             //Frozen De-burning/Thermal De-burring
 //            {sheet: 5, row: 13, col: 1, json: {data: '热能去除毛刺'}},
 //            {sheet: 5, row: 14, col: 1, json: {data: '冷冻去除毛刺'}},
