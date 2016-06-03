@@ -4,7 +4,7 @@ function getPatchA0602(k) {
     function get1() {
         var cells = [];
         cells.push(
-                {sheet: 1, row: 106, col: 2, json: {data: "人工费/只 "}}, // 
+                {sheet: 1, row: 106, col: 2, json: {data: "Labor cost/pc|人工费/只 "}}, // 
                 {sheet: 1, row: 106, col: 3, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=C105*35/3600"}}, // 
                 {sheet: 1, row: 106, col: 4, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=D105*35/3600"}}, // 
                 {sheet: 1, row: 106, col: 5, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=E105*35/3600"}}, // 
