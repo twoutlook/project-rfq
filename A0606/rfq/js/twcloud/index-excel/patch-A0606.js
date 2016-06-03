@@ -4,13 +4,12 @@ function getPatchA0606(k) {
     function get1() {
         var cells = [];
         cells.push(
-                {sheet: 1, row: 94, col: 3, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-                {sheet: 1, row: 94, col: 4, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-                {sheet: 1, row: 94, col: 5, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-                {sheet: 1, row: 94, col: 6, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-                {sheet: 1, row: 94, col: 7, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-                {sheet: 1, row: 94, col: 8, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
-        //
+                {sheet: 1, row: 95, col: 3, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
+                {sheet: 1, row: 95, col: 4, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
+                {sheet: 1, row: 95, col: 5, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
+                {sheet: 1, row: 95, col: 6, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
+                {sheet: 1, row: 95, col: 7, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})},
+                {sheet: 1, row: 95, col: 8, json: styleSubTotal({data: '=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)'})}, //
         //
         //
         // LAST ONE ============================================================================================

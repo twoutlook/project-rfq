@@ -12,7 +12,7 @@ echo "<br> // [[A0606]] ";
 // {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
 $tool->getPatchCellsTo6Col(95, "=(C87*(SUM(C88:C89))+(SUM(C90:C92)))*(1+(1-C93/100))*C94)");
 
-//$tool->extendColToCDEFGH(95,"{sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},");
+$tool->extendColToCDEFGH(95,"=(C86*(SUM(C87:C88))+SUM(C89:C91))*(1+(1-C92/100))*C93");
 
 class MarkTool {
     /*
@@ -74,7 +74,7 @@ class MarkTool {
                 $newStr = $colName . $item;
                 $data = str_replace($oldStr, $newStr, $newCellformula);
             }
-            $cells = "{sheet: 1, row: 94, col: $k, json: styleSubTotal({data: '$data'})},";
+            $cells = "{sheet: 1, row: $rowNum, col: $k, json: styleSubTotal({data: '$data'})},";
             echo "$cells<br>";
         }
         echo ";<br>";

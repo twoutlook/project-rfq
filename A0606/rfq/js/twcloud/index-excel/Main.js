@@ -1717,8 +1717,14 @@ Ext.onReady(function () {
     SHEET_API.updateCells(SHEET_API_HD, getPatchA0606InMain());
     //
     //文清發現 #95 公式錯誤
-    SHEET_API.updateCells(SHEET_API_HD, getPatchA0606(1));
+    //SHEET_API.updateCells(SHEET_API_HD, getPatchA0606(1));
     //
+
+//    SHEET_API.loadData(SHEET_API_HD, json, function () {
+//        SHEET_API.deleteRow(SHEET_API_HD, 1, 5,0); //[[A0606]] CLEAN UP UNUSED ROW, BY 文清
+//    }, this);
+
+
     SHEET_API.setFocus(SHEET_API_HD, 3, 1);
 
 
