@@ -80,7 +80,12 @@ Ext.onReady(function () {
     var ddlMachine = {bgc: colorDdl, ta: "center", data: "≡Machine size≡|≡适用机型≡", drop: Ext.encode({data: "一。铝合金压铸合模费：,AL-125T|铝-125T,AL-150T/160T/200T|鋁-150T/160T/200T,AL-250T/280T|鋁-250T/280T,AL-350T/340T/400T|鋁-350T/340T/400T,AL-550T/530T/500T|鋁-550T/530T/500T,AL-630T/650T|鋁-630T/650T,AL-800T/900T|鋁-800T/900T,AL-1250T|鋁-1250T,AL-1600T|鋁-1600T,AL-2000T|鋁-2000T,AL-2500T|鋁-2500T,AL-3000T|鋁-3000T,二。锌合金压铸合模费：,鋅-快速机/4轴机,鋅-10T/5T,鋅-15T/20T,鋅-25T/30T/40T,鋅-50T/60T,鋅-80T/100T/125,鋅-150T,鋅-185/200T,鋅-250T,鋅-300T,三。镁合金压铸合模费：,鎂-150T,鎂-340T/400T,鎂-530T/660T,THX-鎂280T,THX-鎂650T"})};
 //DOING...喷沙sand blasting 抛丸.震动研磨
     var ddlSand = {bgc: colorDdl, ta: "center", data: "≡shot blasting,vibration≡|≡喷砂,抛丸,震动研磨≡", drop: Ext.encode({data: "喷砂,抛丸,震动研磨"})};
-    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
+   
+    //[[A0606]] EN Frozen De-burning/Thermal De-burring
+//    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
+    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "Frozen De-burning|冷冻去除毛刺,Thermal De-burring|热能去除毛刺"})};
+    
+    
     var ddlStep9 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
     var ddlMaching = {bgc: colorDdl, ta: "center", data: "≡CNC≡|≡机加工≡", drop: Ext.encode({data: "CNC机加工,传统机加工"})};
     var ddl079 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜"})};
@@ -452,8 +457,15 @@ Ext.onReady(function () {
             {sheet: 5, row: 10, col: 1, json: {data: '震动研磨'}},
             {sheet: 5, row: 11, col: 1, json: {data: '抛丸'}},
             {sheet: 5, row: 12, col: 1, json: {data: '喷砂'}},
-            {sheet: 5, row: 13, col: 1, json: {data: '热能去除毛刺'}},
-            {sheet: 5, row: 14, col: 1, json: {data: '冷冻去除毛刺'}},
+            
+            //Frozen De-burning/Thermal De-burring
+//            {sheet: 5, row: 13, col: 1, json: {data: '热能去除毛刺'}},
+//            {sheet: 5, row: 14, col: 1, json: {data: '冷冻去除毛刺'}},
+            {sheet: 5, row: 13, col: 1, json: {data: 'Thermal De-burring|热能去除毛刺'}},
+            {sheet: 5, row: 14, col: 1, json: {data: 'Frozen De-burning|冷冻去除毛刺'}},
+            
+            
+            
             {sheet: 5, row: 15, col: 1, json: {data: '气密性测试'}},
             {sheet: 5, row: 16, col: 1, json: {data: '丝印/网印'}},
             {sheet: 5, row: 17, col: 1, json: {data: '筛选和包装'}},
