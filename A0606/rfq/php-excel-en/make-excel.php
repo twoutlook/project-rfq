@@ -36,20 +36,20 @@ $json_array = json_decode($data, true); // json_decode and json_encode not 100% 
 //}
 
 function getDesiredData($obj) {
-    $colName =  substr($obj["pos"],0, 1);
+    $colName = substr($obj["pos"], 0, 1);
     $rowNum = (int) substr($obj["pos"], 1);
-    
- //    {"pos":"C34","data":"4%"}
- //  {"pos":"C47","data":"91%"}
+
+    //    {"pos":"C34","data":"4%"}
+    //  {"pos":"C47","data":"91%"}
     //
     // NOTE: 
     // [[A0601]] 位移重新定位百分比欄位 
     //if (in_array($rowNum, array(47,57,68,89,106))){
-    if (in_array($rowNum, array(48,58,69,93,110))){
-        if ($colName>="C" && $colName<="H" ){
-            $p1=str_replace("%","",$obj["data"]);
-            $p2=  doubleval(str_replace(",","",$p1));
-            $p3=$p2/100;
+    if (in_array($rowNum, array(48, 58, 69, 93, 110))) {
+        if ($colName >= "C" && $colName <= "H") {
+            $p1 = str_replace("%", "", $obj["data"]);
+            $p2 = doubleval(str_replace(",", "", $p1));
+            $p3 = $p2 / 100;
             return $p3;
         }
     }
@@ -68,8 +68,48 @@ function getDesiredData($obj) {
     $temp5 = str_replace('===', '≡≡≡', $temp4);
     $temp6 = str_replace('#N/A', '', $temp5);
 
+    /*
+      http://php.net/manual/en/function.strpos.php
+      //$mystring = 'abc';
+      $findme   = 'a';
+      $pos = strpos($mystring, $findme);
 
-    return $temp6;
+      // Note our use of ===.  Simply == would not work as expected
+      // because the position of 'a' was the 0th (first) character.
+      if ($pos === false) {
+      echo "The string '$findme' was not found in the string '$mystring'";
+      } else {
+      echo "The string '$findme' was found in the string '$mystring'";
+      echo " and exists at position $pos";
+      }
+     */
+    //
+    //
+    //[[A0606]]
+    // | to be \n in PHPExcel
+    //http://www.cnblogs.com/shanmao/archive/2013/08/23/phpexcel.html
+
+    $result = $temp6;
+    $mystring = $temp6;
+    $findme = '|';
+    $pos = strpos($mystring, $findme);
+    if ($pos === false) {
+        //   echo "The string '$findme' was not found in the string '$mystring'";
+    } else {
+//        echo "The string '$findme' was found in the string '$mystring'";
+//        echo " and exists at position $pos";
+        $tempArr = explode("|", $result);
+        $tempArrEn = $tempArr[0];
+        $tempArrZh = $tempArr[1];
+
+        $result = "$tempArrEn\n$tempArrZh";
+//        $result="\"$result\"";
+    }
+
+//    $result = str_replace('|', '\n', $temp6);
+//    $WHY="XXXXHel\nlo\nWor\nld";
+//    $result=$WHY;
+    return $result;
 }
 
 function fix01($row, $str) {
@@ -331,8 +371,16 @@ if (substr($isDataInCol, 7, 1) == '.') {
     }
 }
 
+/*
+  http://blog.sina.com.cn/s/blog_61e65d1701017qto.html
+  $WHY="XXXXHel\nlo\nWor\nld";
+  $WHY_NOT='XXXXHel\nlo\nWor\nld';
 
-
+  $objPHPExcel->getActiveSheet()
+  ->setCellValue('A4',$WHY );
+  $objPHPExcel->getActiveSheet()
+  ->setCellValue('A5',$WHY_NOT );
+ */
 
 $objWriter->save($defaultOutputFile);
 //$objWriter->save(str_replace('.php', '.xlsx', __FILE__));
