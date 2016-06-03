@@ -799,7 +799,7 @@ Ext.onReady(function () {
             {sheet: 1, row: 83, col: 2, json: {bgc: colorStepEnd, data: "sub-toal cost: |皮膜处理　小计： "}},
             {sheet: 1, row: 83, col: 3, json: styleSubTotal({data: "=C80*C81*C82"})},
             {sheet: 1, row: 84, col: 1, json: {data: "* "}},
-            {sheet: 1, row: 84, col: 2, json: {bgc: colorStep, data: "10)Surfach finishing Cost : power coating, wet paint ,…etc. 10)粉体烤漆.液体烤漆： "}},
+            {sheet: 1, row: 84, col: 2, json: {bgc: colorStep, data: "10)Surfach finishing Cost : power coating, wet paint ,…etc. |10)粉体烤漆.液体烤漆： "}},
             {sheet: 1, row: 84, col: 3, json: {data: ""}},
             {sheet: 1, row: 85, col: 1, json: {data: "10-1）"}},
             {sheet: 1, row: 85, col: 2, json: {data: "Surface finishing requirement: |表面要求"}},

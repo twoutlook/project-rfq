@@ -23,7 +23,7 @@ function getPatchCellsA0601_1() {
 //    }
     var cells = [];
     cells.push(
-            {sheet: 1, row: 113, col: 2, json: {data: '合計（含稅）：'}},
+            {sheet: 1, row: 113, col: 2, json: {data: 'Total Cost per part (RMB with VAT) :|合計（含稅）：'}},
             {sheet: 1, row: 113, col: 3, json: styleSubTotal({data: '=C111*1.17'})},
             {sheet: 1, row: 113, col: 4, json: styleSubTotal({data: '=D111*1.17'})},
             {sheet: 1, row: 113, col: 5, json: styleSubTotal({data: '=E111*1.17'})},
