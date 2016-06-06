@@ -464,15 +464,15 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendColToCDEFGH(95,=(C87*(SUM(C88:C89)+(SUM(C90:C92))*(1+(1-C93))*C94) ---
+// --- extendColToCDEFGH(95,=(C87*(SUM(C88:C89))+SUM(C90:C92))*(1+(1-C93))*C94) ---
 
 $objPHPExcel->getActiveSheet()
-->setCellValue('C95', '=(C87*(SUM(C88:C89)+(SUM(C90:C92))*(1+(1-C93))*C94')
-->setCellValue('D95', '=(D87*(SUM(D88:D89)+(SUM(D90:D92))*(1+(1-D93))*D94')
-->setCellValue('E95', '=(E87*(SUM(E88:E89)+(SUM(E90:E92))*(1+(1-E93))*E94')
-->setCellValue('F95', '=(F87*(SUM(F88:F89)+(SUM(F90:F92))*(1+(1-F93))*F94')
-->setCellValue('G95', '=(G87*(SUM(G88:G89)+(SUM(G90:G92))*(1+(1-G93))*G94')
-->setCellValue('H95', '=(H87*(SUM(H88:H89)+(SUM(H90:H92))*(1+(1-H93))*H94')
+->setCellValue('C95', '=(C87*(SUM(C88:C89))+SUM(C90:C92))*(1+(1-C93))*C94')
+->setCellValue('D95', '=(D87*(SUM(D88:D89))+SUM(D90:D92))*(1+(1-D93))*D94')
+->setCellValue('E95', '=(E87*(SUM(E88:E89))+SUM(E90:E92))*(1+(1-E93))*E94')
+->setCellValue('F95', '=(F87*(SUM(F88:F89))+SUM(F90:F92))*(1+(1-F93))*F94')
+->setCellValue('G95', '=(G87*(SUM(G88:G89))+SUM(G90:G92))*(1+(1-G93))*G94')
+->setCellValue('H95', '=(H87*(SUM(H88:H89))+SUM(H90:H92))*(1+(1-H93))*H94')
 ;
 
 

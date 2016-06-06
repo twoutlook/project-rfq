@@ -89,7 +89,7 @@ $tool->extendColToCDEFGH(84,"=C81*C82*C83");
 //$tool->extendColToCDEFGH(95,"=C87*(SUM(C88:C92))*(1+(1-C93))*C94");
 // [[A0607]]
 echo "//[[A0607]] 加入的 遮蔽費用等三項, 公式之前有誤";
-$tool->extendColToCDEFGH(95,"=(C87*(SUM(C88:C89)+(SUM(C90:C92))*(1+(1-C93))*C94");
+$tool->extendColToCDEFGH(95,"=(C87*(SUM(C88:C89))+SUM(C90:C92))*(1+(1-C93))*C94");
 
 
 
