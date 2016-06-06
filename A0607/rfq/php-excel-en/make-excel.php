@@ -354,7 +354,9 @@ include 'make-excel-genearted-statements.php';//wrong spelling here
 // 不能設為0, 0.1 或 1 可行
 $objPHPExcel->getActiveSheet()->getRowDimension('5')->setRowHeight(1);
 $objPHPExcel->getActiveSheet()->getRowDimension('26')->setRowHeight(1);
-$objPHPExcel->getActiveSheet()->getRowDimension('27')->setRowHeight(1);
+
+//
+//$objPHPExcel->getActiveSheet()->getRowDimension('27')->setRowHeight(1);
 $objPHPExcel->getActiveSheet()->getRowDimension('59')->setRowHeight(1);
 
 $objPHPExcel->getActiveSheet()->getRowDimension('6')->setRowHeight(120);
