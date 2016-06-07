@@ -1520,7 +1520,7 @@ Ext.onReady(function () {
 //
 //          // 只是做成最後一行
             {sheet: 1, row: 7, col: 1, json: {bgc: colorVersion, data: 'RFQ'}},
-            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0607'}},
+            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0608'}},
             {sheet: 1, row: 9, col: 1, json: {bgc: colorVersion, data: '公版'}},
         ]
     };
