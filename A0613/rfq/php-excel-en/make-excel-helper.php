@@ -104,9 +104,15 @@ $tool->extendColToCDEFGH(103,"=C101/3600*C102");
 // 108                        =C105/3600*C106+C107
 //$tool->extendColToCDEFGH(108,"=C105/3600*C106+C107");
 
-echo "// [[A0607]] FIX 106, 108 FORMULA IN EXCEL";
+//echo "// [[A0607]] FIX 106, 108 FORMULA IN EXCEL";
+echo "//[[A0613]] #106 BUG";
 // 108                        =C105/3600*C106+C107
-$tool->extendColToCDEFGH(106,"=C105/3600");
+
+
+//[[A0613]]
+//$tool->extendColToCDEFGH(106,"=C105/3600");//BUG
+$tool->extendColToCDEFGH(106,"=C105*35/3600");
+
 $tool->extendColToCDEFGH(108,"=C106+C107");
 
 

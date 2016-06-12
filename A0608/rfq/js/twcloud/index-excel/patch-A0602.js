@@ -13,7 +13,7 @@ function getPatchA0602(k) {
                 {sheet: 1, row: 106, col: 8, json: {fm: "money|¥|2|none", dsd: "ed", cal: true, data: "=H105*35/3600"}}, // 
                 {sheet: 1, row: 108, col: 3, json: styleSubTotal({data: "=C106+C107"})}, // 
                 {sheet: 1, row: 108, col: 4, json: styleSubTotal({data: "=D106+D107"})}, // 
-                {sheet: 1, row: 108, col: 5, json: styleSubTotal({data: "=E106+E07"})}, // 
+                {sheet: 1, row: 108, col: 5, json: styleSubTotal({data: "=E106+E07"})}, // BUG HERE
                 {sheet: 1, row: 108, col: 6, json: styleSubTotal({data: "=F106+F107"})}, // 
                 {sheet: 1, row: 108, col: 7, json: styleSubTotal({data: "=G106+G107"})}, // 
                 {sheet: 1, row: 108, col: 8, json: styleSubTotal({data: "=H106+H107"})}, // 

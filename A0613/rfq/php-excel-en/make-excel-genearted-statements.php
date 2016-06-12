@@ -515,16 +515,27 @@ $objPHPExcel->getActiveSheet()
 //
 
 
-// --- extendColToCDEFGH(106,=C105/3600) ---
 
-$objPHPExcel->getActiveSheet()
-->setCellValue('C106', '=C105/3600')
-->setCellValue('D106', '=D105/3600')
-->setCellValue('E106', '=E105/3600')
-->setCellValue('F106', '=F105/3600')
-->setCellValue('G106', '=G105/3600')
-->setCellValue('H106', '=H105/3600')
+
+//[[A0613]] #106 BUG
+
+//
+// file:D:\xampp\htdocs\project-rfq\A0613\rfq\php-excel\make-excel-helper.php line:307 function: extendColToCDEFGH
+//
+
+
+// --- extendColToCDEFGH(106,=C105*35/3600) ---
+
+$objPHPExcel->getActiveSheet() 
+->setCellValue('C106', '=C105*35/3600')
+->setCellValue('D106', '=D105*35/3600')
+->setCellValue('E106', '=E105*35/3600')
+->setCellValue('F106', '=F105*35/3600')
+->setCellValue('G106', '=G105*35/3600')
+->setCellValue('H106', '=H105*35/3600')
 ;
+
+
 
 
 //
