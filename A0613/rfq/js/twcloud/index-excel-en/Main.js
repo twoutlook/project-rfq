@@ -70,7 +70,7 @@ Ext.onReady(function () {
 //    var ddlSurface = {bgc: colorDdl, ta: "center", data: "===表面要求===", drop: Ext.encode({data: "单清洗,烤漆前皮膜（含清洗）,铝合金一般皮膜（48H）,锌合金一般皮膜（48H),镁合金一般皮膜（24H),铝合金-特殊皮膜（   H）,锌合金-特殊皮膜（   H) ,特殊导电皮膜(  欧姆) ,粉體烤漆-A+級,粉體烤漆-A級 ,粉體烤漆-B級 ,液體烤漆-A+級 ,液體烤漆-A級 ,液體烤漆-B級 ,阳极氧化-A级 , 阳极氧化-B级 ,电泳-A级,电泳-B级 ,掛鍍-A級,掛鍍-B 級,滾鍍-A級,滾鍍-B級 ,高清洁度清洗（600um）,高清洁度清洗（400um）,高清洁度清洗（200um）,清洗鉻酸"})};
 
 
-   // var ddlSurface_data = "cleaning|单清洗,Chromating and cleaning before painting|烤漆前皮膜（含清洗）,normal Al alloy chromating|铝合金一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),Special Al alloy chromating|铝合金-特殊皮膜（   H）,Special chromating, Zinc alloy|锌合金-特殊皮膜（   H) ,Special conductive chromating|特殊导电皮膜(  欧姆) ,power coating-Lev.A+|粉體烤漆-A+級,power coating-Lev.A|粉體烤漆-A級 ,power coating-Lev.B|粉體烤漆-B級 ,wet paint-Lev.A+|液體烤漆-A+級 ,wet paint-Lev.A|液體烤漆-A級 ,wet paint-Lev.B|液體烤漆-B級 ,anodizing-Lev.A|阳极氧化-A级 , anodizing-Lev.B|阳极氧化-B级 ,electrophoresis-Lev.A|电泳-A级,electrophoresis-Lev.B|电泳-B级 ,rack plating-Lev.A|掛鍍-A級,rack plating-Lev.B|掛鍍-B 級,barrel plating-Lev.A|滾鍍-A級,barrel plating-Lev.B|滾鍍-B級 ,high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Chromating|清洗鉻酸";
+    // var ddlSurface_data = "cleaning|单清洗,Chromating and cleaning before painting|烤漆前皮膜（含清洗）,normal Al alloy chromating|铝合金一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),Special Al alloy chromating|铝合金-特殊皮膜（   H）,Special chromating, Zinc alloy|锌合金-特殊皮膜（   H) ,Special conductive chromating|特殊导电皮膜(  欧姆) ,power coating-Lev.A+|粉體烤漆-A+級,power coating-Lev.A|粉體烤漆-A級 ,power coating-Lev.B|粉體烤漆-B級 ,wet paint-Lev.A+|液體烤漆-A+級 ,wet paint-Lev.A|液體烤漆-A級 ,wet paint-Lev.B|液體烤漆-B級 ,anodizing-Lev.A|阳极氧化-A级 , anodizing-Lev.B|阳极氧化-B级 ,electrophoresis-Lev.A|电泳-A级,electrophoresis-Lev.B|电泳-B级 ,rack plating-Lev.A|掛鍍-A級,rack plating-Lev.B|掛鍍-B 級,barrel plating-Lev.A|滾鍍-A級,barrel plating-Lev.B|滾鍍-B級 ,high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Chromating|清洗鉻酸";
     var ddlSurface_data = "cleaning|单清洗,Chromating and cleaning before painting|烤漆前皮膜（含清洗）,normal Al alloy chromating|铝合金一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),Special Al alloy chromating|铝合金-特殊皮膜（   H）,Special chromating, Zinc alloy|锌合金-特殊皮膜（   H) ,Special conductive chromating|特殊导电皮膜(  欧姆) ,power coating-Lev.A+|粉體烤漆-A+級,power coating-Lev.A|粉體烤漆-A級 ,power coating-Lev.B|粉體烤漆-B級 ,wet paint-Lev.A+|液體烤漆-A+級 ,wet paint-Lev.A|液體烤漆-A級 ,wet paint-Lev.B|液體烤漆-B級 ,anodizing-Lev.A|阳极氧化-A级 , anodizing-Lev.B|阳极氧化-B级 ,electrophoresis-Lev.A|电泳-A级,electrophoresis-Lev.B|电泳-B级 ,rack plating-Lev.A|掛鍍-A級,rack plating-Lev.B|掛鍍-B 級,barrel plating-Lev.A|滾鍍-A級,barrel plating-Lev.B|滾鍍-B級 ,high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Chromating|清洗鉻酸";
 
 
@@ -92,8 +92,8 @@ Ext.onReady(function () {
     var ddlMaching = {bgc: colorDdl, ta: "center", data: "≡CNC≡|≡机加工≡", drop: Ext.encode({data: "CNC machining|CNC机加工,traditional machining|传统机加工"})};
 
 //    var ddl079 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜"})};
-    
-        //[[A0608]]
+
+    //[[A0608]]
 //    var ddl079Data = "cleaning|清洗,normal chromating（48H）|一般皮膜（48H）, normal Zinc alloy chromating| 锌合金一般皮膜（48H),normal Mg alloy chromating|镁合金一般皮膜（24H),high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Special chromatingoy|特殊皮膜";
     var ddl079Data = "cleaning|清洗,normal chromating（48H）|一般皮膜（48H）,normal Mg alloy chromating|镁合金一般皮膜（24H),high cleanliness of cleaning（600um）|高清洁度清洗（600um）,high cleanliness of cleaning（400um）高清洁度清洗（400um）,high cleanliness of cleaning（200um）|高清洁度清洗（200um）,Special chromatingoy|特殊皮膜";
 //var ddl079 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "清洗,一般皮膜(48H),鎂合金一般皮膜(24H),高清洁度清洗(600um),高清洁度清洗(400um),高清洁度清洗(200um),特殊皮膜"})};
@@ -267,8 +267,6 @@ Ext.onReady(function () {
             {sheet: 11, row: 3, col: 2, json: {data: '0.2'}},
             {sheet: 11, row: 4, col: 1, json: {data: 'normal Mg alloy chromating|镁合金一般皮膜（24H)'}},
             {sheet: 11, row: 4, col: 2, json: {data: '0.2'}},
-            
-            
             {sheet: 11, row: 5, col: 1, json: {data: 'high cleanliness of cleaning（600um）|高清洁度清洗（600um）'}},
             {sheet: 11, row: 5, col: 2, json: {data: '0.2'}},
             {sheet: 11, row: 6, col: 1, json: {data: 'high cleanliness of cleaning（400um）高清洁度清洗（400um）'}},
@@ -1568,7 +1566,7 @@ Ext.onReady(function () {
 //          // 只是做成最後一行
             {sheet: 1, row: 0, col: 0, json: {fz: 10, ww: 'break-word', ws: 'normal', dsd: "", height: 36, va: "middle"}},
             {sheet: 1, row: 7, col: 1, json: {bgc: colorVersion, data: 'RFQ'}},
-            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0608'}},
+            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0616'}}, //VERSION
             {sheet: 1, row: 9, col: 1, json: {bgc: colorVersion, data: 'MEX'}}
         ]
     };
