@@ -311,7 +311,7 @@ Ext.onReady(function () {
             {sheet: 3, row: 0, col: 2, json: {fm: "money|¥|2|none", ta: "center", data: "B", width: 100}},
             {sheet: 3, row: 0, col: 3, json: {fm: "money|¥|2|none", ta: "center", data: "C", width: 100}},
             //[[A0603]] 無效
-            {sheet: 3, row: 0, col: 4, json: {fm: "money|¥|2|none", ta: "center", data: "D", width: 100}},
+            {sheet: 3, row: 0, col: 4, json: {fm: "money||2|none", ta: "center", data: "D", width: 100}},
             //[[A0603]]
             {sheet: 3, row: 1, col: 1, json: {ta: 'center', data: '压铸合模费：'}},
             {sheet: 3, row: 2, col: 1, json: {ta: 'center', data: '一。铝合金压铸合模费：'}},
@@ -425,6 +425,40 @@ Ext.onReady(function () {
             {sheet: 3, row: 29, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 30, col: 3, json: {ta: 'center', data: '135'}},
             {sheet: 3, row: 31, col: 3, json: {ta: 'center', data: '135'}},
+            //
+            //[[A0628]]
+            //
+            {sheet: 3, row: 1, col: 4, json: {ta: 'center', data: '用工数/机'}},
+            {sheet: 3, row: 2, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 3, col: 4, json: {ta: 'center', data: '1.5'}}, //
+            {sheet: 3, row: 4, col: 4, json: {ta: 'center', data: '1.75'}},
+            {sheet: 3, row: 5, col: 4, json: {ta: 'center', data: '2.0'}},
+            {sheet: 3, row: 6, col: 4, json: {ta: 'center', data: '2.25'}},
+            {sheet: 3, row: 7, col: 4, json: {ta: 'center', data: '2.5'}},
+            {sheet: 3, row: 8, col: 4, json: {ta: 'center', data: '2.5'}},
+            {sheet: 3, row: 9, col: 4, json: {ta: 'center', data: '2.5'}},
+            {sheet: 3, row: 10, col: 4, json: {ta: 'center', data: '3'}},
+            {sheet: 3, row: 11, col: 4, json: {ta: 'center', data: '3'}},
+            {sheet: 3, row: 12, col: 4, json: {ta: 'center', data: '3'}},
+            {sheet: 3, row: 13, col: 4, json: {ta: 'center', data: '3.5'}},
+            {sheet: 3, row: 14, col: 4, json: {ta: 'center', data: '3.5'}},
+            {sheet: 3, row: 15, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 16, col: 4, json: {ta: 'center', data: '0.5'}},
+            {sheet: 3, row: 17, col: 4, json: {ta: 'center', data: '0.5'}},
+            {sheet: 3, row: 18, col: 4, json: {ta: 'center', data: '0.75'}},
+            {sheet: 3, row: 19, col: 4, json: {ta: 'center', data: '1.0'}},
+            {sheet: 3, row: 20, col: 4, json: {ta: 'center', data: '1.0'}},
+            {sheet: 3, row: 21, col: 4, json: {ta: 'center', data: '1.5'}},
+            {sheet: 3, row: 22, col: 4, json: {ta: 'center', data: '1.75'}},
+            {sheet: 3, row: 23, col: 4, json: {ta: 'center', data: '2.0'}},
+            {sheet: 3, row: 24, col: 4, json: {ta: 'center', data: '2.0'}},
+            {sheet: 3, row: 25, col: 4, json: {ta: 'center', data: '2.5'}},
+            {sheet: 3, row: 26, col: 4, json: {ta: 'center', data: ''}},
+            {sheet: 3, row: 27, col: 4, json: {ta: 'center', data: '2.0'}},
+            {sheet: 3, row: 28, col: 4, json: {ta: 'center', data: '3.0'}},
+            {sheet: 3, row: 29, col: 4, json: {ta: 'center', data: '3.0'}},
+            {sheet: 3, row: 30, col: 4, json: {ta: 'center', data: '2.0'}},
+            {sheet: 3, row: 31, col: 4, json: {ta: 'center', data: '3.0'}},
             // [[A0603]] MOQ --- start
 //            {sheet: 3, row: 1, col: 4, json: {ta: 'center', data: 'MOQ'}},
 //            {sheet: 3, row: 2, col: 4, json: {ta: 'center', data: ''}},
@@ -1566,7 +1600,7 @@ Ext.onReady(function () {
 //          // 只是做成最後一行
             {sheet: 1, row: 0, col: 0, json: {fz: 10, ww: 'break-word', ws: 'normal', dsd: "", height: 36, va: "middle"}},
             {sheet: 1, row: 7, col: 1, json: {bgc: colorVersion, data: 'RFQ'}},
-            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0613'}}, //VERSION
+            {sheet: 1, row: 8, col: 1, json: {bgc: colorVersion, data: 'A0629'}}, //VERSION
             {sheet: 1, row: 9, col: 1, json: {bgc: colorVersion, data: 'MEX'}}
         ]
     };
