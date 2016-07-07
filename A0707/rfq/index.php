@@ -47,7 +47,7 @@ if (strlen($active_user) == 0) {
                 <?php
                 if (strlen($active_user_zh) > 0) {
                     echo "登入用戶︰ $active_user_zh ($active_user)";
-                    echo '&nbsp;&nbsp;<a href="../../../fingerprint/logout.php">[登出]</a>';
+                    echo '&nbsp;&nbsp;<a href="../../fingerprint/logout.php">[登出]</a>';
                 }
                 ?>
 
