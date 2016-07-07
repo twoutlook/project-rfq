@@ -33,8 +33,14 @@ if (strlen($active_user) == 0) {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
         <body>
-            <div>...引導至登入頁面</div>
-        </body>
+
+
+        <center>
+            <div style="margin-top: 60px;  font-size: 32pt">
+                ...引導至登入頁面
+            </div>
+        </center>
+    </body>
     </html>
 
 
@@ -61,6 +67,11 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>...引導至應用入口</div>
-    </body>
+
+    <center>
+        <div style="margin-top: 60px;  font-size: 32pt">
+            ...引導至應用入口
+        </div>
+    </center>
+</body>
 </html>
