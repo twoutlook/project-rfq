@@ -58,7 +58,7 @@ if (strlen($active_user) == 0) {
                         <a href="index-zh.php">RFQ 報價自動化 ( 公版 )</a>
                     </li>
                     <li>
-                        <a href="index-en.">RFQ 報價自動化 ( 中英文版 )  </a>
+                        <a href="index-en.php">RFQ 報價自動化 ( 中英文版 )  </a>
                     </li>
                 </ul>
 

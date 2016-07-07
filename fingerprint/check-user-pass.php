@@ -1,9 +1,9 @@
 <?php
 Session_Start();
 
-echo "...checking user-pass<br>";
+//echo "...checking user-pass<br>";
 $xx_username=$_POST["xx_username"];
-echo $xx_username;
+//echo $xx_username;
 
 
 
@@ -45,13 +45,35 @@ if (count($_POST) > 0) {
         $_SESSION["user_name"] = 'abc';
 
         $_SESSION["active_user"] = "rfq";
-        $_SESSION["active_user_zh"] = "臨時共同帳號";
+        $_SESSION["active_user_zh"] = "臨時共用帳號";
 
-        echo "PASS";
-        
+//        echo "PASS";
+        header("Location:../portal");
+        exit();
         
     } else {
         $message = "帳號密碼不正確，請重新提交。";
-        echo "failed!";
+//        echo "failed!";
+//        header("Location:index.php");
+//        exit();
+        ?>
+
+<html>
+    <head>
+        <title>index</title>
+        <meta http-equiv="refresh" content="2;url=index.php" /> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+          <div style="margin-top: 60px;  font-size: 32pt">
+        帳號密碼不正確，請重新提交。<br>...停留三秒鐘，引導至登入頁面</div>
+    </center>
+    </body>
+</html>
+
+<?php
+        
     }
 }
