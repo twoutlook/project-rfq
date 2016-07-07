@@ -34,7 +34,7 @@ if (strlen($active_user) == 0) {
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="js/jquery-1.10.2.js"></script>
-
+        <title>RFQ</title>
 
     </head>
     <body>
