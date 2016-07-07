@@ -10,12 +10,12 @@ and open the template in the editor.
 
 .tableheader {
 background-color: #95BEE6;
-color:white;
+color:black;
 font-weight:bold;
 }
 .tablerow {
 background-color: #A7D6F1;
-color:white;
+color:black;
 }
 .message {
 color: #FF0000;
