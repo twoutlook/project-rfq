@@ -1,7 +1,11 @@
 <?php
 Session_Start();
 
-echo "...checking user-pass";
+echo "...checking user-pass<br>";
+$xx_username=$_POST["xx_username"];
+echo $xx_username;
+
+
 
 $IS_DEBUG = false;
 $_SESSION["current_page"] = "fingerprint/index.php";

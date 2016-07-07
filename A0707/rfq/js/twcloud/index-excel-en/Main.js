@@ -85,7 +85,7 @@ Ext.onReady(function () {
 
     //[[A0606]] EN Frozen De-burning/Thermal De-burring
 //    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "冷冻去除毛刺,热能去除毛刺"})};
-    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡cold spray,burning burr≡|≡冷喷.热烧≡", drop: Ext.encode({data: "Frozen De-burning|冷冻去除毛刺,Thermal De-burring|热能去除毛刺"})};
+    var ddlCold = {bgc: colorDdl, ta: "center", data: "≡Frozen De-burning/Thermal De-burring≡|≡冷喷.热烧≡", drop: Ext.encode({data: "Frozen De-burning|冷冻去除毛刺,Thermal De-burring|热能去除毛刺"})};
 
 
     var ddlStep9 = {bgc: colorDdl, ta: "center", data: "≡Chromating≡|≡皮膜处理≡", drop: Ext.encode({data: "烤漆前清洗皮膜,一般清洗加皮膜,特殊要求皮膜,清洗,特殊清洗"})};
