@@ -565,6 +565,7 @@ if (isset($_SESSION["user_id"])) {
                 spContent = '';
 
                 spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
+                note2=spContent;
                 form1.eReadContent.value = spContent;
                 console.log("---ReadNote___byMark--- [2]=" + spContent);
                 var x = document.getElementById("showNote2");
@@ -615,7 +616,8 @@ if (isset($_SESSION["user_id"])) {
                 spContent = '';
 
                 spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
-                form1.eReadContent.value = spContent;
+                note4=spContent;
+               form1.eReadContent.value = spContent;
                 console.log("---ReadNote___byMark--- [3]=" + spContent);
                 var x = document.getElementById("showNote4");
                 x.innerHTML = spContent;
@@ -667,7 +669,7 @@ if (isset($_SESSION["user_id"])) {
                     //     alert("搜索到相同指纹ID：" + fpidd);
 //                    x.innerHTML = "<h1>" +Date()+ "<br>Got ID=" + fpidd + "</h1>";
                     // x.innerHTML = fpidd;
-                    $.post("finger-login-checker-v2.php", {note2:note2,note3:note3,note4:note4,finger_id: form1.ZAZFingerActivex.SearchID, device_id: "abc987"})
+                    $.post("finger-login-checker-v3.php", {note2:note2,note3:note3,note4:note4,finger_id: form1.ZAZFingerActivex.SearchID, device_id: "abc987"})
                             .done(function (data) {
                                 if (data === "ok999") {
                                     x.innerHTML = "";
