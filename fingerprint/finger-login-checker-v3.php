@@ -47,6 +47,14 @@ $nameZhList[611] = "陳炳陵";
 //$nameZhList[613] = "陳炳陵-左手無名指";
 $step2md5[611] = "8f10d544832295d0d8751ea4e5fb1f8f";
 
+//
+$nameList[612] = "derrick.chen";
+$nameZhList[612] = "陳宏宇";
+$step2md5[612] = "1e43de448a714c36928334521b19179a";//1e43de448a714c36928334521b19179a *612step1.txt
+
+
+
+
 
 $nameList[711] = "yf.sun";
 $nameList[712] = "wenqing.wu";
@@ -58,7 +66,7 @@ $nameZhList[712] = "吳文清";
 $nameZhList[713] = "吳文益";
 $nameZhList[714] = "李兰英";
 $nameZhList[715] = "朱中行";
-
+$step2md5[715] = "12d1b3abb5184beded583dc958981a95";//12d1b3abb5184beded583dc958981a95 *715step1.txt 2016-07-15
 
 
 

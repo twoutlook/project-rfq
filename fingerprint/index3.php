@@ -341,6 +341,7 @@ if (isset($_SESSION["user_id"])) {
                     <tr>
                         <td>
                             指紋儀特定用戶︰    
+                            <span id="showNote1" style="display: inline"></span>
                             <span id="showNote2" style="display: inline"></span>
                             <span id="showNote3"></span>
                             <span id="showNote4" style="display: none"></span>
@@ -541,7 +542,8 @@ if (isset($_SESSION["user_id"])) {
             </form>
         </center>
         <script>
-            var note2, note3, note4;
+            var note1, note2, note3, note4;
+            note1 = "";
             note2 = "";
             note3 = "";
             note4 = "";
@@ -565,10 +567,33 @@ if (isset($_SESSION["user_id"])) {
                 spContent = '';
 
                 spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
-                note2=spContent;
+                note2 = spContent;
                 form1.eReadContent.value = spContent;
                 console.log("---ReadNote___byMark--- [2]=" + spContent);
                 var x = document.getElementById("showNote2");
+                x.innerHTML = spContent;
+            }
+            function ReadNote1___byMark()
+            {
+                var spDeviceType = form1.DeviceType.value;
+                var spComPort = form1.ComPort.value;
+                var spBaudRate = form1.BaudRate.value;
+
+                form1.ZAZFingerActivex.spDeviceType = spDeviceType;
+                form1.ZAZFingerActivex.spComPort = spComPort;
+                form1.ZAZFingerActivex.spBaudRate = spBaudRate;
+
+                var spNotePage, spContent;
+                //spNotePage = form1.eNotePage.value;
+                spNotePage = '1';
+
+
+                spContent = '';
+
+                spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
+                note1 = spContent;
+                form1.eReadContent.value = spContent;
+                var x = document.getElementById("showNote1");
                 x.innerHTML = spContent;
             }
 
@@ -591,7 +616,7 @@ if (isset($_SESSION["user_id"])) {
                 spContent = '';
 
                 spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
-                note3=spContent;
+                note3 = spContent;
                 form1.eReadContent.value = spContent;
                 console.log("---ReadNote___byMark--- [3]=" + spContent);
                 var x = document.getElementById("showNote3");
@@ -616,12 +641,13 @@ if (isset($_SESSION["user_id"])) {
                 spContent = '';
 
                 spContent = form1.ZAZFingerActivex.ZAZReadInfo(spNotePage);
-                note4=spContent;
-               form1.eReadContent.value = spContent;
+                note4 = spContent;
+                form1.eReadContent.value = spContent;
                 console.log("---ReadNote___byMark--- [3]=" + spContent);
                 var x = document.getElementById("showNote4");
                 x.innerHTML = spContent;
             }
+            ReadNote1___byMark();
             ReadNote3___byMark();
             ReadNote2___byMark();
             ReadNote4___byMark();
@@ -629,15 +655,15 @@ if (isset($_SESSION["user_id"])) {
             function SearchFp()
             {
                 if (note3.length === 0) {
-                    alert("系統未能偵測到指紋儀， 無法使用指紋輸入!");
+                    alert("系統未能偵測到指紋儀或特定用戶信息， 無法使用指紋輸入!");
                     return;
                 }
-                
+
                 console.log("=== NEED TO KNOW DB DATA===");
                 var db = form1.ZAZFingerActivex.ZAZFingerdb();
                 console.log(db);
-                
-                
+
+
                 var x = document.getElementById("showResult");
 
 
@@ -669,7 +695,7 @@ if (isset($_SESSION["user_id"])) {
                     //     alert("搜索到相同指纹ID：" + fpidd);
 //                    x.innerHTML = "<h1>" +Date()+ "<br>Got ID=" + fpidd + "</h1>";
                     // x.innerHTML = fpidd;
-                    $.post("finger-login-checker-v3.php", {note2:note2,note3:note3,note4:note4,finger_id: form1.ZAZFingerActivex.SearchID, device_id: "abc987"})
+                    $.post("finger-login-checker-v3.php", {note2: note2, note3: note3, note4: note4, finger_id: form1.ZAZFingerActivex.SearchID, device_id: "abc987"})
                             .done(function (data) {
                                 if (data === "ok999") {
                                     x.innerHTML = "";
